@@ -63,14 +63,29 @@
                 <p>Make a Transaction to recieve top-not feedback about whether your transaction is good or bad.</p>
                 <p><b>Add/Drop:</b>Find out the pros and cons of adding and dropping players from your team</p>
                 <p><b>Trade</b> Find out if you are getting the best out of your trade or if you are getting robbed</p>
+
                 <form style="background-color:brown; padding: 5% 5% 5% 5%">
-                    <select style=" width: 50%">
+                    <select id="page" style="width: 50%">
+                        <option>Select</option>
                         <option value="ad">Add/Drop</option>
                         <option value="t">Trade</option>
                     </select>
-                    <button>Submit</button>
+                    <button id="submit" onclick="changePage()">Submit</button>
                 </form>
+
             </div>         
         </div>
     </body>
+    <script>
+        function changePage(){
+            var value = document.getElementById("page").value;
+            if(value == "ad"){
+                window.location.href="transaction_add_drop.html";
+            }else{
+                window.location.href="transaction_trade.html";
+            }
+        }
+    
+    
+    </script>
 </html>
