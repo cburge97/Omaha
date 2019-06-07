@@ -57,11 +57,30 @@
 ## Update #3: 6/7
 
 ### What did your team do last week?
+* finished and uploaded values in database
+* started working on html pages for website
 
 ### What will you do this week?
 * Revise design document based on the comments
 * Add Machine Learning piece to system architect and flow
 * cleanup the repo
+* finish html pages
+* research for machine learning
+* find a way to scrape data from NFL weather website
+* find a way to connect sql code to python
+
+### Any blocking issues/challenges need to be addressed?
+* easy way to scrape data from website
+* learning how to connect connect sql code to python
+### Link to meeting notes
+
+## Update #4: 6/14
+
+### What did your team do last week?
+
+
+### What will you do this week?
+
 
 ### Any blocking issues/challenges need to be addressed?
 
