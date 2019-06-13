@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Player Stats</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+	<style>
+		.my-custom-scrollbar {
+			position: relative;
+			height: 200px;
+			overflow: auto;
+		}
+	.table-wrapper-scroll-y {
+		display: block;
+	}
+	
+	
+		
+	</style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  		<a class="navbar-brand" href="#">OMAHA</a>
+  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    		<span class="navbar-toggler-icon"></span>
+ 		 </button>
+		
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Player Stats</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Transactions
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Add/Drop</a>
+		  <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Trade</a>
+          
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Draft</a>
+      </li>
+    </ul>
+   
+  </div>
+</nav>
+	
+<h1>Player Stats</h1>
+	<input class="form-control" id="myInput" type="text" placeholder="Search..">
+		<div class="table-wrapper-scroll-y my-custom-scrollbar">
+
+  		<table class="table table-bordered table-striped mb-0">
+    	<thead>
+      		<tr>
+        		<th scope="col">#</th>
+        		<th scope="col">First</th>
+        		<th scope="col">Last</th>
+        		<th scope="col">Position</th>
+				<th scope="col">Height</th>
+				<th scope="col">Weight</th>
+				<th scope="col">Birth</th>
+				<th scope="col">College</th>
+				<th scope="col">Draft Pick</th>
+				<th scope="col">Draft Year</th>
+				<th scope="col">Salary</th>
+      		</tr>
+    	</thead>
+    	<tbody id="myTable">
+      		<tr data-toggle="modal" data-id="1" data-target="#myModal">
+        		<th scope="row">1</th>
+        		<td>Mark</td>
+        		<td>Otto</td>
+        		<td>QB</td>
+				<td>6'3</td>
+        		<td>190</td>
+        		<td>1/5/1997</td>
+				<td>Mark</td>
+        		<td>Otto</td>
+        		<td>3000</td>
+				<td>$499</td>		
+   		  </tr>
+      	<tr data-toggle="modal" data-id="2" data-target="#myModal">
+        	<th scope="row">2</th>
+        		<td>Mark</td>
+        		<td>Otto</td>
+        		<td>QB</td>
+				<td>6'3</td>
+        		<td>190</td>
+        		<td>1/5/1997</td>
+				<td>Mark</td>
+        		<td>Otto</td>
+        		<td>2006</td>
+		  <td>$499</td>
+      	</tr >
+      <tr data-toggle="modal" data-id="3" data-target="#myModal">
+        <th scope="row">3</th>
+        		<td>Mark</td>
+        		<td>Otto</td>
+        		<td>QB</td>
+				<td>6'3</td>
+        		<td>190</td>
+        		<td>1/5/1997</td>
+				<td>Mark</td>
+        		<td>Otto</td>
+        		<td>2006</td>
+		<td>$499</td>
+      </tr>
+      <tr data-toggle="modal" data-id="4" data-target="#myModal">
+        <th scope="row">4</th>
+        		<td>Mark</td>
+        		<td>Otto</td>
+        		<td>QB</td>
+				<td>6'3</td>
+        		<td>190</td>
+        		<td>1/5/1997</td>
+				<td>Mark</td>
+        		<td>Otto</td>
+        		<td>2006</td>
+		<td>$499</td>
+      </tr>
+      <tr data-toggle="modal" data-id="5" data-target="#myModal">
+        <th scope="row">5</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+      </tr>
+      <tr data-toggle="modal" data-id="6" data-target="#myModal">
+        <th scope="row">6</th>
+        <td>Larry</td>
+        <td>the Bird</td>
+        <td>@twitter</td>
+      </tr>
+    </tbody>
+  	</table>
+
+</div>
+
+	
+  <!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Modal Heading</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          Player career and season stats here
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+<script>
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myTable tr").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
+</body>
+	
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</html>
