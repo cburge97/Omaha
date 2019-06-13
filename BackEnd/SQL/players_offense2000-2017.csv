@@ -1,0 +1,1287 @@
+﻿player_id,F_name,L_Name,position,height,weight,birth_year,college,draft_round,draft_position,draft_year,current_salary
+5,Jared,Abbrederis,WR,6-1,195,1990,Wisconsin,5,176,2014,"615,000"
+10,Ameer,Abdullah,RB,,198,1993,Nebraska,2,54,2015,"687,830"
+60,Davante,Adams,WR,,212,1992,Fresno St.,2,53,2014,"956,373"
+71,Jerell,Adams,TE,,244,1992,South Carolina,6,184,2016,"540,000"
+72,Joe,Adams,WR,,177,1989,Arkansas,4,104,2012,
+90,Rodney,Adams,WR,,189,1994,South Florida,5,170,2017,"465,000"
+108,Joseph,Addai,RB,,210,1983,LSU,1,30,2006,
+137,Nelson,Agholor,WR,,190,1993,USC,1,20,2015,"1,287,489"
+143,Roberto,Aguayo,K,,207,1994,Florida St.,2,59,2016,
+153,Sam,Aiken,WR,,204,1980,North Carolina,4,127,2003,
+160,Jay,Ajayi,RB,,216,1993,Boise St.,5,149,2015,"615,000"
+210,Dan,Alexander,RB,,257,1978,Nebraska,6,192,2001,
+242,Shaun,Alexander,RB,5-11,225,1977,Alabama,1,19,2000,
+259,Mario,Alford,WR,,177,1992,West Virginia,7,238,2015,
+269,Anthony,Allen,RB,,223,1988,Louisville,7,225,2011,
+275,Brian,Allen,RB,,205,1980,Stanford,6,204,2002,
+289,Dwayne,Allen,TE,,255,1990,Clemson,3,64,2012,
+309,Javorius,Allen,RB,,220,1991,USC,4,125,2015,"615,000"
+317,Keenan,Allen,WR,,206,1992,California,3,76,2013,
+342,Aundrae,Allison,WR,,198,1986,East Carolina,5,146,2007,
+373,Jace,Amaro,TE,,265,1992,Texas Tech,2,49,2014,
+427,Courtney,Anderson,TE,,270,1980,San Jose St.,7,245,2004,
+432,David,Anderson,WR,,195,1983,Colorado St.,7,251,2006,
+434,Derek,Anderson,QB,,229,1983,Oregon St.,6,213,2005,"1,550,000"
+473,Mike,Anderson,RB,6-0,230,1973,Utah,6,189,2000,
+489,Scotty,Anderson,WR,6-2,191,1979,Grambling St.,5,148,2001,
+536,Mark,Anelli,TE,,265,1979,Wisconsin,6,201,2002,
+541,Richard,Angulo,TE,,260,1980,West. New Mexico,7,254,2003,
+582,Dri,Archer,WR,5-8,173,1991,Kent St.,3,97,2014,
+644,Devin,Aromashodu,WR,,202,1984,Auburn,7,233,2006,
+647,Adrian,Arrington,WR,,185,1985,Michigan,7,237,2008,
+648,J.J.,Arrington,RB,,214,1983,California,2,44,2005,
+656,Cameron,Artis-Payne,RB,,212,1992,Auburn,5,174,2015,"615,000"
+741,David,Ausberry,WR,,235,1987,USC,7,241,2011,
+756,Tavon,Austin,WR,,174,1991,West Virginia,1,8,2013,"3,500,000"
+757,Terrence,Austin,WR,5-11,175,1988,UCLA,7,219,2010,
+764,Jason,Avant,WR,,210,1983,Michigan,4,109,2006,
+770,Donnie,Avery,WR,,186,1984,Houston,2,33,2008,
+785,Demarcus,Ayers,WR,,190,1994,Houston,7,229,2016,
+802,Bill,Baber,TE,,255,1979,Virginia,5,141,2001,
+816,Kennard,Backman,TE,,258,1993,Ala-Birmingham,6,213,2015,
+868,Stedman,Bailey,WR,5-10,193,1990,West Virginia,3,92,2013,
+877,Billy,Bajema,TE,,261,1982,Oklahoma St.,7,249,2005,
+884,Chris,Baker,TE,6-3,258,1979,Michigan St.,3,88,2002,
+887,Dallas,Baker,WR,,206,1982,Florida,7,227,2007,
+890,Edwin,Baker,RB,,204,1991,Michigan St.,7,250,2012,
+946,Jonathan,Baldwin,WR,,225,1989,Pittsburgh,1,26,2011,
+959,Montee,Ball,RB,,214,1990,Wisconsin,2,58,2013,
+967,Vick,Ballard,RB,,217,1990,Mississippi St.,5,170,2012,
+1004,Mike,Banks,TE,,262,1979,Iowa St.,7,223,2002,
+1015,Alex,Bannister,WR,,207,1979,East. Kentucky,5,140,2001,
+1035,Marion,Barber,RB,,221,1983,Minnesota,4,109,2005,
+1052,Ramses,Barden,WR,,227,1986,Cal Poly-San Luis Obispo,3,85,2009,
+1067,Matt,Barkley,QB,,227,1990,USC,4,98,2013,
+1075,Kevan,Barlow,RB,,238,1979,Pittsburgh,3,80,2001,
+1081,Kenjon,Barner,RB,,196,1989,Oregon,6,182,2013,"568,235"
+1142,Gary,Barnidge,TE,6-5,240,1985,Louisville,5,141,2008,
+1239,Baron,Batch,RB,,200,1987,Texas Tech,7,232,2011,
+1264,Arnaz,Battle,WR,,217,1980,Notre Dame,6,197,2003,
+1350,C.J.,Beathard,QB,,219,1993,Iowa,3,104,2017,"465,000"
+1366,Anthony,Becht,TE,,272,1977,West Virginia,1,27,2000,
+1371,John,Beck,QB,,215,1981,BYU,2,40,2007,
+1383,Odell,Beckham,WR,5-11,198,1992,LSU,1,12,2014,"1,839,027"
+1390,Travis,Beckum,TE,,240,1987,Wisconsin,3,100,2009,
+1440,Blake,Bell,TE,,263,1991,Oklahoma,4,117,2015,"615,000"
+1465,Le'Veon,Bell,RB,,230,1992,Michigan St.,2,48,2013,"12,120,000"
+1480,Tatum,Bell,RB,,190,1981,Oklahoma St.,2,41,2004,
+1520,Kelvin,Benjamin,WR,,240,1991,Florida St.,1,28,2014,"1,000,000"
+1524,Travis,Benjamin,WR,5-10,172,1989,Miami (FL),4,100,2012,"5,250,000"
+1526,Arrelious,Benn,WR,,225,1988,Illinois,2,39,2010,"775,000"
+1539,Earl,Bennett,WR,,205,1987,Vanderbilt,3,70,2008,
+1544,Martellus,Bennett,TE,6-7,248,1987,Texas A&M;,2,61,2008,"900,000"
+1545,Michael,Bennett,RB,,211,1978,Wisconsin,1,27,2001,
+1557,Cedric,Benson,RB,,222,1982,Texas,1,4,2005,
+1598,Eddie,Berlin,WR,,195,1978,Northern Iowa,5,159,2001,
+1603,Giovani,Bernard,RB,,202,1991,North Carolina,2,37,2013,"1,600,000"
+1624,Bernard,Berrian,WR,6-1,190,1980,Fresno St.,3,78,2004,
+1665,Jahvid,Best,RB,,190,1989,California,1,30,2010,
+1683,Ladell,Betts,RB,,222,1979,Iowa,2,56,2002,
+1783,Avion,Black,WR,,185,1977,Tennessee St.,4,121,2000,
+1808,Justin,Blackmon,WR,,210,1990,Oklahoma St.,1,5,2012,
+1862,Derrick,Blaylock,RB,,205,1979,S.F. Austin,5,150,2001,
+1894,Alfred,Blue,RB,,223,1991,LSU,6,181,2014,"690,000"
+1961,Anquan,Boldin,WR,,218,1980,Florida St.,2,54,2003,
+1970,Kyle,Boller,QB,,220,1981,California,1,19,2003,
+1973,Brooks,Bollinger,QB,,205,1979,Wisconsin,6,200,2003,
+1999,Devontae,Booker,RB,5-11,212,1992,Utah,4,136,2016,"540,000"
+2001,Lorenzo,Booker,RB,,191,1984,Florida St.,3,71,2007,
+2038,Blake,Bortles,QB,,232,1992,Central Florida,1,3,2014,"3,236,565"
+2050,Matthew,Bosher,K,,208,1987,Miami (FL),6,192,2011,"2,200,000"
+2054,Kevin,Boss,TE,,255,1984,Western Oregon,5,153,2007,
+2098,Dwayne,Bowe,WR,,221,1984,LSU,1,23,2007,
+2136,Josh,Boyce,WR,5-11,206,1991,TCU,4,102,2013,
+2141,Cory,Boyd,RB,,212,1985,South Carolina,7,238,2008,
+2158,Tyler,Boyd,WR,,197,1994,Pittsburgh,2,55,2016,"643,589"
+2175,Nick,Boyle,TE,,268,1993,Delaware,5,171,2015,"615,000"
+2196,Allen,Bradford,RB,,235,1988,USC,6,187,2011,
+2201,Sam,Bradford,QB,,236,1987,Oklahoma,1,1,2010,"14,000,000"
+2220,Mark,Bradley,WR,,201,1982,Oklahoma,2,39,2005,
+2224,Ahmad,Bradshaw,RB,,195,1986,Marshall,7,250,2007,
+2240,Tom,Brady,QB,,225,1977,Michigan,6,199,2000,"1,000,000"
+2262,Deion,Branch,WR,5-9,193,1979,Louisville,2,65,2002,
+2275,Tom,Brandstater,QB,,215,1984,Fresno St.,6,174,2009,
+2295,Daniel,Braverman,WR,,178,1993,West. Michigan,7,230,2016,
+2310,LaVon,Brazill,WR,,192,1989,Ohio,6,206,2012,
+2314,Steve,Breaston,WR,,175,1983,Michigan,5,142,2007,
+2328,Drew,Brees,QB,,209,1979,Purdue,2,32,2001,"13,000,000"
+2359,Sean,Brewer,TE,6-4,255,1977,San Jose St.,3,66,2001,
+2377,Teddy,Bridgewater,QB,,214,1992,Louisville,1,32,2014,"1,354,023"
+2411,Dezmon,Briscoe,WR,,200,1989,Kansas,6,191,2010,
+2414,Jacoby,Brissett,QB,,231,1993,Florida,3,91,2016,"580,038"
+2425,Kenny,Britt,WR,6-3,215,1988,Rutgers,1,30,2009,"4,000,000"
+2464,Brian,Brohm,QB,,227,1985,Louisville,2,56,2008,
+2529,John,Broussard,WR,,185,1983,San Jose St.,7,229,2007,
+2536,Aaron,Brown,RB,,196,1985,TCU,6,192,2009,
+2540,Andre,Brown,RB,,224,1986,North Carolina St.,4,129,2009,
+2544,Antonio,Brown,WR,,180,1988,Central Michigan,6,195,2010,"910,000"
+2556,Bryce,Brown,RB,6-0,223,1991,Kansas St.,7,229,2012,
+2574,Chris,Brown,RB,,219,1981,Colorado,3,93,2003,
+2597,Dee,Brown,RB,,209,1978,Syracuse,6,175,2001,
+2605,Donald,Brown,RB,,210,1987,Connecticut,1,27,2009,
+2652,John,Brown,WR,,179,1990,Pittsburg St.,3,91,2014,"1,797,000"
+2654,Josh,Brown,K,,202,1979,Nebraska,7,222,2003,
+2655,Justin,Brown,WR,,207,1991,Oklahoma,6,186,2013,
+2674,Levi,Brown,QB,,229,1987,Troy,7,209,2010,
+2692,Noah,Brown,WR,,222,1996,Ohio St.,7,239,2017,"465,000"
+2711,Reggie,Brown,WR,,197,1981,Georgia,2,35,2005,
+2723,Ronnie,Brown,RB,,233,1981,Auburn,1,2,2005,
+2777,Ryan,Broyles,WR,,192,1988,Oklahoma,2,54,2012,
+2833,Antonio,Bryant,WR,6-1,192,1981,Pittsburgh,2,63,2002,
+2848,Dez,Bryant,WR,,225,1988,Oklahoma St.,1,24,2010,"13,000,000"
+2857,Martavis,Bryant,WR,,211,1991,Clemson,4,118,2014,"615,000"
+2895,Correll,Buckhalter,RB,,222,1978,Nebraska,4,121,2001,
+2916,David,Buehler,K,6-2,219,1987,USC,5,172,2009,
+2940,Marc,Bulger,QB,,215,1977,West Virginia,6,168,2000,
+2949,Randy,Bullock,K,,205,1989,Texas A&M;,5,161,2012,"775,000"
+2975,Aaron,Burbridge,WR,6-0,210,1993,Michigan St.,6,213,2016,"363,000"
+3009,Rex,Burkhead,RB,,214,1990,Nebraska,6,190,2013,
+3019,Nate,Burleson,WR,,192,1981,Nevada,3,71,2003,
+3061,Plaxico,Burress,WR,,226,1977,Michigan St.,1,8,2000,
+3090,Keenan,Burton,WR,,202,1984,Kentucky,4,128,2008,
+3100,Stephen,Burton,WR,,221,1989,Long Beach CC,7,236,2011,
+3113,Michael,Bush,RB,,243,1984,Louisville,4,100,2007,
+3116,Reggie,Bush,RB,,200,1985,USC,1,2,2006,
+3132,Harrison,Butker,K,,199,1995,Georgia Tech,7,233,2017,
+3142,Brice,Butler,WR,,215,1990,San Diego St.,7,209,2013,"800,000"
+3148,Deon,Butler,WR,,170,1986,Penn St.,3,91,2009,
+3193,Nate,Byham,TE,,268,1988,Pittsburgh,6,182,2010,
+3207,Dominique,Byrd,TE,,255,1984,USC,3,93,2006,
+3253,Andre,Caldwell,WR,6-1,207,1985,Florida,3,97,2008,
+3264,Reche,Caldwell,WR,,215,1979,Florida,2,48,2002,
+3269,Brian,Calhoun,RB,,200,1984,Wisconsin,3,74,2006,
+3278,Tyrone,Calico,WR,,223,1980,Middle Tenn. St.,2,60,2003,
+3304,Jordan,Cameron,TE,,244,1988,USC,4,102,2011,
+3310,Michael,Campanaro,WR,,192,1991,Wake Forest,7,218,2014,"700,000"
+3329,Jason,Campbell,QB,,223,1981,Auburn,1,25,2005,
+3372,Trung,Canidate,RB,5-11,205,1977,Arizona,1,31,2000,
+3425,Ka'Deem,Carey,RB,,207,1992,Arizona,4,117,2014,
+3437,John,Carlson,TE,,256,1984,Notre Dame,2,38,2008,
+3486,David,Carr,QB,,215,1979,Fresno St.,1,1,2002,
+3487,Derek,Carr,QB,,214,1991,Fresno St.,2,36,2014,"5,000,000"
+3532,Leonte,Carroo,WR,6-0,217,1994,Rutgers,3,86,2016,"560,000"
+3536,Chris,Carson,RB,,218,1994,Oklahoma St.,7,249,2017,"465,000"
+3565,Delone,Carter,RB,,225,1987,Syracuse,4,119,2011,
+3567,Drew,Carter,WR,,200,1981,Ohio St.,5,163,2004,
+3578,Jonathan,Carter,WR,,180,1979,Troy,5,162,2001,
+3590,Quincy,Carter,QB,,213,1977,Georgia,2,53,2001,
+3598,Tim,Carter,WR,,200,1979,Auburn,2,46,2002,
+3631,James,Casey,TE,,235,1984,Rice,5,152,2009,
+3655,Matt,Cassel,QB,,230,1982,USC,7,230,2005,"1,750,000"
+3705,Brent,Celek,TE,,261,1985,Cincinnati,5,162,2007,"3,000,000"
+3733,Chris,Chambers,WR,,210,1978,Wisconsin,2,52,2001,
+3748,Jeff,Chandler,K,,218,1979,Florida,4,102,2002,
+3751,Scott,Chandler,TE,6-7,270,1985,Iowa,4,129,2007,
+3758,Shaun,Chapas,RB,6-2,236,1988,Georgia,7,220,2011,
+3760,Doug,Chapman,RB,,213,1977,Marshall,3,88,2000,
+3772,Jamaal,Charles,RB,,199,1986,Texas,3,73,2008,"900,000"
+3775,Orson,Charles,TE,,251,1991,Georgia,4,116,2012,
+3826,Jehu,Chesson,WR,,204,1993,Michigan,4,139,2017,"465,000"
+3848,Greg,Childs,WR,,219,1990,Arkansas,4,134,2012,
+3862,Tashard,Choice,RB,,210,1984,Oklahoma,4,122,2008,
+3877,Gerald,Christian,TE,,250,1991,Louisville,7,256,2015,
+3953,Dallas,Clark,TE,,257,1979,Iowa,1,24,2003,
+4026,Jimmy,Clausen,QB,,217,1987,Notre Dame,2,48,2010,
+4032,Charles,Clay,TE,6-3,245,1989,Tulsa,6,174,2011,"4,500,000"
+4036,Kaelin,Clay,WR,,190,1992,Utah,6,184,2015,"540,000"
+4051,Mark,Clayton,WR,,193,1982,Oklahoma,1,22,2005,
+4052,Michael,Clayton,WR,,197,1982,LSU,1,15,2004,
+4063,Kellen,Clemens,QB,,224,1983,Oregon,2,49,2006,"1,000,000"
+4084,Toney,Clemons,WR,,210,1988,Colorado,7,231,2012,
+4109,David,Clowney,WR,,190,1985,Virginia Tech,5,157,2007,
+4117,Danny,Coale,WR,6-0,201,1988,Virginia Tech,5,152,2012,
+4121,Sammie,Coates,WR,,213,1993,Auburn,3,87,2015,"615,000"
+4125,David,Cobb,RB,,229,1993,Minnesota,5,138,2015,
+4126,DeAndra,Cobb,RB,5-10,196,1981,Michigan St.,6,201,2005,
+4130,Randall,Cobb,WR,,191,1990,Kentucky,2,64,2011,"8,600,000"
+4137,Cedric,Cobbs,RB,,225,1981,Arkansas,4,128,2004,
+4168,Glen,Coffee,RB,6-1,200,1987,Alabama,3,74,2009,
+4175,Chase,Coffman,TE,6-5,250,1986,Missouri,3,98,2009,
+4185,Tarik,Cohen,RB,,179,1995,North Carolina A&T;,4,119,2017,"465,000"
+4193,Keary,Colbert,WR,,200,1982,USC,2,62,2004,
+4200,Chris,Cole,WR,,195,1977,Texas A&M;,3,70,2000,
+4225,B.J.,Coleman,QB,,233,1988,Tenn-Chattanooga,7,243,2012,
+4231,Corey,Coleman,WR,,194,1994,Baylor,1,15,2016,"979,773"
+4263,Tevin,Coleman,RB,,210,1993,Indiana,3,73,2015,"680,000"
+4266,Laveranues,Coles,WR,,193,1977,Florida St.,3,78,2000,
+4269,Stacy,Coley,WR,6-1,195,1994,Miami (FL),7,219,2017,"465,000"
+4275,Austin,Collie,WR,,200,1985,BYU,4,127,2009,
+4285,Alex,Collins,RB,,218,1994,Arkansas,5,171,2016,
+4310,Jerome,Collins,TE,6-4,267,1982,Notre Dame,5,144,2005,
+4350,Marques,Colston,WR,6-4,225,1983,Hofstra,7,252,2006,
+4400,Chris,Conley,WR,,207,1992,Georgia,3,76,2015,"635,000"
+4418,James,Conner,RB,,233,1995,Pittsburgh,3,105,2017,"465,000"
+4419,John,Conner,RB,,240,1987,Kentucky,5,139,2010,
+4457,Connor,Cook,QB,,220,1993,Michigan St.,4,100,2016,"540,000"
+4458,Dalvin,Cook,RB,,210,1995,Florida St.,2,41,2017,"465,000"
+4469,Jared,Cook,TE,6-4,235,1987,South Carolina,3,89,2009,
+4480,Brandin,Cooks,WR,,189,1993,Oregon St.,1,20,2014,
+4486,Chris,Cooley,TE,,252,1982,Utah St.,3,81,2004,
+4495,Amari,Cooper,WR,,210,1994,Alabama,1,4,2015,"615,000"
+4520,Pharoh,Cooper,WR,,208,1995,South Carolina,4,117,2016,"540,000"
+4524,Riley,Cooper,WR,6-3,214,1987,Florida,5,159,2010,
+4558,Cody,Core,WR,,207,1994,Mississippi,6,199,2016,"540,000"
+4614,Jerricho,Cotchery,WR,6-1,200,1982,North Carolina St.,4,108,2004,
+4618,Brad,Cottam,TE,,271,1984,Tennessee,3,76,2008,
+4644,Kirk,Cousins,QB,,214,1988,Michigan St.,4,102,2012,"23,943,600"
+4647,Brandon,Coutu,K,,188,1984,Georgia,7,235,2008,
+4681,Michael,Cox,RB,,,1988,Massachusetts,7,253,2013,
+4700,Michael,Crabtree,WR,,215,1987,Texas Tech,1,10,2009,"6,250,000"
+4753,Patrick,Crayton,WR,,205,1979,NW Oklahoma St.,7,216,2004,
+4773,Juron,Criner,WR,6-3,224,1989,Arizona,5,168,2012,
+4824,Mason,Crosby,K,6-1,212,1984,Colorado,6,193,2007,"1,000,000"
+4853,Jamison,Crowder,WR,,174,1993,Duke,4,105,2015,"615,000"
+4867,Brodie,Croyle,QB,,205,1983,Alabama,3,85,2006,
+4875,Alge,Crumpler,TE,,262,1977,North Carolina,2,35,2001,
+4917,B.J.,Cunningham,WR,,211,1989,Michigan St.,6,183,2012,
+4931,Justice,Cunningham,TE,6-3,258,1991,South Carolina,7,254,2013,
+4954,Airese,Currie,WR,5-10,186,1982,Clemson,5,140,2005,
+4972,Ronald,Curry,WR,,220,1979,North Carolina,7,235,2002,
+4981,Kevin,Curtis,WR,5-11,186,1978,Utah St.,3,74,2003,
+4993,Jay,Cutler,QB,,225,1983,Vanderbilt,1,11,2006,
+5035,Andy,Dalton,QB,6-2,215,1987,TCU,2,35,2011,"13,100,000"
+5058,B.J.,Daniels,QB,,217,1988,South Florida,7,237,2013,
+5072,Owen,Daniels,TE,,245,1982,Wisconsin,4,98,2006,
+5086,Amara,Darboh,WR,,214,1994,Michigan,3,106,2017,"465,000"
+5090,Kenneth,Darby,RB,5-10,214,1982,Alabama,7,246,2007,
+5104,Devard,Darling,WR,,213,1982,Florida St.,3,82,2004,
+5127,Najeh,Davenport,RB,,245,1979,Miami (FL),4,135,2002,
+5131,Rohan,Davey,QB,,245,1978,LSU,4,117,2002,
+5152,Andre',Davis,WR,,195,1979,Virginia Tech,2,47,2002,
+5189,Chris,Davis,WR,,181,1984,Florida St.,4,128,2007,
+5194,Corey,Davis,WR,,209,1995,West. Michigan,1,5,2017,"465,000"
+5195,Craig,Davis,WR,,200,1985,LSU,1,30,2007,
+5217,Fred,Davis,TE,,250,1986,USC,2,48,2008,
+5220,Geremy,Davis,WR,,219,1992,Connecticut,6,186,2015,"615,000"
+5237,James,Davis,RB,,218,1986,Clemson,6,195,2009,
+5255,Kellen,Davis,TE,,259,1985,Michigan St.,5,158,2008,
+5258,Knile,Davis,RB,,227,1991,Arkansas,3,96,2013,
+5268,Mike,Davis,RB,,223,1992,South Carolina,4,126,2015,"437,647"
+5316,Trevor,Davis,WR,,188,1993,California,5,163,2016,"540,000"
+5325,Vernon,Davis,TE,,250,1984,Maryland,1,6,2006,"2,000,000"
+5358,JaJuan,Dawson,WR,,197,1977,Tulane,3,79,2000,
+5374,Matthew,Dayes,RB,,205,1994,North Carolina St.,7,252,2017,"465,000"
+5377,Ron,Dayne,RB,,250,1978,Wisconsin,1,11,2000,
+5403,Eric,Decker,WR,,206,1987,Minnesota,3,87,2010,
+5535,A.J.,Derby,TE,,255,1991,Arkansas,6,202,2015,"615,000"
+5562,Seth,Devalve,TE,,245,1993,Princeton,4,138,2016,"540,000"
+5604,Dorin,Dickerson,WR,,230,1988,Pittsburgh,7,227,2010,
+5616,Ed,Dickson,TE,,244,1987,Oregon,3,70,2010,"1,950,000"
+5642,Stefon,Diggs,WR,,195,1993,Maryland,5,146,2015,"615,000"
+5651,Jarett,Dillard,WR,,185,1985,Rice,5,144,2009,
+5697,Anthony,Dixon,RB,,239,1987,Mississippi St.,6,173,2010,
+5703,Dennis,Dixon,QB,,195,1985,Oregon,5,156,2008,
+5712,Kenneth,Dixon,RB,,215,1994,Louisiana Tech,4,134,2016,"412,941"
+5719,Ron,Dixon,WR,,190,1976,West Georgia,3,73,2000,
+5736,Aaron,Dobson,WR,,210,1991,Marshall,2,59,2013,
+5742,Josh,Doctson,WR,,202,1992,TCU,1,22,2016,"906,802"
+5829,Phillip,Dorsett,WR,5-10,183,1993,Miami (FL),1,29,2015,
+5838,Ken,Dorsey,QB,,218,1981,Miami (FL),7,241,2003,
+5839,Kevin,Dorsey,WR,,,1990,Maryland,7,224,2013,
+5847,Tandon,Doss,WR,,201,1989,Indiana,4,123,2011,
+5856,Early,Doucet,WR,,211,1985,LSU,3,81,2008,
+5871,Harry,Douglas,WR,,170,1984,Louisville,3,84,2008,"1,200,000"
+5938,Kenyan,Drake,RB,,210,1994,Alabama,3,73,2016,"595,000"
+5945,Jim,Dray,TE,,253,1986,Stanford,7,233,2010,
+5950,Joel,Dreessen,TE,,260,1982,Colorado St.,6,198,2005,
+5967,Reuben,Droughns,RB,,207,1978,Oregon,3,81,2000,
+5983,Thomas,Duarte,WR,,225,1995,UCLA,7,231,2016,
+5998,T.J.,Duckett,RB,,254,1981,Michigan St.,1,18,2002,
+6029,Jeff,Dugan,TE,,261,1981,Maryland,7,220,2004,
+6031,Ron,Dugans,WR,,205,1977,Florida St.,3,66,2000,
+6063,LaTarence,Dunbar,WR,,196,1980,TCU,6,196,2003,
+6105,Drake,Dunsmore,TE,,241,1988,Northwestern,7,233,2012,
+6122,Kris,Durham,WR,,215,1988,Georgia,4,107,2011,
+6145,Jonathan,Dwyer,RB,,235,1989,Georgia Tech,6,188,2010,
+6182,Marcus,Easley,WR,,225,1987,Connecticut,4,107,2010,
+6207,Jeremy,Ebert,WR,5-11,200,1989,Northwestern,7,235,2012,
+6211,Eric,Ebron,TE,6-4,250,1993,North Carolina,1,10,2014,"1,590,337"
+6215,Adimchinobe,Echemandu,RB,,225,1980,California,7,208,2004,
+6236,Julian,Edelman,WR,,198,1986,Kent St.,7,232,2009,"3,000,000"
+6240,Paul,Edinger,K,,175,1978,Michigan St.,6,174,2000,
+6242,Dominique,Edison,WR,,200,1986,S.F. Austin,6,206,2009,
+6254,Armanti,Edwards,QB,,191,1988,Appalachian St.,3,89,2010,
+6257,Braylon,Edwards,WR,6-3,211,1983,Michigan,1,3,2005,
+6296,Trent,Edwards,QB,,231,1983,Stanford,3,92,2007,
+6306,Michael,Egnew,TE,6-5,252,1989,Missouri,3,78,2012,
+6318,Tyler,Eifert,TE,6-6,250,1990,Notre Dame,1,21,2013,"4,782,000"
+6367,Andre,Ellington,RB,,199,1989,Clemson,6,187,2013,"775,000"
+6368,Bruce,Ellington,WR,,197,1991,South Carolina,4,106,2014,"690,000"
+6375,Ezekiel,Elliott,RB,,225,1995,Ohio St.,1,4,2016,"1,584,379"
+6376,Jake,Elliott,K,,167,1995,Memphis,5,153,2017,
+6377,Jamin,Elliott,WR,,187,1979,Delaware,6,203,2002,
+6484,Evan,Engram,TE,,234,1994,Mississippi,1,23,2017,"465,000"
+6491,Quincy,Enunwa,WR,,225,1992,Nebraska,6,209,2014,"615,000"
+6497,Dedrick,Epps,TE,,246,1988,Miami (FL),7,235,2010,
+6501,Hayden,Epstein,K,,214,1980,Michigan,7,247,2002,
+6519,Paul,Ernster,K,,217,1982,Northern Arizona,7,239,2005,
+6520,Zach,Ertz,TE,,249,1990,Stanford,2,35,2013,"775,000"
+6521,Tyler,Ervin,RB,,192,1993,San Jose St.,4,119,2016,"540,000"
+6527,Gavin,Escobar,TE,,254,1991,San Diego St.,2,47,2013,
+6544,Patrick,Estes,TE,,268,1983,Virginia,7,248,2005,
+6558,Tim,Euhus,TE,,247,1980,Oregon St.,4,109,2004,
+6591,Lee,Evans,WR,,202,1981,Wisconsin,1,13,2004,
+6598,Mike,Evans,WR,,231,1993,Texas A&M;,1,7,2014,"690,000"
+6613,Kevin,Everett,TE,,241,1982,Miami (FL),3,86,2005,
+6659,David,Fales,QB,,212,1990,San Jose St.,6,183,2014,
+6686,Danny,Farmer,WR,,217,1977,UCLA,4,103,2000,
+6720,Randy,Fasani,QB,,234,1978,Stanford,5,137,2002,
+6721,Anthony,Fasano,TE,6-4,255,1984,Notre Dame,2,53,2006,"1,500,000"
+6722,Ciatrick,Fason,RB,,207,1982,Florida,4,112,2005,
+6771,A.J.,Feeley,QB,,225,1977,Oregon,5,155,2001,
+6799,Jerome,Felton,RB,,246,1986,Furman,5,146,2008,
+6834,Robert,Ferguson,WR,,209,1979,Texas A&M;,2,41,2001,
+6857,Tony,Fiammetta,RB,,246,1986,Syracuse,4,128,2009,
+6864,C.J.,Fiedorowicz,TE,,265,1991,Iowa,3,65,2014,"3,097,000"
+6892,Yamon,Figurs,WR,,174,1983,Kansas St.,3,74,2007,
+6907,Derek,Fine,TE,,250,1983,Kansas,4,132,2008,
+6913,Jermichael,Finley,TE,,240,1987,Texas,3,91,2008,
+6967,Larry,Fitzgerald,WR,,225,1983,Pittsburgh,1,3,2004,"11,000,000"
+6975,Ryan,Fitzpatrick,QB,6-2,221,1982,Harvard,7,250,2005,
+6977,Joe,Flacco,QB,,232,1985,Pittsburgh,1,18,2008,"6,000,000"
+6999,Coby,Fleener,TE,6-6,250,1988,Stanford,2,34,2012,"5,800,000"
+7008,Troy,Fleming,RB,,230,1980,Tennessee,6,191,2004,
+7017,Bryan,Fletcher,TE,,238,1979,UCLA,6,210,2002,
+7063,Michael,Floyd,WR,,220,1989,Notre Dame,1,13,2012,"887,058"
+7075,Matt,Flynn,QB,,228,1985,LSU,7,209,2008,
+7084,Nick,Foles,QB,,244,1989,Arizona,3,88,2012,
+7093,Nick,Folk,K,,211,1984,Arizona,6,178,2007,
+7119,Carl,Ford,WR,6-0,183,1980,Toledo,7,256,2003,
+7131,Jacoby,Ford,WR,,181,1987,Clemson,4,108,2010,
+7144,D'Onta,Foreman,RB,,233,1996,Texas,3,89,2017,"465,000"
+7155,Justin,Forsett,RB,,190,1985,California,7,233,2008,
+7156,Brock,Forsey,RB,,203,1980,Boise St.,6,206,2003,
+7164,Matt,Forte,RB,,221,1985,Tulane,2,44,2008,"4,000,000"
+7178,DeShaun,Foster,RB,,222,1980,UCLA,2,34,2002,
+7203,Leonard,Fournette,RB,,240,1995,LSU,1,4,2017,"465,000"
+7249,Carlos,Francis,WR,5-10,190,1981,Texas Tech,4,99,2004,
+7289,Johnathan,Franklin,RB,,205,1989,UCLA,4,125,2013,
+7299,Will,Franklin,WR,,200,1985,Missouri,4,105,2008,
+7303,Bubba,Franks,TE,,263,1978,Miami (FL),1,14,2000,
+7342,Devonta,Freeman,RB,,206,1992,Florida St.,4,103,2014,"1,297,000"
+7346,Josh,Freeman,QB,,240,1988,Kansas St.,1,17,2009,
+7356,Nate,Freese,K,,192,1990,Boston Col.,7,229,2014,
+7413,Charlie,Frye,QB,,217,1981,Akron,3,67,2005,
+7429,Mondriel,Fulcher,TE,,250,1976,Miami (FL),7,227,2000,
+7433,Corey,Fuller,WR,,204,1990,Virginia Tech,6,171,2013,"690,000"
+7450,Will,Fuller,WR,6-0,186,1994,Notre Dame,1,21,2016,"912,014"
+7461,Devin,Funchess,WR,,230,1994,Michigan,2,41,2015,"836,900"
+7476,Blaine,Gabbert,QB,6-5,235,1989,Missouri,1,10,2011,"900,000"
+7478,Doug,Gabriel,WR,,215,1980,Central Florida,5,167,2003,
+7489,Jabar,Gaffney,WR,,205,1980,Florida,2,33,2002,
+7495,Justin,Gage,WR,,208,1981,Missouri,5,143,2003,
+7509,Michael,Gaines,TE,,280,1980,Central Florida,7,232,2004,
+7545,Wayne,Gallman,RB,,215,1994,Clemson,4,140,2017,"465,000"
+7567,Terrance,Ganaway,RB,,239,1988,Baylor,6,202,2012,
+7582,Quinton,Ganther,RB,,215,1984,Utah,7,246,2006,
+7598,Pierre,Garcon,WR,,210,1986,Mount Union,6,205,2008,"3,675,000"
+7615,Rod,Gardner,WR,,213,1977,Clemson,1,15,2001,
+7616,Talman,Gardner,WR,,205,1980,Florida St.,7,231,2003,
+7636,Jimmy,Garoppolo,QB,,226,1991,East. Illinois,2,62,2014,"820,077"
+7637,David,Garrard,QB,,244,1978,East Carolina,4,108,2002,
+7688,Clyde,Gates,WR,5-11,189,1986,Abilene Christian,4,111,2011,
+7689,Lionel,Gates,RB,,233,1982,Louisville,7,236,2005,
+7727,Trevor,Gaylor,WR,,195,1977,Miami (OH),4,111,2000,
+7783,Toby,Gerhart,RB,,234,1987,Stanford,2,51,2010,
+7789,Reggie,Germany,WR,,180,1978,Ohio St.,7,214,2001,
+7798,David,Gettis,WR,,217,1987,Baylor,6,198,2010,
+7832,Brandon,Gibson,WR,,204,1987,Washington St.,6,194,2009,
+7848,Shelton,Gibson,WR,,191,1995,West Virginia,5,166,2017,"465,000"
+7901,Mike,Gillislee,RB,,208,1990,Florida,5,164,2013,
+7902,Crockett,Gillmore,TE,,260,1991,Colorado St.,3,99,2014,"690,000"
+7910,John,Gilmore,TE,,260,1979,Penn St.,6,196,2002,
+7914,Mardy,Gilyard,WR,6-0,187,1986,Cincinnati,4,99,2010,
+7916,Ted,Ginn,WR,5-11,178,1985,Ohio St.,1,9,2007,
+7928,Chris,Givens,WR,,198,1989,Wake Forest,4,96,2012,
+7929,David,Givens,WR,,212,1980,Notre Dame,7,253,2002,
+7971,Mike,Glennon,QB,,225,1989,North Carolina St.,3,73,2013,"8,000,000"
+8003,Chris,Godwin,WR,6-1,209,1996,Penn St.,3,84,2017,"465,000"
+8015,Jared,Goff,QB,,210,1994,California,1,1,2016,"1,719,894"
+8050,Kenny,Golladay,WR,6-4,218,1993,Northern Illinois,3,96,2017,"465,000"
+8064,Anthony,Gonzalez,WR,,193,1984,Ohio St.,1,32,2007,
+8070,Zane,Gonzalez,K,,202,1995,Arizona St.,7,224,2017,"465,000"
+8110,Mike,Goodson,RB,,195,1987,Texas A&M;,4,111,2009,
+8119,Marquise,Goodwin,WR,,183,1990,Texas,3,78,2013,
+8140,Josh,Gordon,WR,,220,1991,Utah,2,1,2012,"1,068,406"
+8141,Lamar,Gordon,RB,,228,1980,North Dakota St.,3,84,2002,
+8145,Melvin,Gordon,RB,,207,1993,Wisconsin,1,15,2015,"1,404,980"
+8146,Richard,Gordon,TE,,262,1987,Miami (FL),6,181,2011,
+8152,Frank,Gore,RB,5-9,215,1983,Miami (FL),3,65,2005,"3,500,000"
+8172,Stephen,Gostkowski,K,,200,1984,Memphis,4,118,2006,"2,700,000"
+8192,Bruce,Gradkowski,QB,,220,1983,Toledo,6,194,2006,
+8198,Chris,Gragg,TE,,244,1990,Arkansas,7,222,2013,
+8208,Daniel,Graham,TE,,257,1978,Colorado,1,21,2002,
+8216,Garrett,Graham,TE,,245,1986,Wisconsin,4,118,2010,
+8220,Jimmy,Graham,TE,,260,1986,Miami (FL),3,95,2010,"7,900,000"
+8233,T.J.,Graham,WR,,188,1989,North Carolina St.,3,69,2012,
+8238,Bill,Gramatica,K,5-10,189,1978,Florida St.,4,98,2001,
+8269,Jakeem,Grant,WR,,165,1992,Texas Tech,6,186,2016,"540,000"
+8279,Ryan,Grant,WR,,199,1990,Tulane,5,142,2014,"690,000"
+8302,Cyrus,Gray,RB,5-10,206,1989,Texas A&M;,6,182,2012,
+8329,Garrett,Grayson,QB,,215,1991,Colorado St.,3,75,2015,
+8337,A.J.,Green,WR,,205,1988,Georgia,1,4,2011,"10,300,000"
+8341,Alex,Green,RB,,220,1988,Hawaii,3,96,2011,
+8385,Ladarius,Green,TE,,237,1990,La-Lafayette,4,110,2012,
+8394,Mike,Green,RB,,249,1976,Houston,7,213,2000,
+8403,Skyler,Green,WR,,195,1984,LSU,4,125,2006,
+8412,William,Green,RB,,215,1979,Boston Col.,1,16,2002,
+8416,Dorial,Green-Beckham,WR,,225,1993,Oklahoma,2,40,2015,
+8434,Rashad,Greene,WR,,180,1992,Florida St.,5,139,2015,"615,000"
+8436,Shonn,Greene,RB,,235,1985,Iowa,3,65,2009,
+8489,Jermaine,Gresham,TE,,261,1988,Oklahoma,1,21,2010,"2,000,000"
+8491,Marion,Grice,RB,,208,1991,Arizona St.,6,201,2014,
+8518,Quentin,Griffin,RB,,195,1981,Oklahoma,4,108,2003,
+8521,Robert,Griffin,QB,,220,1990,Baylor,1,2,2012,
+8522,Ryan,Griffin,TE,,216,1990,Connecticut,6,201,2013,"875,000"
+8571,Dan,Gronkowski,TE,,255,1985,Maryland,7,255,2009,
+8573,Rob,Gronkowski,TE,,265,1989,Arizona,2,42,2010,"4,250,000"
+8590,Rex,Grossman,QB,,222,1980,Florida,1,22,2003,
+8657,Todd,Gurley,RB,,226,1994,Georgia,1,10,2015,"1,691,653"
+8698,D.J.,Hackett,WR,,199,1981,Northern State Univ.,5,157,2004,
+8703,Drew,Haddad,WR,,187,1978,Buffalo,7,233,2000,
+8720,Derek,Hagan,WR,,205,1984,Arizona St.,3,82,2006,
+8721,Marques,Hagans,WR,,202,1982,Virginia,5,144,2006,
+8785,Andy,Hall,QB,,218,1980,Georgia Tech,6,185,2004,
+8797,Dante,Hall,WR,,187,1978,Texas A&M;,5,153,2000,
+8833,Roy,Hall,WR,6-2,229,1983,Ohio St.,5,169,2007,
+8867,Gibran,Hamdan,QB,,240,1981,Indiana,7,232,2003,
+8875,Cobi,Hamilton,WR,,212,1990,Arkansas,6,197,2013,"190,590"
+8878,Derrick,Hamilton,WR,,200,1981,Clemson,3,77,2004,
+8882,Joe,Hamilton,QB,5-10,190,1977,Georgia Tech,7,234,2000,
+8883,Justin,Hamilton,RB,,217,1982,Virginia Tech,7,222,2006,
+8943,Leonard,Hankerson,WR,,205,1988,Miami (FL),3,79,2011,
+8953,James,Hanna,TE,,252,1989,Oklahoma,6,186,2012,"2,250,000"
+8960,Ryan,Hannam,TE,,248,1980,Northern Iowa,5,169,2002,
+8974,Chad,Hansen,WR,,202,1995,California,4,141,2017,"465,000"
+9002,Clay,Harbor,TE,,252,1987,SW Missouri St.,4,125,2010,
+9017,Montario,Hardesty,RB,,205,1987,Tennessee,2,59,2010,
+9037,James,Hardy,WR,,220,1985,Indiana,2,41,2008,
+9041,Justin,Hardy,WR,,190,1991,East Carolina,4,107,2015,"615,000"
+9081,Chandler,Harnish,QB,,219,1988,Northern Illinois,7,253,2012,
+9088,Chris,Harper,WR,,229,1989,Kansas St.,4,123,2013,
+9095,Jamie,Harper,RB,5-11,235,1989,Clemson,4,130,2011,
+9097,Justin,Harper,WR,,205,1985,Virginia Tech,7,215,2008,
+9118,Joey,Harrington,QB,,220,1978,Oregon,1,3,2002,
+9145,Clark,Harris,TE,,257,1984,Rutgers,7,243,2007,"950,000"
+9161,Dwayne,Harris,WR,,200,1987,East Carolina,6,176,2011,"2,475,000"
+9259,Jerome,Harrison,RB,,195,1983,Washington St.,5,145,2006,
+9293,Mike,Hart,RB,,195,1986,Michigan,6,202,2008,
+9306,Brian,Hartline,WR,,180,1986,Ohio St.,4,108,2009,
+9315,Ben,Hartsock,TE,,264,1980,Ohio St.,3,68,2004,
+9339,Percy,Harvin,WR,,200,1988,Florida,1,22,2009,
+9348,Mike,Hass,WR,6-1,210,1983,Oregon St.,6,171,2006,
+9382,Stanley,Havili,RB,,230,1987,USC,7,240,2011,
+9402,Lavelle,Hawkins,WR,,187,1986,California,4,126,2008,
+9456,Windrell,Hayes,WR,,198,1976,San Jose St.,5,143,2000,
+9457,Herb,Haygood,WR,,193,1977,Michigan St.,5,144,2002,
+9475,Verron,Haynes,RB,,223,1979,Georgia,5,166,2002,
+9485,Matt,Hazel,WR,,198,1992,Coastal Carolina,6,190,2014,"476,475"
+9499,Todd,Heap,TE,,252,1980,Arizona St.,1,31,2001,
+9559,Keith,Heinrich,TE,,255,1979,Sam Houston St.,6,174,2002,
+9577,Roy,Helu,RB,,216,1988,Nebraska,4,105,2011,
+9580,Junior,Hemingway,WR,,225,1988,Michigan,7,238,2012,
+9581,Temarrick,Hemingway,TE,,244,1993,South Carolina St.,6,177,2016,"363,000"
+9588,De'Angelo,Henderson,RB,,208,1992,Coastal Carolina,6,203,2017,"465,000"
+9589,Devery,Henderson,WR,,200,1982,LSU,2,50,2004,
+9627,Alex,Henery,K,6-1,178,1987,Nebraska,4,120,2011,
+9636,Chad,Henne,QB,6-3,228,1985,Michigan,2,57,2008,"2,250,000"
+9651,Chris,Henry,WR,,197,1983,West Virginia,3,83,2005,
+9652,Chris,Henry,RB,,230,1985,Arizona,2,50,2007,
+9653,Derrick,Henry,RB,,247,1994,Alabama,2,45,2016,"695,815"
+9655,Hunter,Henry,TE,,250,1994,Arkansas,2,35,2016,"740,014"
+9657,Leonard,Henry,RB,,210,1978,East Carolina,7,241,2002,
+9665,Travis,Henry,RB,,215,1978,Tennessee,2,58,2001,
+9672,Drew,Henson,QB,,233,1980,Michigan,6,192,2003,
+9693,Aaron,Hernandez,TE,6-2,250,1989,Florida,4,113,2010,
+9719,Dan,Herron,RB,,212,1989,Ohio St.,6,191,2012,
+9722,Noah,Herron,RB,,224,1982,Northwestern,7,244,2005,
+9724,Robert,Herron,WR,,193,1992,Wyoming,6,185,2014,
+9733,Jacob,Hester,RB,,230,1985,LSU,3,69,2008,
+9741,Jeff,Heuerman,TE,,255,1992,Ohio St.,3,92,2015,"615,000"
+9751,Darrius,Heyward-Bey,WR,,205,1987,Maryland,1,7,2009,"1,200,000"
+9792,Tyler,Higbee,TE,,233,1993,West. Kentucky,4,110,2016,"540,000"
+9798,Johnnie,Lee,WR,,185,1983,Texas-El Paso,3,99,2007,
+9801,Rashard,Higgins,WR,,188,1994,Colorado St.,5,172,2016,"508,224"
+9812,Tim,Hightower,RB,,226,1986,Richmond,5,149,2008,
+9820,Anthony,Hill,TE,,264,1985,North Carolina St.,4,122,2009,
+9824,Brian,Hill,RB,,219,1995,Wyoming,5,156,2017,"465,000"
+9833,Darrell,Hill,WR,,200,1979,Northern Illinois,7,225,2002,
+9853,Jason,Hill,WR,,204,1985,Washington St.,3,76,2007,
+9856,Jeremy,Hill,RB,,233,1992,LSU,2,55,2014,"881,855"
+9864,Kahlil,Hill,WR,6-2,200,1979,Iowa,6,184,2002,
+9888,Stephen,Hill,WR,,215,1991,Georgia Tech,2,43,2012,
+9894,Tyreek,Hill,WR,,185,1994,West Alabama,5,165,2016,"540,000"
+9908,Lex,Hilliard,RB,,233,1984,Montana,6,204,2008,
+9910,Peyton,Hillis,RB,,240,1986,Arkansas,7,227,2008,
+9912,Ronnie,Hillman,RB,,200,1991,San Diego St.,3,67,2012,
+9921,T.Y.,Hilton,WR,,183,1989,Florida International,3,92,2012,"8,000,000"
+9958,Domenik,Hixon,WR,,192,1984,Akron,4,130,2006,
+9982,Zach,Hocker,K,,189,1991,Arkansas,7,228,2014,
+10018,Kevin,Hogan,QB,,217,1992,Stanford,5,162,2016,"540,000"
+10063,Jonathan,Holland,WR,,191,1985,Louisiana Tech,7,254,2007,
+10078,Trindon,Holliday,WR,,162,1986,LSU,6,197,2010,
+10082,Tony,Hollings,RB,,216,1981,Georgia Tech,2,1,2003,
+10086,Mack,Hollins,WR,,221,1993,North Carolina,4,118,2017,"465,000"
+10096,Jabari,Holloway,TE,,260,1978,Notre Dame,4,119,2001,
+10139,Santonio,Holmes,WR,,185,1984,Ohio St.,1,25,2006,
+10167,Elijah,Hood,RB,6-0,232,1996,North Carolina,7,242,2017,"273,529"
+10179,Michael,Hoomanawanui,TE,,271,1988,Illinois,5,132,2010,"1,350,000"
+10180,Austin,Hooper,TE,,248,1994,Stanford,3,81,2016,"540,000"
+10191,DeAndre,Hopkins,WR,6-1,214,1992,Clemson,1,27,2013,"8,000,000"
+10192,Dustin,Hopkins,K,,206,1990,Florida St.,6,177,2013,"690,000"
+10255,T.J.,Houshmandzadeh,WR,,197,1977,Oregon St.,7,204,2001,
+10256,Rob,Housler,TE,,238,1988,Florida Atlantic,3,69,2011,
+10260,Cedric,Houston,RB,,225,1982,Tennessee,6,182,2005,
+10295,Jordan,Howard,RB,,225,1994,Indiana,5,150,2016,"540,000"
+10298,O.J.,Howard,TE,,251,1994,Alabama,1,19,2017,"465,000"
+10334,Keenan,Howry,WR,5-10,172,1981,Oregon,7,221,2003,
+10355,Paul,Hubbard,WR,,214,1985,Wisconsin,6,191,2008,
+10387,Josh,Huff,WR,,206,1991,Oregon,3,86,2014,
+10472,Brett,Hundley,QB,,227,1993,UCLA,5,147,2015,"615,000"
+10496,Kareem,Hunt,RB,,216,1995,Toledo,3,86,2017,"465,000"
+10503,Tony,Hunt,RB,,233,1985,Penn St.,3,90,2007,
+10520,Javin,Hunter,WR,,190,1980,Notre Dame,6,206,2002,
+10523,Justin,Hunter,WR,,196,1991,Tennessee,2,34,2013,
+10524,Kendall,Hunter,RB,5-7,199,1988,Oklahoma St.,4,115,2011,
+10557,Todd,Husak,QB,,216,1978,Stanford,6,202,2000,
+10586,Carlos,Hyde,RB,6-0,230,1990,Ohio St.,2,57,2014,"822,047"
+10604,Juaquin,Iglesias,WR,6-0,204,1987,Oklahoma,3,99,2009,
+10635,Mark,Ingram,RB,,215,1989,Alabama,1,28,2011,"3,100,000"
+10738,Brandon,Jackson,RB,,210,1985,Nebraska,2,63,2007,
+10743,Chad,Jackson,WR,6-1,205,1985,Florida,2,36,2006,
+10753,Darius,Jackson,RB,,221,1993,East. Michigan,6,216,2016,"540,000"
+10754,Darrell,Jackson,WR,,201,1978,Florida,3,80,2000,
+10756,DeSean,Jackson,WR,,178,1986,California,2,49,2008,"6,500,000"
+10758,Dexter,Jackson,WR,5-10,180,1986,Appalachian St.,2,58,2008,
+10778,James,Jackson,RB,,215,1976,Miami (FL),3,65,2001,
+10779,Jarious,Jackson,QB,,228,1977,Notre Dame,7,214,2000,
+10839,Steven,Jackson,RB,6-3,229,1983,Oregon St.,1,24,2004,
+10843,Tarvaris,Jackson,QB,,226,1983,Arkansas,2,64,2006,
+10853,Vincent,Jackson,WR,,241,1983,Northern Colorado,2,61,2005,
+10861,Brandon,Jacobs,RB,,256,1982,Southern Illinois,4,110,2005,
+10872,Taylor,Jacobs,WR,,198,1981,Florida,2,44,2003,
+10895,Cedric,James,WR,,199,1979,TCU,4,131,2001,
+10909,Jesse,James,TE,6-7,254,1994,Penn St.,5,160,2015,"615,000"
+10912,LaMichael,James,RB,,190,1989,Oregon,2,61,2012,
+10915,Mike,James,RB,5-10,223,1991,Miami (FL),6,189,2013,"775,000"
+10942,Sebastian,Janikowski,K,,250,1978,Florida St.,1,17,2000,"3,000,000"
+10943,Jeff,Janis,WR,,219,1991,Saginaw Valley St.,7,236,2014,"690,000"
+10961,Dwayne,Jarrett,WR,,219,1986,USC,2,45,2007,
+10998,D.C.,Jefferson,TE,,,1989,Rutgers,7,219,2013,
+11012,Alshon,Jeffery,WR,,230,1990,South Carolina,2,45,2012,
+11030,A.J.,Jenkins,WR,,192,1989,Illinois,1,30,2012,
+11064,Michael,Jenkins,WR,,217,1982,Ohio St.,1,29,2004,
+11072,Adam,Jennings,WR,,181,1982,Fresno St.,6,184,2006,
+11078,Greg,Jennings,WR,,195,1983,West. Michigan,2,52,2006,
+11088,Rashad,Jennings,RB,,234,1985,Liberty,7,250,2009,
+11103,Jerrel,Jernigan,WR,,181,1989,Troy,3,83,2011,
+11157,Andre,Johnson,WR,,219,1981,Miami (FL),1,3,2003,
+11169,Bethel,Johnson,WR,,200,1979,Texas A&M;,2,45,2003,
+11186,Bryant,Johnson,WR,6-2,214,1981,Penn St.,1,17,2003,
+11189,Calvin,Johnson,WR,,239,1985,Georgia Tech,1,2,2007,
+11195,Chad,Johnson,WR,6-1,192,1978,Langston,2,36,2001,
+11200,Charles,Johnson,WR,6-2,215,1989,Grand Valley St.,7,216,2013,"1,100,000"
+11208,Chris,Johnson,RB,,195,1985,East Carolina,1,24,2008,"847,059"
+11229,David,Johnson,TE,,270,1987,Arkansas St.,7,241,2009,
+11230,David,Johnson,RB,,224,1991,Northern Iowa,3,86,2015,"615,000"
+11246,Duke,Johnson,RB,,206,1993,Miami (FL),3,77,2015,"642,500"
+11257,Eric,Johnson,TE,,256,1979,Yale,7,224,2001,
+11264,Gartrell,Johnson,RB,5-10,222,1986,Colorado St.,4,134,2009,
+11294,Jaymar,Johnson,WR,,176,1984,Jackson St.,6,193,2008,
+11315,Josh,Johnson,QB,,198,1986,San Diego,5,160,2008,"423,529"
+11333,Kyle,Johnson,RB,,242,1978,Syracuse,5,145,2002,
+11337,Larry,Johnson,RB,6-1,228,1979,Penn St.,1,27,2003,
+11353,Manuel,Johnson,WR,,183,1986,Oklahoma,7,229,2009,
+11388,Quinn,Johnson,RB,,251,1986,LSU,5,145,2009,
+11408,Ron,Johnson,WR,,225,1980,Minnesota,4,123,2002,
+11410,Ronald,Johnson,WR,,199,1988,USC,6,182,2011,
+11411,Rudi,Johnson,RB,,220,1979,Auburn,4,100,2001,
+11423,Steve,Johnson,WR,,210,1986,Kentucky,7,224,2008,
+11425,Storm,Johnson,RB,,209,1992,Central Florida,7,222,2014,
+11430,Teyo,Johnson,TE,6-5,260,1981,Stanford,2,63,2003,
+11475,Doug,Jolley,TE,,250,1979,BYU,2,55,2002,
+11487,Aaron,Jones,RB,,208,1994,Texas-El Paso,5,182,2017,"465,000"
+11512,Brandon,Jones,WR,,208,1982,Oklahoma,3,96,2005,
+11524,Cardale,Jones,QB,,250,1992,Ohio St.,4,139,2016,
+11548,Daryl,Jones,WR,,190,1979,Miami (FL),7,226,2002,
+11580,Felix,Jones,RB,6-0,200,1987,Arkansas,1,22,2008,
+11591,Greg,Jones,RB,,248,1981,Florida St.,2,55,2004,
+11606,Jacoby,Jones,WR,,192,1984,Lane,3,73,2007,
+11611,James,Jones,WR,6-1,208,1984,San Jose St.,3,78,2007,
+11634,Julio,Jones,WR,,220,1989,Alabama,1,6,2011,"11,500,000"
+11635,Julius,Jones,RB,,210,1981,Notre Dame,2,43,2004,
+11643,Kevin,Jones,RB,,228,1982,Virginia Tech,1,30,2004,
+11648,Landry,Jones,QB,,225,1989,Oklahoma,4,115,2013,"1,900,000"
+11658,Mark,Jones,WR,,185,1980,Tennessee,7,206,2004,
+11662,Marvin,Jones,WR,,198,1990,California,5,166,2012,"7,000,000"
+11663,Matt,Jones,WR,6-6,242,1983,Arkansas,1,21,2005,
+11664,Matt,Jones,RB,6-1,235,1993,Florida,3,95,2015,"542,647"
+11706,T.J.,Jones,WR,,188,1992,Notre Dame,6,189,2014,"690,000"
+11707,Taiwan,Jones,RB,,202,1988,East. Washington,4,125,2011,"775,000"
+11712,Terry,Jones,TE,,265,1979,Alabama,5,155,2002,
+11713,Thomas,Jones,RB,,220,1978,Virginia,1,7,2000,
+11731,Zay,Jones,WR,,201,1995,East Carolina,2,37,2017,"465,000"
+11732,Maurice,Jones-Drew,RB,,205,1985,UCLA,2,60,2006,
+11734,Bennie,Joppru,TE,6-4,234,1980,Michigan,2,41,2003,
+11755,LaMont,Jordan,RB,5-10,230,1978,Maryland,2,49,2001,
+11848,Nate,Kaeding,K,,187,1982,Iowa,3,65,2004,
+11849,Colin,Kaepernick,QB,,225,1987,Nevada,2,36,2011,
+11854,Mike,Kafka,QB,,216,1987,Northwestern,4,122,2010,
+11877,Alvin,Kamara,RB,,214,1995,Tennessee,3,67,2017,"465,000"
+11909,Deji,Karim,RB,,200,1986,Southern Illinois,6,180,2010,
+11927,Nick,Kasa,TE,6-6,269,1990,Colorado,6,172,2013,
+11935,Kevin,Kasper,WR,,197,1977,Iowa,6,190,2001,
+11983,Curtis,Keaton,RB,,220,1976,West Virginia,4,97,2000,
+12018,Travis,Kelce,TE,,255,1989,Cincinnati,3,63,2013,"2,700,000"
+12026,Dustin,Keller,TE,,248,1984,Purdue,1,30,2008,
+12072,Malcolm,Kelly,WR,,218,1986,Oklahoma,2,51,2008,
+12106,Lance,Kendricks,TE,,240,1988,Wisconsin,2,47,2011,"800,000"
+12135,Jordan,Kent,WR,,219,1984,Oregon,6,210,2007,
+12147,Jeremy,Kerley,WR,,188,1988,TCU,5,153,2011,"775,000"
+12170,Cody,Kessler,QB,,224,1993,USC,3,93,2016,"604,049"
+12221,Ethan,Kilmer,WR,,205,1983,Shippensburg,7,209,2006,
+12263,Andre,King,WR,,195,1973,Miami (FL),7,245,2001,
+12292,Jeff,King,TE,,250,1983,Virginia Tech,5,155,2006,
+12309,Tavarres,King,WR,,189,1990,Georgia,5,161,2013,"487,059"
+12316,Kliff,Kingsbury,QB,,231,1979,Texas Tech,6,201,2003,
+12320,Erron,Kinney,TE,,275,1977,Florida,3,68,2000,
+12335,David,Kircus,WR,,185,1980,Grand Valley St.,6,175,2003,
+12356,David,Kirtman,RB,6-0,232,1983,USC,5,163,2006,
+12368,George,Kittle,TE,,247,1993,Iowa,5,146,2017,"465,000"
+12369,Kurt,Kittner,QB,,221,1980,Illinois,5,158,2002,
+12374,DeShone,Kizer,QB,,233,1996,Notre Dame,2,52,2017,"465,000"
+12399,Joe,Klopfenstein,TE,6-5,250,1983,Colorado,2,46,2006,
+12447,Johnny,Knox,WR,6-0,185,1986,Abilene Christian,5,140,2009,
+12485,Kevin,Kolb,QB,,218,1984,Houston,2,36,2007,
+12507,Jameson,Konz,TE,,227,1986,Kent St.,7,245,2010,
+12567,Ben,Koyack,TE,,249,1993,Notre Dame,7,229,2015,"540,000"
+12602,Matt,Kranchick,TE,,260,1979,Penn St.,6,194,2004,
+12613,Ryan,Krause,TE,,256,1981,Nebraska-Omaha,6,169,2004,
+12627,Craig,Krenzel,QB,,225,1981,Ohio St.,5,148,2004,
+12649,Tyler,Kroft,TE,6-5,240,1992,Rutgers,3,85,2015,"628,000"
+12701,Cooper,Kupp,WR,,204,1993,East. Washington,3,69,2017,"465,000"
+12749,Eddie,Lacy,RB,,231,1991,Alabama,2,61,2013,
+12762,Brandon,LaFell,WR,6-2,208,1986,LSU,3,78,2010,"1,250,000"
+12827,Jarvis,Landry,WR,,205,1992,LSU,2,63,2014,"893,852"
+12860,Jeremy,Langford,RB,,211,1991,Michigan St.,4,106,2015,
+12922,Daniel,Lasco,RB,,205,1992,California,7,237,2016,"349,412"
+12943,Cody,Latimer,WR,,215,1992,Indiana,2,56,2014,"925,725"
+12996,Quinten,Lawrence,WR,,175,1984,McNeese St.,6,175,2009,
+12999,Nate,Lawrie,TE,,256,1981,Yale,6,181,2004,
+13020,George,Layne,RB,5-11,250,1978,TCU,4,108,2001,
+13085,Charles,Lee,WR,6-3,227,1977,Central Florida,7,242,2000,
+13090,Donald,Lee,TE,,255,1980,Mississippi St.,5,156,2003,
+13113,Marqise,Lee,WR,,192,1991,USC,2,39,2014,"1,125,549"
+13136,Byron,Leftwich,QB,,245,1980,Marshall,1,7,2003,
+13142,Jordan,Leggett,TE,,258,1995,Clemson,5,150,2017,"465,000"
+13157,Matt,Leinart,QB,,225,1983,USC,1,10,2006,
+13165,Ashley,Lelie,WR,,200,1980,Hawaii,1,19,2002,
+13192,Brian,Leonard,RB,,226,1984,Rutgers,2,52,2007,
+13211,Mikel,Leshoure,RB,,230,1990,Illinois,2,57,2011,
+13268,Dezmin,Lewis,WR,,214,1992,Central Arkansas,7,234,2015,
+13269,Dion,Lewis,RB,,195,1990,Pittsburgh,5,149,2011,"1,200,000"
+13283,Jamal,Lewis,RB,,240,1979,Tennessee,1,5,2000,
+13302,Marcedes,Lewis,TE,,255,1984,UCLA,1,28,2006,
+13372,Ryan,Lindley,QB,,229,1989,San Diego St.,6,185,2012,
+13407,Tony,Lippett,WR,,192,1992,Michigan St.,5,156,2015,"615,000"
+13427,Greg,Little,WR,,215,1989,North Carolina,2,59,2011,
+13454,Brandon,Lloyd,WR,,192,1981,Illinois,4,124,2003,
+13466,Jake,Locker,QB,,228,1988,Washington,1,8,2011,
+13473,Tyler,Lockett,WR,,181,1992,Kansas St.,3,69,2015,"695,000"
+13587,J.P.,Losman,QB,,220,1981,UCLA,1,22,2004,
+13610,Ricardo,Louis,WR,6-2,215,1994,Auburn,4,114,2016,"540,000"
+13674,Andrew,Luck,QB,,240,1989,Stanford,1,1,2012,"7,000,000"
+13688,Triandos,Luke,WR,,190,1981,Alabama,6,171,2004,
+13705,Wali,Lundy,RB,,215,1983,Virginia,6,170,2006,
+13723,Chris,Luzar,TE,,262,1979,Virginia,4,118,2002,
+13734,Dustin,Lyman,TE,,245,1976,Wake Forest,3,87,2000,
+13751,Marshawn,Lynch,RB,5-11,215,1986,California,1,12,2007,"1,350,000"
+13753,Paxton,Lynch,QB,,244,1994,Memphis,1,26,2016,"880,741"
+13799,Marlon,Mack,RB,,213,1996,South Florida,4,143,2017,"465,000"
+13822,Jeremy,Maclin,WR,,200,1988,Missouri,1,19,2009,
+13843,Adrian,Madise,WR,,215,1980,TCU,5,158,2003,
+13917,Ryan,Mallett,QB,,240,1988,Arkansas,3,74,2011,"1,000,000"
+13930,Josh,Malone,WR,6-3,208,1996,Tennessee,4,128,2017,"465,000"
+13976,Maurice,Mann,WR,,190,1982,Nevada,5,149,2004,
+13982,Eli,Manning,QB,,218,1981,Mississippi,1,1,2004,"13,000,000"
+13991,Mario,Manningham,WR,,185,1986,Michigan,3,95,2008,
+13992,Sean,Mannion,QB,,229,1992,Oregon St.,3,89,2015,"730,037"
+14004,EJ,Manuel,QB,,237,1990,Florida St.,1,16,2013,
+14010,Brandon,Manumaleuna,TE,,288,1980,Arizona,4,129,2001,
+14013,Johnny,Manziel,QB,6-0,207,1992,Texas A&M;,1,22,2014,
+14038,Owen,Marecic,RB,,246,1988,Stanford,4,124,2011,
+14045,Marc,Mariani,WR,,190,1987,Montana,7,222,2010,
+14056,Marcus,Mariota,QB,,215,1993,Oregon,1,2,2015,"615,000"
+14071,Laurence,Maroney,RB,,210,1985,Minnesota,1,21,2006,
+14097,Brandon,Marshall,WR,,229,1984,Central Florida,4,119,2006,"3,000,000"
+14118,Rasheed,Marshall,WR,,185,1981,West Virginia,5,174,2005,
+14145,David,Martin,TE,6-4,260,1979,Tennessee,6,198,2001,
+14151,Doug,Martin,RB,,223,1989,Boise St.,1,31,2012,"5,764,706"
+14162,Ingle,Martin,QB,,220,1982,Furman,5,148,2006,
+14173,Keshawn,Martin,WR,,190,1990,Michigan St.,4,121,2012,
+14191,Tee,Martin,QB,,225,1978,Tennessee,5,163,2000,
+14229,Tre,Mason,RB,,207,1993,Auburn,3,75,2014,
+14232,Mohamed,Massaquoi,WR,,210,1986,Georgia,2,50,2009,
+14233,Tim,Massaquoi,TE,,253,1982,Michigan,7,244,2006,
+14235,Chris,Massey,RB,6-0,245,1979,Marshall,7,243,2002,
+14267,Ryan,Mathews,RB,,220,1987,Fresno St.,1,12,2010,
+14274,Jerome,Mathis,WR,,181,1983,Hampton,4,114,2005,
+14311,Jordan,Matthews,WR,,212,1992,Vanderbilt,2,42,2014,"1,094,900"
+14314,Rishard,Matthews,WR,,212,1989,Nevada,7,227,2012,"5,000,000"
+14333,Matt,Mauck,QB,,213,1979,LSU,7,225,2004,
+14335,Reagan,Maui'a,RB,,260,1984,Hawaii,6,181,2007,
+14357,Marcus,Maxwell,WR,,205,1983,Oregon,7,223,2005,
+14392,Vince,Mayle,WR,,224,1991,Washington St.,4,123,2015,"540,000"
+14406,Devante,Mays,RB,,230,1994,Utah St.,7,238,2017,"465,000"
+14411,Lee,Mays,WR,,200,1978,Texas-El Paso,6,202,2002,
+14424,Jason,McAddley,WR,,200,1979,Alabama,5,149,2002,
+14429,Pat,McAfee,K,,228,1987,West Virginia,7,222,2009,
+14435,Deuce,McAllister,RB,,232,1978,Mississippi,1,23,2001,
+14450,Tre,McBride,WR,,210,1992,William & Mary,7,245,2015,"615,000"
+14460,Christian,McCaffrey,RB,5-11,202,1996,Stanford,1,8,2017,"465,000"
+14483,Darnerien,McCants,WR,6-3,214,1978,Delaware St.,5,154,2001,
+14487,Justin,McCareins,WR,,215,1978,Northern Illinois,4,124,2001,
+14490,A.J.,McCarron,QB,6-3,220,1990,Alabama,5,164,2014,"690,000"
+14518,Le'Ron,McClain,RB,,260,1984,Alabama,4,137,2007,
+14550,Dexter,McCluster,WR,,165,1989,Mississippi,2,36,2010,
+14566,Quentin,McCord,WR,,188,1978,Kentucky,7,236,2001,
+14580,Josh,McCown,QB,6-4,212,1979,SMU,3,81,2002,
+14581,Luke,McCown,QB,,208,1981,Louisiana Tech,4,106,2004,
+14583,Anthony,McCoy,TE,,244,1987,USC,6,185,2010,
+14584,Colt,McCoy,QB,,209,1987,Texas,3,85,2010,"2,800,000"
+14590,LeRon,McCoy,WR,,205,1982,Indiana (PA),7,226,2005,
+14591,LeSean,McCoy,RB,,215,1988,Pittsburgh,2,53,2009,"6,000,000"
+14683,Shaun,McDonald,WR,,183,1981,Arizona St.,4,106,2003,
+14688,Vance,McDonald,TE,,267,1990,Rice,2,55,2013,"2,100,000"
+14712,Greg,McElroy,QB,,222,1988,Alabama,7,208,2011,
+14725,Darren,McFadden,RB,,210,1987,Arkansas,1,4,2008,"900,000"
+14741,Willis,McGahee,RB,,228,1981,Miami (FL),1,23,2003,
+14763,Stephen,McGee,QB,,223,1985,Texas A&M;,4,101,2009,
+14819,Elijah,McGuire,RB,,214,1994,La-Lafayette,6,188,2017,"465,000"
+14864,Isaiah,McKenzie,WR,,173,1995,Georgia,5,172,2017,"465,000"
+14881,Kenny,McKinley,WR,,182,1987,South Carolina,5,141,2009,
+14897,Jerick,McKinnon,RB,,205,1992,Georgia Southern,3,96,2014,"700,000"
+14903,Joe,McKnight,RB,,190,1988,USC,4,112,2010,
+14937,Mike,McMahon,QB,,215,1979,Rutgers,5,149,2001,
+14945,Randy,McMichael,TE,6-3,250,1979,Georgia,4,114,2002,
+14964,Billy,McMullen,WR,6-4,210,1980,Virginia,3,95,2003,
+14980,Reggie,McNeal,QB,6-2,200,1983,Texas A&M;,6,193,2006,
+14999,Marvin,McNutt,WR,,216,1989,Iowa,6,194,2012,
+15041,Robert,Meachem,WR,,214,1984,Tennessee,1,27,2007,
+15052,Rondell,Mealey,RB,,224,1977,LSU,7,252,2000,
+15063,Justin,Medlock,K,,201,1983,UCLA,5,160,2007,
+15080,Taylor,Mehlhaff,K,,185,1985,Wisconsin,6,178,2008,
+15083,Kerry,Meier,WR,6-2,219,1986,Kansas,5,165,2010,
+15085,Shad,Meier,TE,,255,1978,Kansas St.,3,90,2001,
+15112,Rashard,Mendenhall,RB,,210,1987,Illinois,1,23,2008,
+15172,Zach,Mettenberger,QB,,224,1991,LSU,6,178,2014,
+15195,Christine,Michael,RB,,220,1990,Texas A&M;,2,62,2013,"378,800"
+15286,Braxton,Miller,WR,,204,1992,Ohio St.,3,85,2016,"557,500"
+15320,Heath,Miller,TE,,256,1982,Virginia,1,30,2005,
+15340,Lamar,Miller,RB,,215,1991,Miami (FL),4,97,2012,"5,500,000"
+15372,Zach,Miller,TE,6-5,256,1985,Arizona St.,2,38,2007,
+15373,Zach,Miller,TE,,233,1984,Nebraska-Omaha,6,180,2009,"1,500,000"
+15402,Martrez,Milner,TE,,256,1984,Georgia,4,133,2007,
+15429,Snoop,Minnis,WR,,172,1977,Florida St.,3,77,2001,
+15433,Travis,Minor,RB,,205,1979,Florida St.,3,85,2001,
+15448,Brandon,Miree,RB,,237,1981,Alabama,7,247,2004,
+15470,Carlton,Mitchell,WR,,212,1988,South Florida,6,177,2010,
+15481,Freddie,Mitchell,WR,,184,1978,UCLA,1,25,2001,
+15497,Malcolm,Mitchell,WR,,194,1993,Georgia,4,112,2016,"363,000"
+15499,Marko,Mitchell,WR,,204,1985,Nevada,7,243,2009,
+15528,Joe,Mixon,RB,,228,1996,Oklahoma,2,48,2017,"465,000"
+15535,Ryan,Moats,RB,,210,1982,Louisiana Tech,3,77,2005,
+15548,Tony,Moeaki,TE,,250,1987,Iowa,3,93,2010,
+15581,Donte,Moncrief,WR,,221,1993,Mississippi,3,90,2014,"1,797,000"
+15657,Chris,Moore,WR,6-1,203,1993,Cincinnati,4,107,2016,"540,000"
+15658,Clarence,Moore,WR,,211,1982,Northern Arizona,6,199,2004,
+15669,Denarius,Moore,WR,,195,1988,Tennessee,5,148,2011,
+15700,Kenny,Moore,WR,5-11,199,1985,Wake Forest,5,136,2008,
+15718,Mewelde,Moore,RB,,210,1982,Tulane,4,119,2004,
+15763,Johnnie,Morant,WR,,229,1981,Syracuse,5,134,2004,
+15766,Frank,Moreau,RB,,223,1976,Louisville,4,115,2000,
+15772,Vernand,Morency,RB,,212,1980,Oklahoma St.,3,73,2005,
+15773,Knowshon,Moreno,RB,,215,1987,Georgia,1,12,2009,
+15788,David,Morgan,TE,,262,1993,Texas-San Antonio,6,188,2016,"540,000"
+15796,Josh,Morgan,WR,,218,1985,Virginia Tech,6,174,2008,
+15803,Quincy,Morgan,WR,,210,1977,Kansas St.,2,33,2001,
+15814,Cameron,Morrah,TE,,244,1987,California,7,248,2009,
+15817,Alfred,Morris,RB,,219,1988,Florida Atlantic,6,173,2012,"1,200,000"
+15842,Maurice,Morris,RB,,202,1979,Oregon,2,54,2002,
+15851,Sammy,Morris,RB,,220,1977,Texas Tech,5,156,2000,
+15852,Sylvester,Morris,WR,,206,1977,Jackson St.,1,21,2000,
+15887,Chad,Morton,RB,,203,1977,USC,5,166,2000,
+15936,Santana,Moss,WR,,185,1979,Miami (FL),1,16,2001,
+15937,Sinorice,Moss,WR,,185,1983,Miami (FL),2,44,2006,
+16020,Keith,Mumphery,WR,6-0,215,1992,Michigan St.,5,175,2015,
+16051,Frank,Murphy,WR,,206,1977,Kansas St.,6,170,2000,
+16062,Louis,Murphy,WR,,200,1987,Florida,4,124,2009,"423,528"
+16063,Marcus,Murphy,RB,,188,1991,Missouri,7,230,2015,
+16066,Matt,Murphy,TE,6-5,260,1980,Maryland,7,252,2002,
+16075,Terrence,Murphy,WR,,202,1982,Texas A&M;,2,58,2005,
+16086,DeMarco,Murray,RB,6-0,214,1988,Oklahoma,3,71,2011,"6,250,000"
+16093,Latavius,Murray,RB,,225,1990,Central Florida,6,181,2013,"900,000"
+16121,Brandon,Myers,TE,,250,1985,Iowa,6,202,2009,
+16149,Legedu,Naanee,WR,,225,1983,Boise St.,5,172,2007,
+16171,John,Nalbone,TE,,257,1986,Monmouth,5,161,2009,
+16173,Craig,Nall,QB,,230,1979,LSU,5,164,2002,
+16185,Damien,Nash,RB,,215,1982,Missouri,5,142,2005,
+16194,Ryan,Nassib,QB,,227,1990,Syracuse,4,110,2013,"683,824"
+16205,John,Navarre,QB,,250,1980,Michigan,7,202,2004,
+16233,Larry,Ned,RB,,217,1978,San Diego St.,6,197,2002,
+16277,JJ,Nelson,WR,,156,1992,Ala-Birmingham,5,159,2015,"615,000"
+16279,Jordy,Nelson,WR,,215,1985,Kansas St.,2,36,2008,"8,250,000"
+16292,Shawn,Nelson,TE,,238,1985,Southern Miss,4,121,2009,
+16359,Kendall,Newson,WR,,197,1980,Middle Tenn. St.,7,222,2002,
+16363,Cam,Newton,QB,,260,1989,Auburn,1,1,2011,"13,166,666"
+16405,Hakeem,Nicks,WR,,210,1988,North Carolina,1,29,2009,
+16423,Troy,Niklas,TE,,270,1992,Notre Dame,2,52,2014,"968,632"
+16456,David,Njoku,TE,,246,1996,Miami (FL),1,29,2017,"465,000"
+16532,Dennis,Northcutt,WR,,175,1977,Arizona,2,32,2000,
+16548,Jerious,Norwood,RB,,205,1983,Mississippi St.,3,79,2006,
+16550,Kevin,Norwood,WR,,198,1989,Alabama,4,123,2014,"615,000"
+16578,Mike,Nugent,K,5-10,182,1982,Ohio St.,2,47,2005,"588,240"
+16581,Keith,Null,QB,,222,1985,West Texas A&M;,6,196,2009,
+16625,Jake,O'Connell,TE,,255,1985,Miami (OH),7,237,2009,
+16626,Kevin,O'Connell,QB,,225,1985,San Diego St.,3,94,2008,
+16648,Dan,O'Leary,TE,6-3,248,1977,Notre Dame,6,195,2001,
+16649,Nick,O'Leary,TE,,247,1992,Florida St.,6,194,2015,"615,000"
+16680,J.T.,O'Sullivan,QB,,220,1979,California-Davis,6,186,2002,
+16697,Ben,Obomanu,WR,,203,1983,Auburn,7,249,2006,
+16736,Chris,Ogbonnaya,RB,,220,1986,Texas,7,211,2009,
+16815,Greg,Olsen,TE,,254,1985,Miami (FL),1,31,2007,"6,500,000"
+16839,Xavier,Omon,RB,,226,1985,NW Missouri St.,6,179,2008,
+16843,Fendi,Onobun,TE,,249,1986,Houston,6,170,2010,
+16860,Dan,Orlovsky,QB,,230,1983,Connecticut,5,145,2005,
+16877,Kyle,Orton,QB,,226,1982,Purdue,4,106,2005,
+16905,Brock,Osweiler,QB,6-7,240,1990,Arizona St.,2,57,2012,
+16937,Chad,Owens,WR,,183,1982,Hawaii,6,185,2005,
+16948,John,Owens,TE,6-3,266,1980,Notre Dame,5,138,2002,
+17002,Curtis,Painter,QB,,230,1985,Purdue,6,201,2009,
+17016,Carson,Palmer,QB,,230,1979,USC,1,1,2003,"15,500,000"
+17023,Jesse,Palmer,QB,,225,1978,Florida,4,125,2001,
+17024,Jordan,Palmer,QB,6-5,232,1984,Texas-El Paso,6,205,2007,
+17083,DeVante,Parker,WR,,209,1993,Louisville,1,14,2015,"1,423,776"
+17109,Samie,Parker,WR,5-11,190,1981,Oregon,4,105,2004,
+17133,Jalen,Parmele,RB,,224,1985,Toledo,6,176,2008,
+17145,Roscoe,Parrish,WR,,168,1982,Miami (FL),2,55,2005,
+17167,Bear,Pascoe,TE,,257,1986,Fresno St.,6,184,2009,
+17192,Ben,Patrick,TE,,252,1984,Duke,7,215,2007,
+17208,Cordarrelle,Patterson,WR,,216,1991,Tennessee,1,29,2013,
+17230,Quinton,Patton,WR,,204,1990,Louisiana Tech,4,128,2013,
+17239,Niles,Paul,WR,6-1,225,1989,Nebraska,5,155,2011,"1,750,000"
+17247,David,Paulson,TE,,243,1989,Oregon,7,240,2012,
+17268,Jordan,Payton,WR,,216,1993,UCLA,5,154,2016,
+17275,Isaiah,Pead,RB,5-10,197,1989,Cincinnati,2,50,2012,
+17276,Charone,Peake,WR,,208,1992,Clemson,7,241,2016,"540,000"
+17283,Alvin,Pearman,RB,,208,1982,Virginia,4,127,2005,
+17313,Justin,Peelle,TE,,255,1979,Oregon,4,103,2002,
+17314,Cedric,Peerman,RB,,210,1986,Virginia,6,185,2009,"900,000"
+17344,Chad,Pennington,QB,,225,1976,Marshall,1,18,2000,
+17370,Samaje,Perine,RB,,233,1995,Oklahoma,4,114,2017,"465,000"
+17382,Paul,Perkins,RB,,210,1994,UCLA,5,149,2016,"540,000"
+17396,Breshad,Perriman,WR,,214,1993,Central Florida,1,26,2015,"1,226,392"
+17403,Bruce,Perry,RB,,200,1981,Maryland,7,242,2004,
+17404,Chris,Perry,RB,,224,1981,Michigan,1,26,2004,
+17423,Tab,Perry,WR,,229,1982,UCLA,6,190,2005,
+17444,Nathan,Peterman,QB,,226,1994,Pittsburgh,5,171,2017,"465,000"
+17462,Adrian,Peterson,RB,5-10,210,1979,Georgia Southern,6,199,2002,
+17463,Adrian,Peterson,RB,,217,1985,Oklahoma,1,7,2007,"1,000,000"
+17503,Brandon,Pettigrew,TE,,257,1985,Oklahoma St.,1,20,2009,
+17505,Austin,Pettis,WR,,205,1988,Boise St.,3,78,2011,
+17509,Bryce,Petty,QB,6-3,230,1991,Baylor,4,103,2015,"615,000"
+17542,John,Phillips,TE,,250,1987,Virginia,6,208,2009,
+17565,Mareno,Philyaw,WR,,208,1977,Troy,6,172,2000,
+17580,Cody,Pickett,QB,,220,1980,Washington,7,217,2004,
+17587,Bernard,Pierce,RB,6-0,215,1990,Temple,3,84,2012,
+17613,Tony,Pike,QB,,212,1986,Cincinnati,6,204,2010,
+17614,Kealoha,Pilares,WR,,213,1988,Hawaii,5,132,2011,
+17636,Todd,Pinkston,WR,,180,1977,Southern Miss,2,36,2000,
+17637,Artose,Pinner,RB,,232,1978,Kentucky,4,99,2003,
+17654,Dennis,Pitta,TE,,245,1985,BYU,4,114,2010,
+17655,Antonio,Pittman,RB,,207,1985,Ohio St.,4,107,2007,
+17710,Owen,Pochman,K,,180,1977,BYU,7,216,2001,
+17711,Jason,Pociask,TE,,266,1983,Wisconsin,5,150,2006,
+17755,Christian,Ponder,QB,,222,1988,Florida St.,1,12,2011,
+17757,Willie,Ponder,WR,,205,1980,Tulsa,6,199,2003,
+17786,Leonard,Pope,TE,,264,1983,Georgia,3,72,2006,
+17803,Jerry,Porter,WR,,220,1978,West Virginia,2,47,2000,
+17821,Clinton,Portis,RB,,205,1981,Miami (FL),2,51,2002,
+17824,DeVier,Posey,WR,,211,1989,Ohio St.,3,68,2012,
+17835,John,Potter,K,6-2,209,1990,West. Michigan,7,251,2012,
+17858,Bilal,Powell,RB,5-11,204,1988,Louisville,4,126,2011,"3,750,000"
+17882,Walt,Powell,WR,,189,1991,Murray St.,6,196,2014,"527,644"
+17906,Travis,Prentice,RB,,221,1976,Miami (OH),3,63,2000,
+17907,Dak,Prescott,QB,,226,1993,Mississippi St.,4,135,2016,"540,000"
+17951,Taylor,Price,WR,,204,1987,Ohio,3,90,2010,
+17995,C.J.,Prosise,RB,,220,1994,Notre Dame,3,90,2016,"565,000"
+18011,MyCole,Pruitt,TE,6-2,251,1992,Southern Illinois,5,143,2015,
+18016,Terrelle,Pryor,QB,,240,1989,Ohio St.,3,1,2011,
+18054,Jeb,Putzier,TE,6-4,256,1979,Boise St.,6,191,2002,
+18074,Andrew,Quarless,TE,,248,1988,Penn St.,5,154,2010,
+18080,Brian,Quick,WR,,209,1989,Appalachian St.,2,33,2012,
+18092,Brady,Quinn,QB,,232,1984,Notre Dame,1,22,2007,
+18099,Richard,Quinn,TE,,260,1986,North Carolina,2,64,2009,
+18113,Neil,Rackers,K,6-0,205,1976,Illinois,6,169,2000,
+18142,Dave,Ragone,QB,,245,1979,Louisville,3,88,2003,
+18153,Chris,Rainey,RB,,178,1988,Florida,5,159,2012,
+18163,Ken-Yon,Rambo,WR,6-1,195,1978,Ohio St.,7,229,2001,
+18179,Patrick,Ramsey,QB,,225,1979,Tulane,1,32,2002,
+18195,Joseph,Randle,RB,,204,1991,Oklahoma St.,5,151,2013,
+18196,Rueben,Randle,WR,6-2,208,1991,LSU,2,63,2012,
+18199,Antwaan,Randle,WR,5-10,192,1979,Indiana,2,62,2002,
+18239,Tim,Rattay,QB,,200,1977,Louisiana Tech,7,212,2000,
+18270,Dave,Rayner,K,,209,1982,Michigan St.,6,202,2005,
+18310,Chris,Redman,QB,,223,1977,Louisville,3,75,2000,
+18317,J.R.,Redmond,RB,5-11,215,1977,Arizona St.,3,76,2000,
+18338,David,Reed,WR,,188,1987,Utah,5,156,2010,
+18350,Jordan,Reed,TE,6-3,236,1990,Florida,3,85,2013,"3,750,000"
+18351,Josh,Reed,WR,,208,1980,LSU,2,36,2002,
+18434,Willie,Reid,WR,,190,1982,Florida St.,3,95,2006,
+18464,Sean,Renfree,QB,6-3,219,1990,Duke,7,249,2013,
+18520,Josh,Reynolds,WR,,194,1995,Texas A&M;,4,117,2017,"465,000"
+18567,Ray,Rice,RB,,195,1987,Rutgers,2,55,2008,
+18570,Sidney,Rice,WR,,200,1986,South Carolina,2,44,2007,
+18602,Daryl,Richardson,RB,,192,1990,Abilene Christian,7,252,2012,
+18621,Paul,Richardson,WR,,175,1992,Colorado,2,45,2014,"1,062,659"
+18630,Trent,Richardson,RB,,228,1990,Alabama,1,3,2012,
+18654,Theo,Riddick,RB,5-10,201,1991,Notre Dame,6,199,2013,"1,075,000"
+18658,Dante,Ridgeway,WR,,206,1984,Ball St.,6,192,2005,
+18664,Stevan,Ridley,RB,,230,1989,LSU,3,73,2011,
+18712,Javon,Ringer,RB,,200,1987,Michigan St.,5,173,2009,
+18736,Mychal,Rivera,TE,,242,1990,Tennessee,6,184,2013,"1,250,000"
+18745,Philip,Rivers,QB,,228,1981,North Carolina St.,1,4,2004,"11,000,000"
+18772,Mike,Roberg,TE,,263,1977,Idaho,7,227,2001,
+18781,Andre,Roberts,WR,,192,1988,The Citadel,3,88,2010,"1,300,000"
+18799,Michael,Roberts,TE,,270,1994,Toledo,4,127,2017,"465,000"
+18831,Adrien,Robinson,TE,6-4,264,1988,Cincinnati,4,127,2012,
+18832,Aldrick,Robinson,WR,,184,1988,SMU,6,178,2011,
+18833,Allen,Robinson,WR,,220,1993,Penn St.,2,61,2014,"898,755"
+18846,Demarcus,Robinson,WR,,203,1994,Florida,4,126,2016,"540,000"
+18847,Denard,Robinson,WR,,199,1990,Michigan,5,135,2013,
+18880,Josh,Robinson,RB,,215,1992,Mississippi St.,6,205,2015,
+18883,Kevin,Robinson,WR,,190,1984,Utah St.,6,182,2008,
+18885,Koren,Robinson,WR,,205,1980,North Carolina St.,1,9,2001,
+18888,Laurent,Robinson,WR,,192,1985,Illinois St.,3,75,2007,
+18906,Ryne,Robinson,WR,,179,1984,Miami (OH),4,118,2007,
+18917,Zac,Robinson,QB,,218,1986,,7,250,2010,
+18918,Brian,Robiskie,WR,,207,1987,Ohio St.,2,36,2009,
+18930,Courtney,Roby,WR,,189,1983,Indiana,3,68,2005,
+18951,Aaron,Rodgers,QB,,223,1983,California,1,24,2005,"12,550,000"
+18955,Jacquizz,Rodgers,RB,,190,1990,Oregon St.,5,145,2011,
+18959,Richard,Rodgers,TE,,257,1992,California,3,98,2014,"1,787,000"
+18964,Evan,Rodriguez,TE,,242,1988,Temple,4,111,2012,
+18977,Ben,Roethlisberger,QB,,240,1982,Miami (OH),1,11,2004,"12,000,000"
+18984,Charles,Rogers,WR,,202,1981,Michigan St.,1,2,2003,
+19077,Dante,Rosario,TE,,244,1984,Oregon,5,155,2007,
+19099,Sage,Rosenfels,QB,,222,1978,Iowa St.,4,109,2001,
+19120,John,Ross,WR,,188,1994,Washington,1,9,2017,"465,000"
+19182,Eddie,Royal,WR,5-10,182,1986,Virginia Tech,2,42,2008,
+19184,Robert,Royal,TE,,257,1979,LSU,5,160,2002,
+19187,Evan,Royster,RB,6-0,218,1987,Penn St.,6,177,2011,
+19210,Martin,Rucker,TE,,238,1985,Missouri,4,111,2008,
+19217,Jake,Rudock,QB,,199,1993,Michigan,6,191,2016,"540,000"
+19223,Kyle,Rudolph,TE,,265,1989,Notre Dame,2,43,2011,"5,150,000"
+19244,J.D.,Runnels,RB,,237,1984,Oklahoma,6,195,2006,
+19272,Cliff,Russell,WR,,193,1979,Utah,3,87,2002,
+19280,JaMarcus,Russell,QB,,265,1985,LSU,1,1,2007,
+19319,Matt,Ryan,QB,,217,1985,Boston Col.,1,3,2008,"15,750,000"
+19322,Sean,Ryan,TE,6-5,254,1980,Boston Col.,5,144,2004,
+19377,Greg,Salas,WR,,206,1988,Hawaii,4,112,2011,
+19395,P.K.,Sam,WR,,210,1983,Florida St.,5,164,2004,
+19403,DeMarco,Sampson,WR,,201,1985,San Diego St.,7,249,2011,
+19414,Curtis,Samuel,WR,,196,1996,Ohio St.,2,40,2017,"465,000"
+19427,Mark,Sanchez,QB,,225,1986,USC,1,5,2009,"1,000,000"
+19436,Ace,Sanders,WR,,173,1991,South Carolina,4,101,2013,
+19446,Darnell,Sanders,TE,,270,1979,Ohio St.,4,122,2002,
+19449,Emmanuel,Sanders,WR,5-11,186,1987,SMU,3,82,2010,"6,750,000"
+19486,Bishop,Sankey,RB,5-10,209,1992,Washington,2,54,2014,"690,000"
+19489,Tom,Santi,TE,,250,1985,Virginia,6,196,2008,
+19495,Mohamed,Sanu,WR,,215,1989,Rutgers,3,83,2012,"6,000,000"
+19532,Eric,Saubert,TE,,253,1994,Drake,5,174,2017,"465,000"
+19547,Jalen,Saunders,WR,,165,1992,Oklahoma,4,104,2014,
+19556,Tom,Savage,QB,,228,1990,Pittsburgh,4,135,2014,"690,000"
+19581,Bo,Scaife,TE,,249,1981,Texas,6,179,2005,
+19618,Matt,Schaub,QB,6-5,235,1981,Virginia,3,90,2004,"2,250,000"
+19621,Tony,Scheffler,TE,,255,1983,West. Michigan,2,61,2006,
+19635,Jake,Schifino,WR,,201,1979,Akron,5,151,2002,
+19636,Chaz,Schilens,WR,,225,1985,San Diego St.,7,226,2008,
+19671,Owen,Schmitt,RB,,251,1985,West Virginia,5,163,2008,
+19687,Matt,Schobel,TE,6-5,257,1978,Texas A&M;,3,67,2002,
+19767,Josh,Scobee,K,,191,1982,Louisiana Tech,5,137,2004,
+19768,Josh,Scobey,RB,,222,1979,Kansas St.,6,185,2002,
+19774,Bernard,Scott,RB,,200,1984,Abilene Christian,6,209,2009,
+19789,Da'Rel,Scott,RB,,205,1988,Maryland,7,221,2011,
+19798,Gari,Scott,WR,,191,1978,Michigan St.,4,99,2000,
+19897,Austin,Seferian-Jenkins,TE,,262,1992,Washington,2,38,2014,"936,690"
+19906,Mike,Seidman,TE,,261,1981,UCLA,3,76,2003,
+19983,Adam,Shaheen,TE,,278,1993,Ashland,2,45,2017,"465,000"
+20009,Tajae,Sharpe,WR,,189,1994,Massachusetts,5,140,2016,"540,000"
+20045,Aaron,Shea,TE,,255,1976,Michigan,4,110,2000,
+20082,Eric,Shelton,RB,,246,1983,Florida St.,2,54,2005,
+20091,Sterling,Shepard,WR,,194,1994,Oklahoma,2,40,2016,"720,208"
+20111,Anthony,Sherman,RB,,244,1988,Connecticut,5,136,2011,"1,100,000"
+20125,Visanthe,Shiancoe,TE,,250,1980,Morgan St.,3,91,2003,
+20141,Jordan,Shipley,WR,,190,1985,Texas,3,84,2010,
+20164,Jeremy,Shockey,TE,6-5,253,1980,Miami (FL),1,14,2002,
+20182,Cecil,Shorts,WR,,200,1987,Mount Union,4,114,2011,
+20195,Mickey,Shuler,TE,,242,1986,Penn St.,7,214,2010,
+20223,Trevor,Siemian,QB,,215,1991,Northwestern,7,250,2015,"615,000"
+20287,Sam,Simmons,WR,5-9,200,1979,Northwestern,5,170,2002,
+20295,Chris,Simms,QB,,220,1980,Texas,3,97,2003,
+20326,Jerome,Simpson,WR,,193,1986,Coastal Carolina,2,46,2008,
+20338,Charles,Sims,RB,,214,1990,West Virginia,3,69,2014,"764,000"
+20342,Dion,Sims,TE,,262,1991,Michigan St.,4,106,2013,"2,000,000"
+20364,Mike,Sims-Walker,WR,,197,1984,Central Florida,3,79,2007,
+20409,John,Skelton,QB,,244,1988,Fordham,5,155,2010,
+20443,Matt,Slater,WR,6-0,198,1985,UCLA,5,153,2008,"900,000"
+20446,Steve,Slaton,RB,,195,1986,West Virginia,3,89,2008,
+20483,Kiero,Small,RB,,244,1989,Arkansas,7,227,2014,
+20487,Wendell,Smallwood,RB,,208,1994,West Virginia,5,153,2016,"540,000"
+20495,Brad,Smelley,TE,,237,1989,Alabama,7,247,2012,
+20496,DeAndre,Smelter,WR,6-2,226,1991,Georgia Tech,4,132,2015,
+20508,Alex,Smith,TE,,258,1982,Stanford,3,71,2005,
+20509,Alex,Smith,QB,,212,1984,Utah,1,1,2005,"10,800,000"
+20541,Brad,Smith,QB,,210,1983,Missouri,4,103,2006,
+20586,Devin,Smith,WR,6-0,190,1992,Ohio St.,2,37,2015,"968,857"
+20607,Emanuel,Smith,WR,6-1,210,1976,Arkansas,6,196,2000,
+20622,Geno,Smith,QB,,218,1990,West Virginia,2,39,2013,"775,000"
+20671,Jonathan,Smith,WR,,194,1981,Georgia Tech,7,214,2004,
+20672,Jonnu,Smith,TE,6-3,248,1995,Florida International,3,100,2017,"465,000"
+20685,Kevin,Smith,RB,,210,1986,Central Florida,3,64,2008,
+20688,Kolby,Smith,RB,,214,1984,Louisville,5,148,2007,
+20689,L.J.,Smith,TE,6-3,258,1980,Rutgers,2,61,2003,
+20698,Lee,Smith,TE,6-6,269,1987,Tennessee,5,159,2011,"1,000,000"
+20705,Marcus,Smith,WR,,214,1985,New Mexico,4,106,2008,
+20716,Michael,Smith,RB,5-9,205,1988,Utah St.,7,212,2012,
+20722,Musa,Smith,RB,6-0,232,1982,Georgia,3,77,2003,
+20729,Onterrio,Smith,RB,5-10,214,1980,Tennessee,4,105,2003,
+20735,Paul,Smith,RB,,234,1978,Texas-El Paso,5,132,2000,
+20769,Rusty,Smith,QB,,212,1987,Florida Atlantic,6,176,2010,
+20783,Steve,Smith,WR,,185,1979,Utah,3,74,2001,
+20785,Steve,Smith,WR,,195,1985,USC,2,51,2007,
+20801,Torrey,Smith,WR,,205,1989,Maryland,2,58,2011,"4,000,000"
+20803,Trent,Smith,TE,,245,1979,Oklahoma,7,223,2003,
+20805,Troy,Smith,QB,6-0,225,1984,Ohio St.,5,174,2007,
+20826,Zuriel,Smith,WR,5-11,166,1980,Hampton,6,186,2003,
+20827,JuJu,Smith-Schuster,WR,,215,1996,USC,2,62,2017,"465,000"
+20844,Jason,Snelling,RB,5-11,235,1983,Virginia,7,244,2007,
+20912,Jim,Sorgi,QB,,196,1980,Wisconsin,6,193,2004,
+20922,R.,Jay,WR,5-11,178,1978,USC,1,29,2000,
+20931,Matt,Spaeth,TE,,270,1983,Minnesota,3,77,2007,
+21004,C.J.,Spiller,RB,,194,1987,Clemson,1,9,2010,"582,253"
+21033,Jeremy,Sprinkle,TE,,252,1994,Arkansas,5,154,2017,"465,000"
+21034,Darren,Sproles,RB,,181,1983,Kansas St.,4,130,2005,"4,000,000"
+21049,Brad,St.,TE,,247,1976,SW Missouri St.,7,210,2000,
+21050,Brian,St.,QB,6-3,230,1979,Boston Col.,5,163,2003,
+21055,Dave,Stachelski,TE,,250,1977,Boise St.,5,141,2000,
+21063,Zac,Stacy,RB,,216,1991,Vanderbilt,5,160,2013,
+21069,Matthew,Stafford,QB,,230,1988,Georgia,1,1,2009,"1,000,000"
+21086,Donte',Stallworth,WR,,197,1980,Tennessee,1,13,2002,
+21096,Isaiah,Stanback,WR,,216,1984,Washington,4,103,2007,
+21108,Derek,Stanley,WR,,173,1985,Wisc-Whitewater,7,249,2007,
+21119,Drew,Stanton,QB,,236,1984,Michigan St.,2,43,2007,
+21122,Ricky,Stanzi,QB,,223,1987,Iowa,5,135,2011,
+21133,James,Starks,RB,,203,1986,Buffalo,6,193,2010,
+21236,Travis,Stephens,RB,,194,1978,Tennessee,4,119,2002,
+21238,LaRod,Stephens-Howling,RB,,180,1987,Pittsburgh,7,240,2009,
+21247,Syndric,Steptoe,WR,,190,1984,Arizona,7,234,2007,
+21249,Neal,Sterling,WR,,235,1988,Monmouth,7,220,2015,
+21258,Craig,Stevens,TE,,255,1984,California,3,85,2008,
+21262,Jerramy,Stevens,TE,,260,1979,Washington,1,28,2002,
+21278,ArDarius,Stewart,WR,,204,1993,Alabama,3,79,2017,"465,000"
+21291,Jonathan,Stewart,RB,,235,1987,Oregon,1,13,2008,"1,100,000"
+21301,Tony,Stewart,TE,,260,1979,Penn St.,5,147,2001,
+21319,Kenny,Stills,WR,,194,1992,Oklahoma,5,144,2013,"1,975,000"
+21332,Shyrone,Stith,RB,,206,1978,Virginia Tech,7,243,2000,
+21340,Luke,Stocker,TE,,255,1988,Tennessee,4,104,2011,"1,700,000"
+21397,Maurice,Stovall,WR,,215,1985,Notre Dame,3,90,2006,
+21429,Devin,Street,WR,,198,1991,Pittsburgh,5,146,2014,
+21431,Tommy,Streeter,WR,,219,1989,Miami (FL),6,198,2012,
+21460,Jaelen,Strong,WR,6-3,215,1994,Arizona St.,3,70,2015,"644,705"
+21474,Sammie,Stroughter,WR,,182,1986,Oregon St.,7,233,2009,
+21486,Chansi,Stuckey,WR,,182,1983,Clemson,7,235,2007,
+21508,Caleb,Sturgis,K,5-10,188,1989,Florida,5,166,2013,"900,000"
+21521,Ryan,Succop,K,,215,1986,South Carolina,7,256,2009,"2,400,000"
+21530,Lee,Suggs,RB,,205,1980,Virginia Tech,4,115,2003,
+21575,Frank,Summers,RB,,240,1985,UNLV,5,169,2009,
+21596,Vinny,Sutherland,WR,,188,1978,Purdue,5,136,2001,
+21622,Geoff,Swaim,TE,,250,1993,Texas,7,246,2015,"615,000"
+21625,Brett,Swain,WR,,200,1985,San Diego St.,7,217,2008,
+21647,Limas,Sweed,WR,,220,1984,Texas,2,53,2008,
+21681,Ryan,Switzer,WR,,181,1994,North Carolina,4,133,2017,"465,000"
+21703,Quinn,Sypniewski,TE,,265,1982,Colorado,5,166,2006,
+21742,Lorenzo,Taliaferro,RB,6-0,229,1991,Coastal Carolina,4,138,2014,
+21758,Jacob,Tamme,TE,6-4,234,1985,Kentucky,4,127,2008,
+21763,Ryan,Tannehill,QB,,220,1988,Texas A&M;,1,8,2012,"17,975,000"
+21773,Jay,Tant,TE,,254,1977,Northwestern,5,164,2000,
+21795,Ben,Tate,RB,,214,1988,Auburn,2,58,2010,
+21796,Brandon,Tate,WR,,195,1987,North Carolina,3,83,2009,"900,000"
+21799,Golden,Tate,WR,,195,1988,Notre Dame,2,60,2010,"6,000,000"
+21833,Chester,Taylor,RB,,213,1979,Toledo,6,207,2002,
+21841,Courtney,Taylor,WR,,204,1984,Auburn,6,197,2007,
+21860,Jamaar,Taylor,WR,,197,1981,Notre Dame,6,168,2004,
+21893,Ryan,Taylor,TE,,250,1987,North Carolina,7,218,2011,
+21897,Stepfan,Taylor,RB,,214,1991,Stanford,5,140,2013,
+21900,Taywan,Taylor,WR,,203,1995,West. Kentucky,3,72,2017,"465,000"
+21905,Travis,Taylor,WR,,210,1979,Florida,1,10,2000,
+21906,Trent,Taylor,WR,,181,1994,Louisiana Tech,5,177,2017,"465,000"
+21908,Tyrod,Taylor,QB,,221,1989,Virginia Tech,6,180,2011,"7,500,000"
+21925,Tim,Tebow,QB,,236,1987,Florida,1,25,2010,
+21932,Randall,Telfer,TE,,242,1992,USC,6,198,2015,"540,000"
+21949,David,Terrell,WR,,215,1979,Michigan,1,8,2001,
+21996,Tyler,Thigpen,QB,,235,1984,Coastal Carolina,7,217,2007,
+22001,Anthony,Thomas,RB,,228,1977,Michigan,2,38,2001,
+22024,Daniel,Thomas,RB,6-0,225,1987,Kansas St.,2,62,2011,
+22026,David,Thomas,TE,,240,1983,Texas,3,86,2006,
+22027,De'Anthony,Thomas,RB,,174,1993,Oregon,4,124,2014,"690,000"
+22029,Demaryius,Thomas,WR,,229,1987,Georgia Tech,1,22,2010,
+22032,Devin,Thomas,WR,,215,1986,Michigan St.,2,34,2008,
+22075,Julius,Thomas,TE,,251,1988,Portland St.,4,129,2011,
+22087,Logan,Thomas,QB,,248,1991,Virginia Tech,4,120,2014,"700,000"
+22090,Marcus,Thomas,RB,,215,1984,Texas-El Paso,5,166,2008,
+22095,Michael,Thomas,WR,,212,1993,Ohio St.,2,47,2016,"682,681"
+22097,Mike,Thomas,WR,,187,1987,Arizona,4,107,2009,
+22098,Mike,Thomas,WR,,197,1994,Southern Miss,6,206,2016,"412,941"
+22122,Sloan,Thomas,WR,,200,1981,Texas,7,211,2004,
+22162,Chris,Thompson,RB,,195,1990,Florida St.,5,154,2013,"382,942"
+22217,Taylor,Thompson,TE,,259,1989,SMU,5,145,2012,
+22257,Craphonso,Thorpe,WR,,187,1983,Florida St.,4,116,2005,
+22362,Jordan,Todman,RB,,195,1990,Connecticut,6,183,2011,
+22364,LaBrandon,Toefield,RB,,232,1980,LSU,4,132,2003,
+22371,Levine,Toilolo,TE,,260,1991,Stanford,4,133,2013,"1,500,000"
+22399,LaDainian,Tomlinson,RB,,221,1979,TCU,1,5,2001,
+22419,Nick,Toon,WR,,215,1988,Wisconsin,4,122,2012,
+22421,Tim,Toone,WR,,185,1985,,7,255,2010,
+22426,Ryan,Torain,RB,6-0,213,1986,Arizona St.,5,139,2008,
+22494,Laquon,Treadwell,WR,,221,1995,Mississippi,1,23,2016,"901,590"
+22528,Ben,Troupe,TE,,262,1982,Florida,2,40,2004,
+22534,Mitch,Trubisky,QB,,222,1994,North Carolina,1,2,2017,"465,000"
+22586,Marques,Tuiasosopo,QB,,220,1979,Washington,2,59,2001,
+22612,Robert,Turbin,RB,,222,1989,Utah St.,4,106,2012,"800,000"
+22656,Michael,Turner,RB,5-10,237,1982,Northern Illinois,5,154,2004,
+22661,Patrick,Turner,WR,6-5,221,1987,USC,3,87,2009,
+22707,David,Tyree,WR,6-0,205,1980,Syracuse,6,211,2003,
+22743,Tiquan,Underwood,WR,,175,1987,Rutgers,7,253,2009,
+22744,Harvey,Unga,RB,,237,1987,,7,1,2010,
+22783,C.J.,Uzomah,TE,,262,1992,Auburn,5,157,2015,"615,000"
+22826,Bradlee,Van,QB,6-2,220,1980,Colorado St.,7,250,2004,
+22850,Nick,Vannett,TE,,256,1993,Ohio St.,3,94,2016,"562,000"
+22910,Shane,Vereen,RB,,200,1989,California,2,56,2011,"2,150,000"
+22931,Michael,Vick,QB,,215,1980,Virginia Tech,1,1,2001,
+23015,Bobby,Wade,WR,,193,1981,Arizona,5,139,2003,
+23066,Clive,Walford,TE,6-4,254,1991,Miami (FL),3,68,2015,"710,646"
+23068,Aaron,Walker,TE,,252,1980,Florida,5,161,2003,
+23085,Delanie,Walker,TE,,241,1984,Central Missouri St.,6,175,2006,"4,200,000"
+23102,Javon,Walker,WR,,220,1978,Florida St.,1,20,2002,
+23158,Mike,Wallace,WR,,180,1986,Mississippi,3,84,2009,"4,750,000"
+23164,Seneca,Wallace,QB,,196,1980,Iowa St.,4,110,2003,
+23167,Taco,Wallace,WR,,190,1981,Kansas St.,7,224,2003,
+23169,Darren,Waller,WR,6-7,242,1992,Georgia Tech,6,204,2015,
+23184,Blair,Walsh,K,,186,1990,Georgia,6,175,2012,"800,000"
+23192,Andrew,Walter,QB,,230,1982,Arizona St.,3,69,2005,
+23196,Kevin,Walter,WR,6-3,221,1981,East. Michigan,7,255,2003,
+23211,Troy,Walters,WR,5-7,172,1976,Stanford,5,165,2000,
+23244,Derrick,Ward,RB,,233,1980,Fresno St.,7,235,2004,
+23267,Spencer,Ware,RB,5-10,229,1991,LSU,6,194,2013,"1,300,000"
+23295,Paris,Warren,WR,6-0,213,1982,Utah,7,225,2005,
+23302,Peter,Warrick,WR,5-11,192,1977,Florida St.,1,4,2000,
+23314,Chauncey,Washington,RB,,221,1985,USC,7,213,2008,
+23325,DeAndre,Washington,RB,,199,1993,Texas Tech,5,143,2016,"540,000"
+23329,Dwayne,Washington,RB,,221,1994,Washington,7,236,2016,"540,000"
+23343,Kelley,Washington,WR,,218,1979,Tennessee,3,65,2003,
+23345,Leon,Washington,RB,,210,1982,Florida St.,4,117,2006,
+23393,Sammy,Watkins,WR,,211,1993,Clemson,1,4,2014,
+23394,Todd,Watkins,WR,,185,1983,BYU,7,218,2006,
+23397,Ben,Watson,TE,,255,1980,Duke,1,32,2004,"1,250,000"
+23402,Deshaun,Watson,QB,,221,1995,Clemson,1,12,2017,"465,000"
+23436,Darius,Watts,WR,,190,1981,Marshall,2,54,2004,
+23449,Reggie,Wayne,WR,,198,1978,Miami (FL),1,30,2001,
+23493,Jeff,Webb,WR,,200,1982,San Diego St.,6,190,2006,
+23495,Joe,Webb,WR,6-4,220,1986,Ala-Birmingham,6,199,2010,"900,000"
+23527,Brandon,Weeden,QB,,221,1983,Oklahoma St.,1,22,2012,
+23551,Chris,Weinke,QB,6-4,232,1972,Florida St.,4,106,2001,
+23582,Beanie,Wells,RB,,235,1988,Ohio St.,1,31,2009,
+23590,Jonathan,Wells,RB,,252,1979,Ohio St.,4,99,2002,
+23623,Carson,Wentz,QB,,237,1992,North Dakota St.,1,2,2016,"1,662,561"
+23658,Terrance,West,RB,,225,1991,Towson,3,94,2014,"1,797,000"
+23662,Brian,Westbrook,RB,,200,1979,Villanova,3,91,2002,
+23665,Dede,Westbrook,WR,,178,1993,Oklahoma,4,110,2017,"348,000"
+23691,James,Whalen,TE,,244,1977,Kentucky,5,157,2000,
+23694,Ryan,Whalen,WR,,204,1989,Stanford,6,167,2011,
+23701,Austin,Wheatley,TE,,254,1977,Iowa,5,158,2000,
+23705,Markus,Wheaton,WR,,189,1991,Oregon St.,3,79,2013,"3,000,000"
+23761,Dez,White,WR,,215,1979,Georgia Tech,3,69,2000,
+23774,James,White,RB,,204,1992,Wisconsin,4,130,2014,"690,000"
+23781,Johnny,White,RB,,200,1988,North Carolina,5,133,2011,
+23782,Jordan,White,WR,,208,1988,West. Michigan,7,244,2012,
+23784,Kevin,White,WR,,210,1992,West Virginia,1,7,2015,"615,000"
+23787,LenDale,White,RB,,240,1984,USC,2,45,2006,
+23798,Pat,White,WR,,190,1986,West Virginia,2,44,2009,
+23810,Roddy,White,WR,,201,1981,Ala-Birmingham,1,27,2005,
+23835,Charlie,Whitehurst,QB,,220,1982,Clemson,3,81,2006,
+23932,Michael,Wiley,RB,,200,1978,Ohio St.,5,144,2000,
+23933,Ernest,Wilford,WR,,218,1979,Virginia Tech,4,120,2004,
+23980,Andre,Williams,RB,5-11,230,1992,Boston Col.,4,113,2014,"527,644"
+23994,Brandon,Williams,WR,,175,1984,Wisconsin,3,84,2006,
+24008,Cadillac,Williams,RB,,217,1982,Auburn,1,5,2005,
+24012,Chad,Williams,WR,6-1,204,1994,Grambling St.,3,98,2017,"465,000"
+24029,D.J.,Williams,TE,,236,1988,Arkansas,5,141,2011,
+24030,Damian,Williams,WR,,190,1988,USC,3,77,2010,
+24043,DeAngelo,Williams,RB,,210,1983,Memphis,1,27,2006,
+24046,Demetrius,Williams,WR,,190,1983,Oregon,4,111,2006,
+24049,Derrick,Williams,WR,,197,1986,Penn St.,3,82,2009,
+24054,Domanick,Williams,RB,5-9,216,1980,LSU,4,101,2003,
+24062,Eddie,Williams,RB,,235,1987,Idaho,7,221,2009,
+24086,Harry,Williams,WR,,180,1982,Tuskegee,7,240,2005,
+24100,Jamaal,Williams,RB,,212,1995,BYU,4,134,2017,"465,000"
+24107,James,Williams,WR,,186,1978,Marshall,6,175,2000,
+24111,Javarris,Williams,RB,,220,1986,Tennessee St.,7,212,2009,
+24135,Jonathan,Williams,RB,5-11,220,1994,Arkansas,5,156,2016,
+24142,Karlos,Williams,RB,6-1,225,1993,Florida St.,5,155,2015,
+24148,Kerwynn,Williams,RB,5-8,196,1991,Utah St.,7,230,2013,"690,000"
+24157,Kyle,Williams,WR,,185,1988,Arizona St.,6,206,2010,
+24178,Maxx,Williams,TE,6-4,250,1994,Minnesota,2,55,2015,"803,431"
+24182,Michael,Williams,TE,,269,1990,Alabama,7,211,2013,
+24188,Mike,Williams,WR,6-5,229,1984,USC,1,10,2005,
+24189,Mike,Williams,WR,,204,1987,Syracuse,4,101,2010,
+24190,Mike,Williams,WR,,218,1994,Clemson,1,7,2017,"465,000"
+24199,Paul,Williams,WR,,205,1983,Fresno St.,3,80,2007,
+24213,Reggie,Williams,WR,,225,1983,Washington,1,9,2004,
+24233,Roy,Williams,WR,,210,1981,Texas,1,7,2004,
+24234,Roydell,Williams,WR,,192,1981,Tulane,4,136,2005,
+24235,Ryan,Williams,RB,,205,1990,Virginia Tech,2,38,2011,
+24257,Terrance,Williams,WR,,208,1989,Baylor,3,74,2013,"1,000,000"
+24303,Troy,Williamson,WR,,203,1983,South Carolina,1,7,2005,
+24327,Luke,Willson,TE,,252,1990,Rice,5,158,2013,"1,000,000"
+24352,Cedrick,Wilson,WR,,183,1978,Tennessee,6,169,2001,
+24360,David,Wilson,RB,,205,1991,Virginia Tech,1,32,2012,
+24393,Kris,Wilson,TE,,250,1981,Pittsburgh,2,61,2004,
+24399,Mark,Wilson,TE,6-6,295,1980,California,5,151,2004,
+24400,Marquess,Wilson,WR,6-3,194,1992,Washington St.,7,236,2013,
+24413,Quincy,Wilson,RB,,225,1981,West Virginia,7,219,2004,
+24421,Russell,Wilson,QB,5-11,203,1988,Wisconsin,3,75,2012,"12,600,000"
+24433,Travis,Wilson,WR,,210,1984,Oklahoma,3,78,2006,
+24490,Kellen,Winslow,TE,,254,1983,Miami (FL),1,6,2004,
+24497,Jameis,Winston,QB,,232,1994,Florida St.,1,1,2015,"615,000"
+24544,Jason,Witten,TE,,257,1982,Tennessee,3,69,2003,"7,400,000"
+24565,Garrett,Wolfe,RB,,171,1984,Northern Illinois,3,93,2007,
+24644,Rashaun,Woods,WR,,202,1980,Oklahoma St.,1,31,2004,
+24649,Robert,Woods,WR,,201,1992,USC,2,41,2013,
+24710,George,Wrighster,TE,,260,1981,Oregon,4,104,2003,
+24718,Dwayne,Wright,RB,6-0,227,1983,Fresno St.,4,111,2007,
+24730,James,Wright,WR,,203,1991,LSU,7,239,2014,
+24731,Jarius,Wright,WR,,182,1989,Arkansas,4,118,2012,"2,500,000"
+24742,Kendall,Wright,WR,5-10,194,1989,Baylor,1,20,2012,"1,250,000"
+24791,Devon,Wylie,WR,,187,1988,Fresno St.,4,107,2012,
+24796,DeShawn,Wynn,RB,,232,1983,Florida,7,228,2007,
+24801,Milton,Wynn,WR,,207,1978,Washington St.,4,116,2001,
+24804,Spergon,Wynn,QB,,226,1978,Minnesota,6,183,2000,
+24835,T.J.,Yates,QB,,210,1987,North Carolina,5,152,2011,
+24845,T.J.,Yeldon,RB,,221,1993,Alabama,2,36,2015,"972,617"
+24921,Titus,Young,WR,,175,1989,Boise St.,2,44,2011,
+24924,Vince,Young,QB,,230,1983,Texas,1,3,2006,
+24926,Walter,Young,WR,,214,1979,Illinois,7,226,2003,
+25013,Keith,Zinger,TE,,250,1984,LSU,7,232,2008,
+25034,Greg,Zuerlein,K,,187,1987,Missouri Western St.,6,171,2012,"1,375,000"

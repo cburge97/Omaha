@@ -62,52 +62,54 @@
                 <h2>Directions</h2>
                 <p>Select how many people you want to add and select how many people you want to drop. Click submit and input the player names into the text boxes.</p>
                 <form>
-                    <div>
-                        <h3><u>Your Team</u></h3>
-                        <select id="userTeam" onchange="getvalue()">
-                                <option value="A0">0</option>
-                                <option value="A1">1</option>
-                                <option value="A2">2</option>
-                                <option value="A3">3</option>
-                                <option value="A4">4</option>
-                                <option value="A5">5</option>
-                                <option value="A6">6</option> 
-                        </select>
-                    </div>
-                    <div>
-                        <input type ="text" id="user1" name="player1" style="display:none" >
-                        <input type ="text" id="user2" name="player2" style="display:none" >
-                        <input type ="text" id="user3" name="player3" style="display:none" >
-                        <input type ="text" id="user4" name="player4" style="display:none" >
-                        <input type ="text" id="user5" name="player5" style="display:none" >
-                        <input type ="text" id="user6" name="player6" style="display:none" >
-
-                    <div>
-                        <h3><u>Free Agency</u></h3>
-                        <select id="FreeAgent" onchange=getvalue2()>
-                                <option value="D0">0</option>
-                                <option value="D1">1</option>
-                                <option value="D2">2</option>
-                                <option value="D3">3</option>
-                                <option value="D4">4</option>
-                                <option value="D5">5</option>
-                                <option value="D6">6</option> 
-                        </select>
-                    </div>
-                    <div>
-                            <input type ="text" id="FA1" name="player1" style="display:none" >
-                            <input type ="text" id="FA2" name="player2" style="display:none" >
-                            <input type ="text" id="FA3" name="player3" style="display:none" >
-                            <input type ="text" id="FA4" name="player4" style="display:none" >
-                            <input type ="text" id="FA5" name="player5" style="display:none" >
-                            <input type ="text" id="FA6" name="player6" style="display:none" >
-    
+                    <div style="float:left; width:50%;">
                         <div>
-                    
-            </form>
-            <hr>
-            </div>         
+                            <h3><u>Your Team</u></h3>
+                            <select id="userTeam" onchange="getvalue()">
+                                    <option value="A0">0</option>
+                                    <option value="A1">1</option>
+                                    <option value="A2">2</option>
+                                    <option value="A3">3</option>
+                                    <option value="A4">4</option>
+                                    <option value="A5">5</option>
+                                    <option value="A6">6</option> 
+                            </select>
+                        </div>
+                        <div>
+                            <input type ="text" id="user1" name="player1" style="display:none" >
+                            <input type ="text" id="user2" name="player2" style="display:none" >
+                            <input type ="text" id="user3" name="player3" style="display:none" >
+                            <input type ="text" id="user4" name="player4" style="display:none" >
+                            <input type ="text" id="user5" name="player5" style="display:none" >
+                            <input type ="text" id="user6" name="player6" style="display:none" >
+                        </div>    
+                    </div>  
+                    <div style="float:left; width:50%;">
+                        <div>
+                            <h3><u>Free Agency</u></h3>
+                            <select id="FreeAgent" onchange=getvalue2()>
+                                    <option value="D0">0</option>
+                                    <option value="D1">1</option>
+                                    <option value="D2">2</option>
+                                    <option value="D3">3</option>
+                                    <option value="D4">4</option>
+                                    <option value="D5">5</option>
+                                    <option value="D6">6</option> 
+                            </select>
+                        </div>
+                        <div>
+                                <input type ="text" id="FA1" name="player1" style="display:none" >
+                                <input type ="text" id="FA2" name="player2" style="display:none" >
+                                <input type ="text" id="FA3" name="player3" style="display:none" >
+                                <input type ="text" id="FA4" name="player4" style="display:none" >
+                                <input type ="text" id="FA5" name="player5" style="display:none" >
+                                <input type ="text" id="FA6" name="player6" style="display:none" >
+                        </div>
+                    </div> 
+                </form>
+            </div>    
         </div>
+
     </body>
     <script>
         function getvalue(){
