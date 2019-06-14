@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/cburge97/Omaha#readme",
   "dependencies": {
+    "bootstrap": "^4.3.1",
     "express": "^4.17.0"
   }
 }

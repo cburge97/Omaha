@@ -11,7 +11,10 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 
 	<style>
-		
+		body{
+            font-family: Verdana;
+            color: black;
+		}	
 		.my-custom-scrollbar {
 			position: relative;
 			height: 200px;
@@ -32,7 +35,7 @@
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  		<a class="navbar-brand" href="#">OMAHA</a>
+  		<a class="navbar-brand" href=#>OMAHA</a>
   		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     		<span class="navbar-toggler-icon"></span>
  		 </button>
@@ -40,24 +43,24 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Player Stats</a>
+      <li class="nav-item">
+        <a class="nav-link" href="playerstats.html">Player Stats</a>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link dropdown-toggle" href="transaction.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Transactions
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Add/Drop</a>
+          <a class="dropdown-item" href="transaction_add_drop.html">Add/Drop</a>
 		  <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Trade</a>
+          <a class="dropdown-item" href="transaction_trade.html">Trade</a>
           
         </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Draft</a>
+        <a class="nav-link active" href="Draft.html">Draft</a>
       </li>
     </ul>
    
@@ -66,9 +69,11 @@
 	
 <h1>Draft</h1>
 	
-	<div class="row">
-  		<div class="column"><h3>User Team: </h3>
-		<table class="table table-bordered table-striped mb-0">
+	<div class="row" style="padding-left: 1cm">
+		  <div class="column"><h3>User Team: </h3>
+			<div class="table-wrapper-scroll-y my-custom-scrollbar" >
+		
+			<table class="table table-bordered table-striped mb-0">
     	<thead>
       		<tr>
         		<th scope="col">#</th>
@@ -118,9 +123,9 @@
     </tbody>
   	</table>
 		</div>
-		
-  	<div class="column"><h3>Already Picked: </h3>
-		<ol>
+	</div>
+  	<div class="column" style="padding-left:0.5cm"><h3>Already Picked: </h3>
+		<ol class=" table-wrapper-scroll-y my-custom-scrollbar">
 			<li>Tom Brady</li>
 			<li>Tom Brady</li>
 			<li>Tom Brady</li>
@@ -137,8 +142,9 @@
 		</ol>
 	</div>
 	</div>
-	<input class="form-control" id="myInput" type="text" placeholder="Search..">
-		<div class="table-wrapper-scroll-y my-custom-scrollbar">
+	<div style="padding: 0.5cm" >
+	<input class="form-control" id="myInput" type="text" placeholder="Search.." style="padding-left:0.5cm">
+		<div class="table-wrapper-scroll-y my-custom-scrollbar" >
 
   		<table class="table table-bordered table-striped mb-0">
     	<thead>
@@ -225,8 +231,8 @@
   	</table>
 
 </div>
-
-<div>
+</div>
+<div style= "padding-left: 0.5cm">
 	<h4>Feedback:</h4>
 	Good Job!
 
