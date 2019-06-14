@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html>
     <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+            <title>Player Stats</title>
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        
         <title>homepage</title>
         <style>
             body{
-                background: skyblue;
                 font-family: Verdana;
                 color: black;
             }
@@ -17,44 +24,43 @@
                 font-size: 16px; 
                 color: #111
             }
-            ul{
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
-                overflow: hidden;
-                background-color: #333;
-                position: fixed;
-                top: 0;
-                width: 100%;
-            }
-            li{
-                float: left;
-                border-right:1px solid #bbbbbb
-            }
-            li a {
-                display:block;
-                color: white;
-                text-align: center;
-                padding: 14px 16px;
-            }
-            li a:hover:not(.active){
-                background-color:#111
-            }
-            .active{
-                background-color: #4caf50
-            }
+            
         </style>
     </head>
     
     <body>
-        <div style="padding: 5px">
-            <ul>
-                <li><a class="active" href="index.html">Omaha</a></li>
-                <li><a href="stats.html">Player Stats</a></li>
-                <li><a href="transaction.html">Transaction</a></li>
-                <li><a href="draft.html">Draft</a></li>
-            </ul>
-        </div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href=#>OMAHA</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="playerstats.html">Player Stats</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="transaction.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Transactions
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="transaction_add_drop.html">Add/Drop</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="transaction_trade.html">Trade</a>
+                    
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Draft.html">Draft</a>
+                </li>
+              </ul>
+             
+            </div>
+          </nav>
         
         <div style="background-color: white; width:80%; float:none; padding: 0% 10% 0% 10%;">
             <div style="background-color: whitesmoke; padding: 2% 5% 2% 5%">
@@ -69,4 +75,9 @@
             </div>         
         </div>
     </body>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
 </html>
