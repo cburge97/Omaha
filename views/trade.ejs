@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Player Stats</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    
+        <title>Trade</title>
+        <style>
+            body{
+                font-family: Verdana;
+                color: black;
+            }
+            h1{
+                font-size: 48px;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+            }
+            p{
+                font-size: 16px; 
+                color: #111
+            }
+
+            .my-custom-scrollbar {
+			position: relative;
+			height: 200px;
+			overflow: auto;
+		}
+	
+		.table-wrapper-scroll-y {
+			display: block;
+		}
+            
+           
+        </style>
+    </head>
+    
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href=#>OMAHA</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="playerstats">Player Stats</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="transaction" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Transactions
+          </a>
+          <div class="dropdown-menu active" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="add_drop">Add/Drop</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item active" href="trade">Trade</a>
+            
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Draft">Draft</a>
+        </li>
+      </ul>
+     
+    </div>
+  </nav>
+          
+        
+        <div style="background-color: white; width:80%; float:none; padding: 5% 10% 5% 10%;">
+            <div style="background-color: whitesmoke; padding: 5% 5% 5% 5%">
+                <h1>Trade</h1>
+                <h2>Directions</h2>
+                <p>Select how many people you want to add and select how many people you want to drop. Click submit and input the player names into the text boxes.</p>
+                <form>
+                    <div>
+                        <h3><u>Your Team</u></h3>
+                        <select id="userTeam" onchange="getvalue()">
+                                <option value="A0">0</option>
+                                <option value="A1">1</option>
+                                <option value="A2">2</option>
+                                <option value="A3">3</option>
+                                <option value="A4">4</option>
+                                <option value="A5">5</option>
+                                <option value="A6">6</option> 
+                        </select>
+                    </div>
+                    <div>
+                        <input type ="text" id="user1" name="player1" style="display:none" >
+                        <input type ="text" id="user2" name="player2" style="display:none" >
+                        <input type ="text" id="user3" name="player3" style="display:none" >
+                        <input type ="text" id="user4" name="player4" style="display:none" >
+                        <input type ="text" id="user5" name="player5" style="display:none" >
+                        <input type ="text" id="user6" name="player6" style="display:none" >
+
+                    <div>
+                        <h3><u>Free Agency</u></h3>
+                        <select id="FreeAgent" onchange=getvalue2()>
+                                <option value="D0">0</option>
+                                <option value="D1">1</option>
+                                <option value="D2">2</option>
+                                <option value="D3">3</option>
+                                <option value="D4">4</option>
+                                <option value="D5">5</option>
+                                <option value="D6">6</option> 
+                        </select>
+                    </div>
+                    <div>
+                            <input type ="text" id="FA1" name="player1" style="display:none" >
+                            <input type ="text" id="FA2" name="player2" style="display:none" >
+                            <input type ="text" id="FA3" name="player3" style="display:none" >
+                            <input type ="text" id="FA4" name="player4" style="display:none" >
+                            <input type ="text" id="FA5" name="player5" style="display:none" >
+                            <input type ="text" id="FA6" name="player6" style="display:none" >
+    
+                        <div>
+                    
+            </form>
+            <hr>
+            </div>         
+        </div>
+    </body>
+    <script>
+        function getvalue(){
+            value = document.getElementById("userTeam").value;
+            if(value == "A0"){
+                document.getElementById("user1").style.display='none';
+                document.getElementById("user2").style.display='none';
+                document.getElementById("user3").style.display='none';
+                document.getElementById("user4").style.display='none';
+                document.getElementById("user5").style.display='none';
+                document.getElementById("user6").style.display='none';
+            }else if(value == "A1"){
+                document.getElementById("user1").style.display='block';
+                document.getElementById("user2").style.display='none';
+                document.getElementById("user3").style.display='none';
+                document.getElementById("user4").style.display='none';
+                document.getElementById("user5").style.display='none';
+                document.getElementById("user6").style.display='none';
+            }else if(value == "A2"){
+                document.getElementById("user1").style.display='block';
+                document.getElementById("user2").style.display='block';
+                document.getElementById("user3").style.display='none';
+                document.getElementById("user4").style.display='none';
+                document.getElementById("user5").style.display='none';
+                document.getElementById("user6").style.display='none';
+            }else if(value == "A3"){
+                document.getElementById("user1").style.display='block';
+                document.getElementById("user2").style.display='block';
+                document.getElementById("user3").style.display='block';
+                document.getElementById("user4").style.display='none';
+                document.getElementById("user5").style.display='none';
+                document.getElementById("user6").style.display='none';
+            }else if(value == "A4"){
+                document.getElementById("user1").style.display='block';
+                document.getElementById("user2").style.display='block';
+                document.getElementById("user3").style.display='block';
+                document.getElementById("user4").style.display='block';
+                document.getElementById("user5").style.display='none';
+                document.getElementById("user6").style.display='none';
+            }else if(value == "A5"){
+                document.getElementById("user1").style.display='block';
+                document.getElementById("user2").style.display='block';
+                document.getElementById("user3").style.display='block';
+                document.getElementById("user4").style.display='block';
+                document.getElementById("user5").style.display='block';
+                document.getElementById("user6").style.display='none';
+            }else if(value == "A6"){
+                document.getElementById("user1").style.display='block';
+                document.getElementById("user2").style.display='block';
+                document.getElementById("user3").style.display='block';
+                document.getElementById("user4").style.display='block';
+                document.getElementById("user5").style.display='block';
+                document.getElementById("user6").style.display='block';
+            }
+        }
+        function getvalue2(){
+            value = document.getElementById("FreeAgent").value;
+            if(value == "D0"){
+                document.getElementById("FA1").style.display='none';
+                document.getElementById("FA2").style.display='none';
+                document.getElementById("FA3").style.display='none';
+                document.getElementById("FA4").style.display='none';
+                document.getElementById("FA5").style.display='none';
+                document.getElementById("FA6").style.display='none';
+            }else if(value == "D1"){
+                document.getElementById("FA1").style.display='block';
+                document.getElementById("FA2").style.display='none';
+                document.getElementById("FA3").style.display='none';
+                document.getElementById("FA4").style.display='none';
+                document.getElementById("FA5").style.display='none';
+                document.getElementById("FA6").style.display='none';
+            }else if(value == "D2"){
+                document.getElementById("FA1").style.display='block';
+                document.getElementById("FA2").style.display='block';
+                document.getElementById("FA3").style.display='none';
+                document.getElementById("FA4").style.display='none';
+                document.getElementById("FA5").style.display='none';
+                document.getElementById("FA6").style.display='none';
+            }else if(value == "D3"){
+                document.getElementById("FA1").style.display='block';
+                document.getElementById("FA2").style.display='block';
+                document.getElementById("FA3").style.display='block';
+                document.getElementById("FA4").style.display='none';
+                document.getElementById("FA5").style.display='none';
+                document.getElementById("FA6").style.display='none';
+            }else if(value == "D4"){
+                document.getElementById("FA1").style.display='block';
+                document.getElementById("FA2").style.display='block';
+                document.getElementById("FA3").style.display='block';
+                document.getElementById("FA4").style.display='block';
+                document.getElementById("FA5").style.display='none';
+                document.getElementById("FA6").style.display='none';
+            }else if(value == "D5"){
+                document.getElementById("FA1").style.display='block';
+                document.getElementById("FA2").style.display='block';
+                document.getElementById("FA3").style.display='block';
+                document.getElementById("FA4").style.display='block';
+                document.getElementById("FA5").style.display='block';
+                document.getElementById("FA6").style.display='none';
+            }else if(value == "D6"){
+                document.getElementById("FA1").style.display='block';
+                document.getElementById("FA2").style.display='block';
+                document.getElementById("FA3").style.display='block';
+                document.getElementById("FA4").style.display='block';
+                document.getElementById("FA5").style.display='block';
+                document.getElementById("FA6").style.display='block';
+            }
+        }
+        
+    </script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</html>

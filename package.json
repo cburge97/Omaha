@@ -18,6 +18,9 @@
   "homepage": "https://github.com/cburge97/Omaha#readme",
   "dependencies": {
     "bootstrap": "^4.3.1",
-    "express": "^4.17.0"
+    "ejs": "^2.6.2",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.1.5",
+    "mysql": "^2.17.1"
   }
 }
