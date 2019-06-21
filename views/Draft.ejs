@@ -163,70 +163,21 @@
       		</tr>
     	</thead>
     	<tbody id="myTable">
-      		<tr data-toggle="modal" data-id="1" data-target="#myModal">
-        		<th scope="row">1</th>
-        		<td>Mark</td>
-        		<td>Otto</td>
-        		<td>QB</td>
-				<td>6'3</td>
-        		<td>190</td>
-        		<td>1/5/1997</td>
-				<td>Mark</td>
-        		<td>Otto</td>
-        		<td>3000</td>
-				<td>$499</td>		
-   		  </tr>
-      	<tr data-toggle="modal" data-id="2" data-target="#myModal">
-        	<th scope="row">2</th>
-        		<td>Mark</td>
-        		<td>Otto</td>
-        		<td>QB</td>
-				<td>6'3</td>
-        		<td>190</td>
-        		<td>1/5/1997</td>
-				<td>Mark</td>
-        		<td>Otto</td>
-        		<td>2006</td>
-		  <td>$499</td>
-      	</tr >
-      <tr data-toggle="modal" data-id="3" data-target="#myModal">
-        <th scope="row">3</th>
-        		<td>Mark</td>
-        		<td>Otto</td>
-        		<td>QB</td>
-				<td>6'3</td>
-        		<td>190</td>
-        		<td>1/5/1997</td>
-				<td>Mark</td>
-        		<td>Otto</td>
-        		<td>2006</td>
-		<td>$499</td>
-      </tr>
-      <tr data-toggle="modal" data-id="4" data-target="#myModal">
-        <th scope="row">4</th>
-        		<td>Mark</td>
-        		<td>Otto</td>
-        		<td>QB</td>
-				<td>6'3</td>
-        		<td>190</td>
-        		<td>1/5/1997</td>
-				<td>Mark</td>
-        		<td>Otto</td>
-        		<td>2006</td>
-		<td>$499</td>
-      </tr>
-      <tr data-toggle="modal" data-id="5" data-target="#myModal">
-        <th scope="row">5</th>
-        <td>Jacob</td>
-        <td>Thornton</td>
-        <td>@fat</td>
-      </tr>
-      <tr data-toggle="modal" data-id="6" data-target="#myModal">
-        <th scope="row">6</th>
-        <td>Larry</td>
-        <td>the Bird</td>
-        <td>@twitter</td>
-      </tr>
+				<% player.forEach((player, index) => { %>
+					<tr data-toggle="modal" data-id="1" data-target="#myModal">
+					  <th scope="row">1</th>
+					  <td><%= player.first_name %></td>
+					  <td><%= player.last_name %></td>
+					  <td><%= player.position %></td>
+					  <td><%= player.height %></td>
+					  <td><%= player.weight %></td>
+					  <td><%= player.birth_year %></td>
+					  <td><%= player.college %></td>
+					  <td><%= player.draft_pick %></td>
+					  <td><%= player.draft_year %></td>
+					  <td><%= player.current_salary %></td>		
+				   </tr>
+			   <% }) %>
     </tbody>
   	</table>
 
