@@ -35,7 +35,10 @@
 		.table-wrapper-scroll-y {
 			display: block;
 		}
-            
+         input{
+             width:80%;
+             padding:5px;
+         }   
            
         </style>
     </head>
@@ -75,12 +78,15 @@
   </nav>
           
         
-        <div style="background-color: white; width:80%; float:none; padding: 5% 10% 5% 10%;">
-            <div style="background-color: whitesmoke; padding: 5% 5% 5% 5%">
-                <h1>Trade</h1>
-                <h2>Directions</h2>
-                <p>Select how many people you want to add and select how many people you want to drop. Click submit and input the player names into the text boxes.</p>
-                <form>
+        <div style="background-color: white; width:100%; float:none; padding: 1% 10% 1% 10%;">
+            <h1>Trade</h1>
+            <h2>Directions</h2>
+            <p>This page allows you to get feedback on possible trades you may do with other teams. Select how many players you are trading from your team, then select how many players you will be recieving from the other team. When the columns appear,
+                input the names of the players into the correct input box. Click the submit box and recieve your results.
+            </p>
+            <hr>
+            <form>
+                <div style="float:left; width:45%;">
                     <div>
                         <h3><u>Your Team</u></h3>
                         <select id="userTeam" onchange="getvalue()">
@@ -94,15 +100,17 @@
                         </select>
                     </div>
                     <div>
-                        <input type ="text" id="user1" name="player1" style="display:none" >
-                        <input type ="text" id="user2" name="player2" style="display:none" >
-                        <input type ="text" id="user3" name="player3" style="display:none" >
-                        <input type ="text" id="user4" name="player4" style="display:none" >
-                        <input type ="text" id="user5" name="player5" style="display:none" >
-                        <input type ="text" id="user6" name="player6" style="display:none" >
-
+                        <input type ="text" id="user1" name="player1" style="display:none" placeholder="Player Name...">
+                        <input type ="text" id="user2" name="player2" style="display:none" placeholder="Player Name...">
+                        <input type ="text" id="user3" name="player3" style="display:none" placeholder="Player Name...">
+                        <input type ="text" id="user4" name="player4" style="display:none" placeholder="Player Name...">
+                        <input type ="text" id="user5" name="player5" style="display:none" placeholder="Player Name...">
+                        <input type ="text" id="user6" name="player6" style="display:none" placeholder="Player Name...">
+                    </div>
+                </div>
+                <div style="float:left; width:45%;">
                     <div>
-                        <h3><u>Free Agency</u></h3>
+                        <h3><u>Other Team</u></h3>
                         <select id="FreeAgent" onchange=getvalue2()>
                                 <option value="D0">0</option>
                                 <option value="D1">1</option>
@@ -114,19 +122,20 @@
                         </select>
                     </div>
                     <div>
-                            <input type ="text" id="FA1" name="player1" style="display:none" >
-                            <input type ="text" id="FA2" name="player2" style="display:none" >
-                            <input type ="text" id="FA3" name="player3" style="display:none" >
-                            <input type ="text" id="FA4" name="player4" style="display:none" >
-                            <input type ="text" id="FA5" name="player5" style="display:none" >
-                            <input type ="text" id="FA6" name="player6" style="display:none" >
+                            <input type ="text" id="FA1" name="player1" style="display:none" placeholder="Player Name...">
+                            <input type ="text" id="FA2" name="player2" style="display:none" placeholder="Player Name...">
+                            <input type ="text" id="FA3" name="player3" style="display:none" placeholder="Player Name...">
+                            <input type ="text" id="FA4" name="player4" style="display:none" placeholder="Player Name...">
+                            <input type ="text" id="FA5" name="player5" style="display:none" placeholder="Player Name...">
+                            <input type ="text" id="FA6" name="player6" style="display:none" placeholder="Player Name...">
     
-                        <div>
-                    
-            </form>
-            <hr>
-            </div>         
-        </div>
+                    </div>
+                </div> 
+                <div style="float:left; width:10%;">
+                    <button>submit</button>
+                </div>        
+        </form>      
+    </div>
     </body>
     <script>
         function getvalue(){

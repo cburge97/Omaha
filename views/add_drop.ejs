@@ -24,6 +24,10 @@
                 font-size: 16px; 
                 color: #111
             }
+            input{
+                width:80%;
+                padding: 5px;
+            }
             
         </style>
     </head>
@@ -61,62 +65,74 @@
      
     </div>
   </nav> 
-        <div style="background-color: white; width:80%; float:none; padding: 5% 10% 5% 10%;">
-            <div style="background-color: whitesmoke; padding: 5% 5% 5% 5%">
-                <h1>Add & Drop</h1>
-                <h2>Directions</h2>
-                <p>Select how many people you want to add and select how many people you want to drop. Click submit and input the player names into the text boxes.</p>
-                <form>
-                    <div style="float:left; width:50%;">
-                        <div>
-                            <h3><u>Your Team</u></h3>
-                            <select id="userTeam" onchange="getvalue()">
-                                    <option value="A0">0</option>
-                                    <option value="A1">1</option>
-                                    <option value="A2">2</option>
-                                    <option value="A3">3</option>
-                                    <option value="A4">4</option>
-                                    <option value="A5">5</option>
-                                    <option value="A6">6</option> 
-                            </select>
-                        </div>
-                        <div>
-                            <input type ="text" id="user1" name="player1" style="display:none" >
-                            <input type ="text" id="user2" name="player2" style="display:none" >
-                            <input type ="text" id="user3" name="player3" style="display:none" >
-                            <input type ="text" id="user4" name="player4" style="display:none" >
-                            <input type ="text" id="user5" name="player5" style="display:none" >
-                            <input type ="text" id="user6" name="player6" style="display:none" >
-                        </div>    
-                    </div>  
-                    <div style="float:left; width:50%;">
-                        <div>
-                            <h3><u>Free Agency</u></h3>
-                            <select id="FreeAgent" onchange=getvalue2()>
-                                    <option value="D0">0</option>
-                                    <option value="D1">1</option>
-                                    <option value="D2">2</option>
-                                    <option value="D3">3</option>
-                                    <option value="D4">4</option>
-                                    <option value="D5">5</option>
-                                    <option value="D6">6</option> 
-                            </select>
-                        </div>
-                        <div>
-                                <input type ="text" id="FA1" name="player1" style="display:none" >
-                                <input type ="text" id="FA2" name="player2" style="display:none" >
-                                <input type ="text" id="FA3" name="player3" style="display:none" >
-                                <input type ="text" id="FA4" name="player4" style="display:none" >
-                                <input type ="text" id="FA5" name="player5" style="display:none" >
-                                <input type ="text" id="FA6" name="player6" style="display:none" >
-                        </div>
-                    </div> 
-                </form>
-            </div>    
+        <div style="background-color: white; width:100%; float:none; padding: 1% 10% 1% 10%;">
+            <h1>Add & Drop</h1>
+            <h2>Directions</h2>
+            <p>This page allows you to get feedback based on possible add and drops you want to do to your team before you actually commit to any changes. First, select how many people
+                you want to drop from your team and how many people you want to add to your team by clicking the dropdown button below. When the textboxes show up, type the player names 
+                into the boxes and hit Submit. You will then be directed to a page with feedback on the transaction.
+            </p>
+            <hr>
+            <form>
+                <div style="float:left; width:45%;">
+                    <div>
+                        <h3><u>Drop From Team</u></h3>
+                        <select id="userTeam" onchange="getvalue()">
+                                <option value="A0">0</option>
+                                <option value="A1">1</option>
+                                <option value="A2">2</option>
+                                <option value="A3">3</option>
+                                <option value="A4">4</option>
+                                <option value="A5">5</option>
+                                <option value="A6">6</option> 
+                        </select>
+                    </div>
+                    <div>
+                        <input type ="text" id="user1" name="player1" style="display:none" placeholder="Player Name...">
+                        <input type ="text" id="user2" name="player2" style="display:none" placeholder="Player Name...">
+                        <input type ="text" id="user3" name="player3" style="display:none" placeholder="Player Name...">
+                        <input type ="text" id="user4" name="player4" style="display:none" placeholder="Player Name...">
+                        <input type ="text" id="user5" name="player5" style="display:none" placeholder="Player Name...">
+                        <input type ="text" id="user6" name="player6" style="display:none" placeholder="Player Name...">
+                    </div>    
+                </div>  
+                <div style="float:left; width:45%;">
+                    <div>
+                        <h3><u>Add To Team</u></h3>
+                        <select id="FreeAgent" onchange=getvalue2()>
+                                <option value="D0">0</option>
+                                <option value="D1">1</option>
+                                <option value="D2">2</option>
+                                <option value="D3">3</option>
+                                <option value="D4">4</option>
+                                <option value="D5">5</option>
+                                <option value="D6">6</option> 
+                        </select>
+                    </div>
+                    <div>
+                            <input type ="text" class="autoc" id="FA1" name="player1" style="display:none" placeholder="Player Name...">
+                            <input type ="text" class="autoc" id="FA2" name="player2" style="display:none" placeholder="Player Name...">
+                            <input type ="text" class="autoc" id="FA3" name="player3" style="display:none" placeholder="Player Name...">
+                            <input type ="text" class="autoc" id="FA4" name="player4" style="display:none" placeholder="Player Name...">
+                            <input type ="text" class="autoc" id="FA5" name="player5" style="display:none" placeholder="Player Name...">
+                            <input type ="text" class="autoc" id="FA6" name="player6" style="display:none" placeholder="Player Name...">
+                    </div>
+                </div> 
+                <div style="float: left; width:10%;">
+                        <button>Submit</button>
+                </div>
+            </form>  
         </div>
 
     </body>
     <script>
+        var tags = ["abc","def","xyz"];
+        $('.autoc').on("focus", function(){
+            $(this).autocomplete({
+            minLength: 2,
+            source: tags
+                });
+        });
         function getvalue(){
             value = document.getElementById("userTeam").value;
             if(value == "A0"){
