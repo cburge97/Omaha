@@ -20,6 +20,11 @@
 			height: 200px;
 			overflow: auto;
 		}
+		.my-custom-scrollbar2 {
+			position: relative;
+			height: 250px;
+			overflow: auto;
+		}
 	.table-wrapper-scroll-y {
 		display: block;
 	}
@@ -71,111 +76,42 @@
 	
 	<div class="row" style="padding-left: 1cm">
 		  <div class="column"><h3>User Team: </h3>
-			<div class="table-wrapper-scroll-y my-custom-scrollbar" >
-		
-			<table class="table table-bordered table-striped mb-0">
-    	<thead>
-      		<tr>
-        		<th scope="col">#</th>
-        		<th scope="col">Name</th>
-        		<th scope="col">Position</th>
-				<th scope="col">Team</th>	
-			</tr>
-    	</thead>
-    	<tbody id="userTable">
-      		<tr data-toggle="modal" data-id="1" data-target="#myModal">
-        		<th scope="row">1</th>
-				<td>Mark</td>
-				<td>QB</td>
-        		<td>Pats</td>
-        				
-   		  </tr>
-      	<tr data-toggle="modal" data-id="2" data-target="#myModal">
-        	<th scope="row">2</th>
-				<td>Mark</td>
-				<td>QB</td>
-        		<td>Pats</td>
-      	</tr >
-      <tr data-toggle="modal" data-id="3" data-target="#myModal">
-        <th scope="row">3</th>
-				<td>Mark</td>
-				<td>QB</td>
-        		<td>Pats</td>
-      </tr>
-      <tr data-toggle="modal" data-id="4" data-target="#myModal">
-        <th scope="row">4</th>
-				<td>Mark</td>
-				<td>QB</td>
-        		<td>Pats</td>
-      </tr>
-      <tr data-toggle="modal" data-id="5" data-target="#myModal">
-        <th scope="row">5</th>
-				<td>Mark</td>
-				<td>K</td>
-        		<td>Pats</td>
-      </tr>
-      <tr data-toggle="modal" data-id="6" data-target="#myModal">
-        <th scope="row">6</th>
-				<td>Mark</td>
-				<td>QB</td>
-        		<td>Pats</td>
-      </tr>
-    </tbody>
-  	</table>
-		</div>
+			<ul class=" table-wrapper-scroll-y my-custom-scrollbar" id="userList">
+						
+			</ul>
+			
 	</div>
   	<div class="column" style="padding-left:0.5cm"><h3>Already Picked: </h3>
-		<ol class=" table-wrapper-scroll-y my-custom-scrollbar">
-			<li>Tom Brady</li>
-			<li>Tom Brady</li>
-			<li>Tom Brady</li>
-			<li>Tom Brady</li>
-			<li>Tom Brady</li>
-			<li>Tom Brady</li>
-			<li>Tom Brady</li>
-			<li>Tom Brady</li>
-			<li>Tom Brady</li>
-			<li>Tom Brady</li>
-			<li>Tom Brady</li>
-			<li>Tom Brady</li>
-			
+		<ol class=" table-wrapper-scroll-y my-custom-scrollbar" id="testList">
+						
 		</ol>
 	</div>
 	</div>
 	<div style="padding: 0.5cm" >
 	<input class="form-control" id="myInput" type="text" placeholder="Search.." style="padding-left:0.5cm">
-		<div class="table-wrapper-scroll-y my-custom-scrollbar" >
+		<div class="table-wrapper-scroll-y my-custom-scrollbar2" >
 
-  		<table class="table table-bordered table-striped mb-0">
+		  <table class="table table-bordered table-striped mb-0" id = "draft_table">
     	<thead>
       		<tr>
-        		<th scope="col">#</th>
+				<th scope="col">number</th>
         		<th scope="col">First</th>
         		<th scope="col">Last</th>
         		<th scope="col">Position</th>
-				<th scope="col">Height</th>
-				<th scope="col">Weight</th>
-				<th scope="col">Birth</th>
 				<th scope="col">College</th>
-				<th scope="col">Draft Pick</th>
-				<th scope="col">Draft Year</th>
-				<th scope="col">Salary</th>
-      		</tr>
+				<th scope="col" colspan="0" style="display: none"> Team</th>
+				
+			  </tr>
     	</thead>
-    	<tbody id="myTable">
+    	<tbody id="myTable" >
 				<% player.forEach((player, index) => { %>
-					<tr data-toggle="modal" data-id="1" data-target="#myModal">
-					  <th scope="row">1</th>
+					<tr id=<%= index %>>
+					  <td ><%= index %></td>
 					  <td><%= player.first_name %></td>
 					  <td><%= player.last_name %></td>
 					  <td><%= player.position %></td>
-					  <td><%= player.height %></td>
-					  <td><%= player.weight %></td>
-					  <td><%= player.birth_year %></td>
 					  <td><%= player.college %></td>
-					  <td><%= player.draft_pick %></td>
-					  <td><%= player.draft_year %></td>
-					  <td><%= player.current_salary %></td>		
+					  <td colspan="0" style="width: 0px; display: none"><%= player.Team %></td>
 				   </tr>
 			   <% }) %>
     </tbody>
@@ -226,6 +162,50 @@ $(document).ready(function(){
   });
 });
 </script>
+
+<script>
+	var yourPick = 5;
+	var currentPick = 1;
+	var picksRound = 10;
+	var round = 1;
+	var table = document.getElementById("draft_table");
+	var targetT = document.getElementById("userTable");    
+	
+	for(var i = 1; i < table.rows.length; i++){
+
+		table.rows[i].ondblclick = function()
+		{
+			var li = document.createElement("LI");  
+			var li2 = document.createElement("LI");  
+			rIndex = this.rowIndex;
+			li.innerHTML = this.cells[1].innerHTML + " " + this.cells[2].innerHTML;
+		
+			
+			console.log(rIndex);
+			document.getElementById("testList").appendChild(li);
+
+			if(round % 2 ==0){
+				if(currentPick == (round*picksRound-yourPick + 1)){
+					li2.innerHTML = this.cells[1].innerHTML + " " + this.cells[2].innerHTML;
+					document.getElementById("userList").appendChild(li2);
+				}
+			}
+			else{
+				if(currentPick == ((round-1)*picksRound + yourPick)){
+					li2.innerHTML = this.cells[1].innerHTML + " " + this.cells[2].innerHTML;
+					document.getElementById("userList").appendChild(li2);
+				}
+			}
+			currentPick = currentPick + 1;
+			if(currentPick % picksRound == 0){
+				round = round + 1;
+			}	
+			this.remove();		
+		}
+	}
+</script>
+
+
 </body>
 	
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
