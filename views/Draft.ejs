@@ -88,7 +88,9 @@
 	</div>
 	</div>
 	<div style="padding: 0.5cm" >
-	<input class="form-control" id="myInput" type="text" placeholder="Search.." style="padding-left:0.5cm">
+			<div class="row" style="padding-left: 1cm">
+					<div class="column">
+		<input class="form-control" id="myInput" type="text" placeholder="Search.." style="padding-left:0.5cm">
 		<div class="table-wrapper-scroll-y my-custom-scrollbar2" >
 
 		  <table class="table table-bordered table-striped mb-0" id = "draft_table">
@@ -116,6 +118,64 @@
 			   <% }) %>
     </tbody>
   	</table>
+</div>
+</div>
+<div class="column" style="padding-left:0.5cm"><h3>Stats: </h3>
+	<table class="table table-bordered table-striped ">
+			<thead>
+				  <tr>
+					<th scope="col">Year</th>
+					<th scope="col">Name</th>
+					<th scope="col">Rush Yards</th>
+					<th scope="col">Receive Yards</th>
+					<th scope="col">Throw Yards</th>
+					<th scope="col">R TD</th>
+					<th scope="col">T TD</th>
+					<th scope="col">Re TD</th>
+					<th scope="col">PAT</th>
+					<th scope="col">FG </th>
+				  </tr>
+			</thead>
+			<tbody id="statTable">
+					<tr>
+						<td>2016</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>2017</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Career</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+		</tbody>
+		  </table>
+</div>
 
 </div>
 </div>
@@ -204,6 +264,55 @@ $(document).ready(function(){
 		}
 	}
 </script>
+
+<script>
+		var table = document.getElementById("myTable");
+		var targetT = document.getElementById("statTable");    
+		var stats = <%- JSON.stringify(stats) %>;
+		var stats17 = <%- JSON.stringify(stats17) %>;
+		var statsCareer = <%- JSON.stringify(statsCareer) %>;
+		for(var i = 0; i < table.rows.length; i++){
+	
+			table.rows[i].onclick = function()
+			{
+				var rIndex = this.rowIndex -1 ;
+
+				//2016
+				targetT.rows[0].cells[1].innerHTML = JSON.stringify(stats[rIndex].first_name + " " + stats[rIndex].last_name);
+				targetT.rows[0].cells[2].innerHTML = JSON.stringify(stats[rIndex].RushingYds);
+				targetT.rows[0].cells[3].innerHTML = JSON.stringify(stats[rIndex].ReceivingYDS);
+				targetT.rows[0].cells[4].innerHTML = JSON.stringify(stats[rIndex].PassingYds);
+				targetT.rows[0].cells[5].innerHTML = JSON.stringify(stats[rIndex].RushingTD);
+				targetT.rows[0].cells[6].innerHTML = JSON.stringify(stats[rIndex].PassingTD);
+				targetT.rows[0].cells[7].innerHTML = JSON.stringify(stats[rIndex].ReceivingTD);
+				targetT.rows[0].cells[8].innerHTML = JSON.stringify(stats[rIndex].PAT);
+				targetT.rows[0].cells[9].innerHTML = JSON.stringify(stats[rIndex].FG);
+
+				//2017
+				targetT.rows[1].cells[1].innerHTML = JSON.stringify(stats17[rIndex].first_name + " " + stats17[rIndex].last_name);
+				targetT.rows[1].cells[2].innerHTML = JSON.stringify(stats17[rIndex].RushingYds);
+				targetT.rows[1].cells[3].innerHTML = JSON.stringify(stats17[rIndex].ReceivingYDS);
+				targetT.rows[1].cells[4].innerHTML = JSON.stringify(stats17[rIndex].PassingYds);
+				targetT.rows[1].cells[5].innerHTML = JSON.stringify(stats17[rIndex].RushingTD);
+				targetT.rows[1].cells[6].innerHTML = JSON.stringify(stats17[rIndex].PassingTD);
+				targetT.rows[1].cells[7].innerHTML = JSON.stringify(stats17[rIndex].ReceivingTD);
+				targetT.rows[1].cells[8].innerHTML = JSON.stringify(stats17[rIndex].PAT);
+				targetT.rows[1].cells[9].innerHTML = JSON.stringify(stats17[rIndex].FG);
+
+				//career
+				targetT.rows[2].cells[1].innerHTML = JSON.stringify(statsCareer[rIndex].first_name + " " + statsCareer[rIndex].last_name);
+				targetT.rows[2].cells[2].innerHTML = JSON.stringify(statsCareer[rIndex].RushingYds);
+				targetT.rows[2].cells[3].innerHTML = JSON.stringify(statsCareer[rIndex].ReceivingYDS);
+				targetT.rows[2].cells[4].innerHTML = JSON.stringify(statsCareer[rIndex].PassingYds);
+				targetT.rows[2].cells[5].innerHTML = JSON.stringify(statsCareer[rIndex].RushingTD);
+				targetT.rows[2].cells[6].innerHTML = JSON.stringify(statsCareer[rIndex].PassingTD);
+				targetT.rows[2].cells[7].innerHTML = JSON.stringify(statsCareer[rIndex].ReceivingTD);
+				targetT.rows[2].cells[8].innerHTML = JSON.stringify(statsCareer[rIndex].PAT);
+				targetT.rows[2].cells[9].innerHTML = JSON.stringify(statsCareer[rIndex].FG);
+			
+			}
+		}
+	</script>
 
 
 </body>
