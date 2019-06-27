@@ -3,7 +3,7 @@
     <head>
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-            <title>Player Stats</title>
+            <title>transaction_add_drop</title>
             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
@@ -16,12 +16,15 @@
             <script>
                 $(function(){
                     
-                    var tags = ["Tom Brady","Drew Brees","Eli Manning"]; 
-                    $("#user1,#user2,#user3, #user4, #user5, #user6, #FA1, #FA2, #FA3, #FA4, #FA5, #FA6").autocomplete({source: tags, messages: 
-                        {noResults: '',results: function() {}}}); 
-                });
+                    // var tags =  <%- JSON.stringify(players) %>;
+
+                    // console.log(tags[1].first_name + " " + stats[rIndex].last_name);
+                    var tags = ["tom Brady", "Dez Bryant", "Drew Brees", 'Keenan ALlen']
+                    $("#user1,#user2,#user3, #user4, #user5, #user6, #FA1, #FA2, #FA3, #FA4, #FA5, #FA6").autocomplete({source: tags , messages: 
+                        {noResults: '',results: function() {}
+                    }})
+                }); 
             </script>
-            <title>transaction_add_drop</title>
             <style>
                 body{
                     font-family: Verdana;

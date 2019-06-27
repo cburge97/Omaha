@@ -28,7 +28,7 @@ const db = mysql.createConnection ({
     host: 'localhost',
     user: 'root',
     password: '',
-    database: 'nfl player stats'
+    database: 'nfl_player_stats'
 });
 
 // connect to database
