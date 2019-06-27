@@ -17,10 +17,13 @@
   },
   "homepage": "https://github.com/cburge97/Omaha#readme",
   "dependencies": {
+    "body-parser": "^1.19.0",
     "bootstrap": "^4.3.1",
     "ejs": "^2.6.2",
     "express": "^4.17.1",
     "express-fileupload": "^1.1.5",
-    "mysql": "^2.17.1"
-  }
+    "mysql": "^2.17.1",
+    "req-flash": "0.0.3"
+  },
+  "devDependencies": {}
 }
