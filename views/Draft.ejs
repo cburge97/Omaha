@@ -73,7 +73,16 @@
 </nav>
 
 <h1>Draft</h1>
-	
+<div id="setupInfo">
+	<label> Number of People:</label>
+	<input type="number" id="numPeople" min="1" max="20" value="1">
+	<label> Draft Pick:</label>
+	<input type="number" id="pick" min="1" max="20" value="1">
+	<br>
+	<input type="submit" id="setupBtn" value="Submit">
+</div>
+
+<div id="drafting" style="visibility: hidden">	
 	<div class="row" style="padding-left: 1cm">
 		  <div class="column"><h3>User Team: </h3>
 			<ul class=" table-wrapper-scroll-y my-custom-scrollbar" id="userList">
@@ -179,13 +188,16 @@
 
 </div>
 </div>
-<div style= "padding-left: 0.5cm">
+<input type="submit" id="analyze">
+<div id="feedback" style= "padding-left: 0.5cm; display: none">
 	<h4>Feedback:</h4>
-	Good Job!
+	<p> Good Job! </p>
 
 	
 </div>
-	
+</div>	
+
+
   <!-- The Modal -->
   <div class="modal" id="myModal">
     <div class="modal-dialog">
@@ -224,9 +236,20 @@ $(document).ready(function(){
 </script>
 
 <script>
-	var yourPick = 5;
+	var setupStuff = document.getElementById("setupInfo");
+	var draftingVis = document.getElementById("drafting");
+	var yourPick;
+	var picksRound;
+	document.getElementById("setupBtn").onclick = function()
+	{
+		yourPick = document.getElementById("pick").value;
+		picksRound = document.getElementById("numPeople").value;
+		setupStuff.style.display = "none";
+		draftingVis.style.visibility = "visible";
+	}
+
+	var count = 1;
 	var currentPick = 1;
-	var picksRound = 10;
 	var round = 1;
 	var table = document.getElementById("draft_table");
 	var targetT = document.getElementById("userTable");    
@@ -247,24 +270,36 @@ $(document).ready(function(){
 			li.innerHTML = this.cells[1].innerHTML + " " + this.cells[2].innerHTML;
 		
 			
-			console.log(rIndex);
 			document.getElementById("testList").appendChild(li);
 
-			if(round % 2 ==0){
+			if(round % 2 < 1){
 				if(currentPick == (round*picksRound-yourPick + 1)){
 					li2.innerHTML = this.cells[1].innerHTML + " " + this.cells[2].innerHTML;
 					document.getElementById("userList").appendChild(li2);
 				}
 			}
 			else{
-				if(currentPick == ((round-1)*picksRound + yourPick)){
+				console.log("odd " + (currentPick == ((round-1)*picksRound + yourPick)));
+				console.log("Current Pick " + (currentPick));
+				console.log("Other " + ((round-1)*picksRound + parseInt(yourPick)));
+				console.log("piclround " + (picksRound ));
+				console.log("u pick  " + (yourPick));
+				
+				if(currentPick == ((round-1)*picksRound + parseInt(yourPick))){
 					li2.innerHTML = this.cells[1].innerHTML + " " + this.cells[2].innerHTML;
 					document.getElementById("userList").appendChild(li2);
 				}
 			}
+			console.log("Count " +count);
+			console.log("Round " + round);
+			console.log(picksRound);
+			
 			currentPick = currentPick + 1;
-			if(currentPick % picksRound == 0){
+			count = count + 1;
+			
+			if(count > picksRound){
 				round = round + 1;
+				count = 1;
 			}	
 			this.remove();
 			
@@ -312,7 +347,13 @@ $(document).ready(function(){
 	}
 </script>
 
-
+<script>
+document.getElementById("analyze").onclick = function()
+	{
+		
+		document.getElementById("feedback").style.display = "block";
+	}
+</script>
 
 </body>
 	
