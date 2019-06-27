@@ -188,7 +188,7 @@
 
 </div>
 </div>
-<input type="submit" id="analyze">
+
 <div id="feedback" style= "padding-left: 0.5cm; display: none">
 	<h4>Feedback:</h4>
 	<p> Good Job! </p>
@@ -311,7 +311,7 @@ $(document).ready(function(){
 				var rIndex = this.rowIndex -1 ;
 				
 				//2016
-				targetT2.rows[0].cells[1].innerHTML = JSON.stringify(stats[table.rows[rIndex+1].cells[0].innerHTML].first_name + " " + stats[rIndex].last_name);
+				targetT2.rows[0].cells[1].innerHTML = JSON.stringify(stats[table.rows[rIndex+1].cells[0].innerHTML].first_name + " " + stats[table.rows[rIndex+1].cells[0].innerHTML].last_name);
 				targetT2.rows[0].cells[2].innerHTML = JSON.stringify(stats[table.rows[rIndex+1].cells[0].innerHTML].RushingYds);
 				targetT2.rows[0].cells[3].innerHTML = JSON.stringify(stats[table.rows[rIndex+1].cells[0].innerHTML].ReceivingYDS);
 				targetT2.rows[0].cells[4].innerHTML = JSON.stringify(stats[table.rows[rIndex+1].cells[0].innerHTML].PassingYds);
@@ -322,7 +322,7 @@ $(document).ready(function(){
 				targetT2.rows[0].cells[9].innerHTML = JSON.stringify(stats[table.rows[rIndex+1].cells[0].innerHTML].FG);
 
 				//2017
-				targetT2.rows[1].cells[1].innerHTML = JSON.stringify(stats17[table.rows[rIndex+1].cells[0].innerHTML].first_name + " " + stats17[rIndex].last_name);
+				targetT2.rows[1].cells[1].innerHTML = JSON.stringify(stats17[table.rows[rIndex+1].cells[0].innerHTML].first_name + " " + stats17[table.rows[rIndex+1].cells[0].innerHTML].last_name);
 				targetT2.rows[1].cells[2].innerHTML = JSON.stringify(stats17[table.rows[rIndex+1].cells[0].innerHTML].RushingYds);
 				targetT2.rows[1].cells[3].innerHTML = JSON.stringify(stats17[table.rows[rIndex+1].cells[0].innerHTML].ReceivingYDS);
 				targetT2.rows[1].cells[4].innerHTML = JSON.stringify(stats17[table.rows[rIndex+1].cells[0].innerHTML].PassingYds);
@@ -333,7 +333,7 @@ $(document).ready(function(){
 				targetT2.rows[1].cells[9].innerHTML = JSON.stringify(stats17[table.rows[rIndex+1].cells[0].innerHTML].FG);
 
 				//career
-				targetT2.rows[2].cells[1].innerHTML = JSON.stringify(statsCareer[table.rows[rIndex+1].cells[0].innerHTML].first_name + " " + statsCareer[rIndex].last_name);
+				targetT2.rows[2].cells[1].innerHTML = JSON.stringify(statsCareer[table.rows[rIndex+1].cells[0].innerHTML].first_name + " " + statsCareer[table.rows[rIndex+1].cells[0].innerHTML].last_name);
 				targetT2.rows[2].cells[2].innerHTML = JSON.stringify(statsCareer[table.rows[rIndex+1].cells[0].innerHTML].RushingYds);
 				targetT2.rows[2].cells[3].innerHTML = JSON.stringify(statsCareer[table.rows[rIndex+1].cells[0].innerHTML].ReceivingYDS);
 				targetT2.rows[2].cells[4].innerHTML = JSON.stringify(statsCareer[table.rows[rIndex+1].cells[0].innerHTML].PassingYds);

@@ -69,37 +69,27 @@
 
   		<table class="table table-bordered table-striped mb-0">
     	<thead>
-      		<tr>
-        		<th scope="col">#</th>
-        		<th scope="col">First</th>
-        		<th scope="col">Last</th>
-        		<th scope="col">Position</th>
-				<th scope="col">Height</th>
-				<th scope="col">Weight</th>
-				<th scope="col">Birth</th>
-				<th scope="col">College</th>
-				<th scope="col">Draft Pick</th>
-				<th scope="col">Draft Year</th>
-				<th scope="col">Salary</th>
-      		</tr>
+				<tr>
+					<th scope="col">#</th>
+					  <th scope="col">First</th>
+					  <th scope="col">Last</th>
+					  <th scope="col">Position</th>
+					  <th scope="col">College</th>
+					  <th scope="col"> Team</th>
+					  
+					</tr>
     	</thead>
     	<tbody id="myTable">
 				<% player.forEach((player, index) => { %>
-					<tr data-id="1">
-					  <td><%= player.Player_ID %></td>
+					<tr id=<%= index %>>
+					  <td ><%= index %></td>
 					  <td><%= player.first_name %></td>
 					  <td><%= player.last_name %></td>
-					  <td></td>
-					  <td></td>
-					  <td></td>
-					  <td></td>
-					  <td></td>
-					  <td></td>
-					  <td></td>
-					  <td></td>		
+					  <td><%= player.position %></td>
+					  <td><%= player.college %></td>
+					  <td><%= player.Team %></td>
 				   </tr>
 			   <% }) %>
-		
     </tbody>
   	</table>
 
