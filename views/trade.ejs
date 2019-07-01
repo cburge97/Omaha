@@ -9,7 +9,30 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <link  href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.min.css" rel="stylesheet" />
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script>
+            $(function(){
+                
+                var tags =  <%- JSON.stringify(players1) %>;   
+                console.log(tags[1].first_name + " " + tags[1].last_name);
+                console.log("Number of players: " + tags.length)
+                var list = [];
+                // console.log(length(tags));
+                for(i = 0; i < tags.length; i++){
+                    var dher = tags[i].first_name + " " + tags[i].last_name;
+                    list.push(dher);
+                }
+                // var tags = ["tom Brady", "Dez Bryant", "Drew Brees", 'Keenan ALlen']
+                $("#user1,#user2,#user3, #user4, #user5, #user6, #FA1, #FA2, #FA3, #FA4, #FA5, #FA6").autocomplete({source: list, messages: 
+                    {noResults: '',results: function() {}
+                }})
+            }); 
+        </script>
        
         <style>
             body{
