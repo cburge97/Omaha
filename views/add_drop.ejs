@@ -139,16 +139,25 @@
                             <input type ="text" class="autoc" id="FA6" name="FA6" style="display:none" placeholder="Player Name...">
                     </div>
                 </div> 
-                <div style="float: left; width:10%;">
-                        <button>Submit</button>
-                </div>
             </form>  
+            <div style="float: left; width:10%;">
+                <!-- <button onclick=submit()>Submit</button> -->
+                <input type="submit" id="analyze" value="Submit">
+            </div>
+            
         </div>
-
+        <div style="position:absolute; bottom:20%;width:100%;">
+            <hr>
+            <h2>Feedback:</h2>
+            <div id="drop"></div>
+            <div id="add"></div>
+            <div id="ml"></div>
+        </div>
     </body>
     <script> 
         function getvalue(){
             value = document.getElementById("userTeam").value;
+            console.log(value);
             if(value == "A0"){
                 document.getElementById("user1").style.display='none';
                 document.getElementById("user2").style.display='none';
@@ -253,5 +262,32 @@
                 document.getElementById("FA6").style.display='block';
             }
         }
+        document.getElementById("analyze").onclick = function()
+	        {
+            value = document.getElementById("userTeam").value;
+            slot1 = document.getElementById("user1").value;
+            slot2 = document.getElementById("user2").value;
+            slot3 = document.getElementById("user3").value;
+            slot4 = document.getElementById("user4").value;
+            slot5 = document.getElementById("user5").value;
+            slot6 = document.getElementById("user6").value;
+            dropPlayers = [slot1,slot2,slot3,slot4,slot5,slot6];
+
+            add1 = document.getElementById("FA1").value;
+            add2 = document.getElementById("FA2").value;
+            add3 = document.getElementById("FA3").value;
+            add4 = document.getElementById("FA4").value;
+            add5 = document.getElementById("FA5").value;
+            add6 = document.getElementById("FA6").value;
+            addPlayers = [add1,add2,add3,add4,add5,add6];
+
+            console.log(value, dropPlayers, addPlayers);
+            document.getElementById("drop").innerHTML = 
+            "You will drop: " + slot1 +" " +  slot2 +" " + slot3 +" " + slot4 +" " + slot5 +" " + slot6;
+            document.getElementById("add").innerHTML = 
+            "You will add: " + add1 +" " +  add2 +" " + add3 +" " + add4 +" " + add5 +" " + add6;
+            document.getElementById("ml").innerHTML = "Machine Learning will go here";
+            
+	        }
     </script>
 </html>
