@@ -14,6 +14,7 @@
 		body{
             font-family: Verdana;
             color: black;
+			background-color: lightgray;
 		}	
 		.my-custom-scrollbar {
 			position: relative;
@@ -35,42 +36,53 @@
 	.column {
   		flex: 50%;
 	}
-		
+
+	table{
+			background-color: white;
+		}
+		h1{
+			text-transform: uppercase;
+			font-weight: bold;
+		}
 	</style>
 </head>
 <body>
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-		<a class="navbar-brand" href=#>OMAHA</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-		  <span class="navbar-toggler-icon"></span>
-		</button>
-	  
-<div class="collapse navbar-collapse" id="navbarSupportedContent">
-  <ul class="navbar-nav mr-auto">
-	<li class="nav-item">
-	  <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
-	</li>
-	<li class="nav-item">
-	  <a class="nav-link" href="playerstats">Player Stats</a>
-	</li>
-	<li class="nav-item dropdown">
-	  <a class="nav-link dropdown-toggle" href="transaction" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-		Transactions
-	  </a>
-	  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-		<a class="dropdown-item" href="add_drop">Add/Drop</a>
-		<div class="dropdown-divider"></div>
-		<a class="dropdown-item" href="trade">Trade</a>
-		
-	  </div>
-	</li>
-	<li class="nav-item">
-	  <a class="nav-link active" href="Draft">Draft</a>
-	</li>
-  </ul>
- 
-</div>
-</nav>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+				<a class="navbar-brand" href="/">OMAHA</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				  <span class="navbar-toggler-icon"></span>
+				</button>
+			  
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		  <ul class="navbar-nav mr-auto">
+			<li class="nav-item">
+			  <a class="nav-link " href="/">Home <span class="sr-only">(current)</span></a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="playerstats">Player Stats</a>
+			</li>
+			<li class="nav-item dropdown">
+			  <a class="nav-link dropdown-toggle" href="transaction" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				Transactions
+			  </a>
+			  <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+				<a class="dropdown-item " href="add_drop">Add/Drop</a>
+				<div class="dropdown-divider"></div>
+				<a class="dropdown-item" href="trade">Trade</a>
+				
+			  </div>
+			</li>
+			<li class="nav-item active">
+			  <a class="nav-link" href="Draft">Draft</a>
+			</li>
+			<li class="nav-item">
+					<a class="nav-link" href="Team">Team</a>
+			 </li>
+	
+		  </ul>
+		 
+		</div>
+	  </nav>
 
 <h1>Draft</h1>
 <div id="setupInfo">

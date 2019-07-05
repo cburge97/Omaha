@@ -14,58 +14,75 @@
             body{
                 font-family: Verdana;
                 color: black;
+                background: lightgray;
             }
             h1{
                 font-size: 48px;
                 text-transform: uppercase;
                 letter-spacing: 2px;
+                text-align: center;
+                font-weight: bold;
             }
             p{
                 font-size: 16px; 
                 color: #111
             }
-            
+            img {
+              display: block;
+              margin-left: auto;
+              margin-right: auto;
+              width: 30%;
+              }
+
         </style>
     </head>
     
     <body>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                    <a class="navbar-brand" href=#>OMAHA</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                    </button>
-                  
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                  <a class="nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="playerstats">Player Stats</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="transaction" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Transactions
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="add_drop">Add/Drop</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="trade">Trade</a>
-                    
-                  </div>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="Draft">Draft</a>
-                </li>
-              </ul>
-             
-            </div>
-          </nav>
-        
-        <div style="background-color: white; width:80%; float:none; padding: 0% 10% 0% 10%;">
-            <div style="background-color: whitesmoke; padding: 2% 5% 2% 5%">
-                <h1>Welcome to Omaha</h1>
-                <h2>About</h2>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="/">OMAHA</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link " href="/">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="playerstats">Player Stats</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="transaction" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Transactions
+          </a>
+          <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+            <a class="dropdown-item " href="add_drop">Add/Drop</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="trade">Trade</a>
+            
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Draft">Draft</a>
+        </li>
+        <li class="nav-item">
+                <a class="nav-link" href="Team">Team</a>
+         </li>
+
+      </ul>
+     
+    </div>
+  </nav>
+          
+          <h1><b>Welcome to Omaha</b></h1>
+          <img src="https://cdn.bleacherreport.net/images/team_logos/328x328/fantasy_football.png" alt="football" style="text-align: center;">
+
+          
+        <div style="width:80%; float:none; padding: 0% 10% 0% 10%; align-content: center;">
+           
+                
+                <h2> <b>About</b></h2>
                 <p>
                     Omaha is a Web Application that helps Fantasy Football players with their team. The reason for
                     for the site is to help fantasy football players win money or get bragging rifht from
@@ -73,13 +90,13 @@
                     get accurate stats based on a players age.
                 </p>
                 <hr>
-                <h2>How To Play</h2>
+                <h2><b>How To Play</b></h2>
                 <p>Fantasy Football is an online competition between people. Participants of Fantasy football selecy imaginary
                   teams with players among the NFL. Each team faces each other each week and score points based on the performacne
                   of the players.
                 </p>
                 
-            </div>         
+                     
         </div>
     </body>
 

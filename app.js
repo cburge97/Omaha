@@ -19,6 +19,9 @@ const {tradePage, trade} = require('./BackEnd/Trade/trade');
 //Add&Drop
 const {addDropPage, addDrop} = require('./BackEnd/AddDrop/AddDrop');
 
+//Team
+const {teamPage, team} = require('./BackEnd/Team/Team');
+
 const port = 5000;
 
 // create connection to database
@@ -28,7 +31,7 @@ const db = mysql.createConnection ({
     host: 'localhost',
     user: 'root',
     password: '',
-    database: 'nfl_player_stats'
+    database: 'nfl player stats'
 });
 
 // connect to database
@@ -71,6 +74,8 @@ app.get('/trade', tradePage);
 app.get('/add_drop', addDropPage);
 //app.post('/add_drop', addDrop);
 
+// Add Drop
+app.get('/Team', teamPage);
 
 // set the app to listen on the port
 app.listen(port, () => {
