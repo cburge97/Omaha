@@ -22,6 +22,8 @@ const {addDropPage, addDrop} = require('./BackEnd/AddDrop/AddDrop');
 //Team
 const {teamPage, team} = require('./BackEnd/Team/Team');
 
+const {testPage} = require('./BackEnd/Python/Test');
+
 const port = 5000;
 
 // create connection to database
@@ -60,7 +62,7 @@ app.get('/', getHomePage);
 
 // Draft
 app.get('/Draft', draftPage);
-//app.post('/Draft', draft);
+app.post('/Draft', draft);
 
 // PlayerStats
 app.get('/PlayerStats', playerStatsPage);
@@ -68,14 +70,18 @@ app.get('/PlayerStats', playerStatsPage);
 
 // Trade
 app.get('/trade', tradePage);
-//app.post('/trade', trade);
+app.post('/trade', trade);
 
 // Add Drop
 app.get('/add_drop', addDropPage);
-//app.post('/add_drop', addDrop);
+app.post('/add_drop', addDrop);
 
-// Add Drop
+// Team
 app.get('/Team', teamPage);
+
+app.get('/run',testPage);
+
+
 
 // set the app to listen on the port
 app.listen(port, () => {

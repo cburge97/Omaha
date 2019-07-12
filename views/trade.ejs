@@ -114,7 +114,7 @@
                 input the names of the players into the correct input box. Click the submit box and recieve your results.
             </p>
             <hr>
-            <form>
+            <form method="post">
                 <div style="float:left; width:45%;">
                     <div>
                         <h3><u>Your Team</u></h3>
@@ -129,12 +129,12 @@
                         </select>
                     </div>
                     <div>
-                        <input type ="text" id="user1" name="player1" style="display:none" placeholder="Player Name...">
-                        <input type ="text" id="user2" name="player2" style="display:none" placeholder="Player Name...">
-                        <input type ="text" id="user3" name="player3" style="display:none" placeholder="Player Name...">
-                        <input type ="text" id="user4" name="player4" style="display:none" placeholder="Player Name...">
-                        <input type ="text" id="user5" name="player5" style="display:none" placeholder="Player Name...">
-                        <input type ="text" id="user6" name="player6" style="display:none" placeholder="Player Name...">
+                        <input type ="text" id="user1" name="user1" style="display:none" placeholder="Player Name...">
+                        <input type ="text" id="user2" name="user2" style="display:none" placeholder="Player Name...">
+                        <input type ="text" id="user3" name="user3" style="display:none" placeholder="Player Name...">
+                        <input type ="text" id="user4" name="user4" style="display:none" placeholder="Player Name...">
+                        <input type ="text" id="user5" name="user5" style="display:none" placeholder="Player Name...">
+                        <input type ="text" id="user6" name="user6" style="display:none" placeholder="Player Name...">
                     </div>
                 </div>
                 <div style="float:left; width:45%;">
@@ -160,10 +160,20 @@
     
                     </div>
                 </div> 
-                <div style="float:left; width:10%;">
-                    <button>submit</button>
-                </div>        
+                <!-- <button onclick=submit()>Submit</button> -->
+                <button type="submit" class="btn btn-primary submit">Submit</button>       
         </form>      
+    </div>
+
+    <div style="position:absolute;bottom:20%;width:100%;">
+        <hr>
+        <h2>Feedback:</h2>
+        <% if (message != '') { %>
+            <p class="text-center"><%= message %></p>
+        <% } %>
+        <div id="drop"></div>
+        <div id="add"></div>
+        <div id="ml"></div>
     </div>
     </body>
     <script>

@@ -15,8 +15,58 @@ module.exports = {
            player: result[0],
            stats: result[1],
            stats17: result[2],
-           statsCareer: result[3]       
+           statsCareer: result[3],
+           message: ''       
         });
       });
+      },
+
+      draft: (req,res) => {
+        let userPlayer1 = req.body.userTable;
+       
+        // Use child_process.spawn method from  
+        // child_process module and assign it 
+        // to variable spawn 
+        var spawn = require("child_process").spawn; 
+          
+        // Parameters passed in spawn - 
+        // 1. type_of_script 
+        // 2. list containing Path of the script 
+        //    and arguments for the script  
+          
+        var process = spawn('python',["./BackEnd/Python/test2.py", 
+                                userPlayer1 
+                                ] ); 
+        // Takes stdout data from script which executed 
+        // with arguments and send this data to res object 
+        //process.stdout.on('data', function(data) { res.send(data.toString()); } )
+  
+        db.query("SELECT p.first_name, p.last_name, p.Player_ID FROM offense_stats o, players p WHERE o.Player_ID = p.player_id and o.Year = 2017 GROUP BY p.player_id", [1,2], (err, result) => {
+
+          if (err) {
+            res.redirect('/');
+          }
+          else{
+            // console.log(result); // [{1: 1}]
+            }
+
+            process.stdout.on('data', (data) => {
+
+            if(userPlayer1 != ''){  
+              res.render('add_drop.ejs', {
+                players: result,
+                message: data     
+             });
+            }
+            else{
+              res.render('add_drop.ejs', {
+                players: result,
+                message: 'No players selected'     
+             });
+            }
+              // Do something with the data returned from python script
+          });
+            
+          });
       },
 }
