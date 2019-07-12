@@ -54,14 +54,14 @@ module.exports = {
             process.stdout.on('data', (data) => {
 
             if(userPlayer1 != ''){  
-              res.render('add_drop.ejs', {
-                players: result,
+              res.render('trade.ejs', {
+                players1: result,
                 message: data     
              });
             }
             else{
-              res.render('add_drop.ejs', {
-                players: result,
+              res.render('trade.ejs', {
+                players1: result,
                 message: 'No players selected'     
              });
             }
