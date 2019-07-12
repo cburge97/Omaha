@@ -93,7 +93,7 @@
 	<br>
 	<input type="submit" id="setupBtn" value="Submit">
 </div>
-
+<form action="post">
 <div id="drafting" style="visibility: hidden">	
 	<div class="row" style="padding-left: 1cm">
 		  <div class="column"><h3>User Team: </h3>
@@ -202,9 +202,12 @@
 </div>
 
 <input type="submit" id="analyze" value="Submit">
+</form>
 <div id="feedback" style= "padding-left: 0.5cm; display: none">
 	<h4>Feedback:</h4>
-	<p> Good Job! </p>
+	<% if (message != '') { %>
+		<p class="text-center"><%= message %></p>
+	<% } %>
 
 	
 </div>
@@ -281,13 +284,14 @@ $(document).ready(function(){
 
 			rIndex = this.rowIndex;
 			li.innerHTML = this.cells[1].innerHTML + " " + this.cells[2].innerHTML;
-		
+			
 			
 			document.getElementById("testList").appendChild(li);
 
 			if(round % 2 < 1){
 				if(currentPick == (round*picksRound-yourPick + 1)){
 					li2.innerHTML = this.cells[1].innerHTML + " " + this.cells[2].innerHTML;
+					li2.id = this.cells[1].innerHTML + " " + this.cells[2].innerHTML;
 					document.getElementById("userList").appendChild(li2);
 				}
 			}
@@ -300,6 +304,7 @@ $(document).ready(function(){
 				
 				if(currentPick == ((round-1)*picksRound + parseInt(yourPick))){
 					li2.innerHTML = this.cells[1].innerHTML + " " + this.cells[2].innerHTML;
+					li2.id = this.cells[1].innerHTML + " " + this.cells[2].innerHTML;
 					document.getElementById("userList").appendChild(li2);
 				}
 			}
