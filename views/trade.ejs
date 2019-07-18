@@ -132,12 +132,12 @@
                         </select>
                     </div>
                     <div>
-                        <input type ="text" id="user1" name="user1" style="display:none" placeholder="Player Name...">
-                        <input type ="text" id="user2" name="user2" style="display:none" placeholder="Player Name...">
-                        <input type ="text" id="user3" name="user3" style="display:none" placeholder="Player Name...">
-                        <input type ="text" id="user4" name="user4" style="display:none" placeholder="Player Name...">
-                        <input type ="text" id="user5" name="user5" style="display:none" placeholder="Player Name...">
-                        <input type ="text" id="user6" name="user6" style="display:none" placeholder="Player Name...">
+                        <input type ="text" id="user1" name="user1" style="visibility:hidden" placeholder="Player Name...">
+                        <input type ="text" id="user2" name="user2" style="visibility:hidden" placeholder="Player Name...">
+                        <input type ="text" id="user3" name="user3" style="visibility:hidden" placeholder="Player Name...">
+                        <input type ="text" id="user4" name="user4" style="visibility:hidden" placeholder="Player Name...">
+                        <input type ="text" id="user5" name="user5" style="visibility:hidden" placeholder="Player Name...">
+                        <input type ="text" id="user6" name="user6" style="visibility:hidden" placeholder="Player Name...">
                     </div>
                 </div>
                 <div style="float:left; width:45%;">
@@ -154,21 +154,23 @@
                         </select>
                     </div>
                     <div>
-                            <input type ="text" id="FA1" name="player1" style="display:none" placeholder="Player Name...">
-                            <input type ="text" id="FA2" name="player2" style="display:none" placeholder="Player Name...">
-                            <input type ="text" id="FA3" name="player3" style="display:none" placeholder="Player Name...">
-                            <input type ="text" id="FA4" name="player4" style="display:none" placeholder="Player Name...">
-                            <input type ="text" id="FA5" name="player5" style="display:none" placeholder="Player Name...">
-                            <input type ="text" id="FA6" name="player6" style="display:none" placeholder="Player Name...">
+                            <input type ="text" id="FA1" name="player1" style="visibility:hidden" placeholder="Player Name...">
+                            <input type ="text" id="FA2" name="player2" style="visibility:hidden" placeholder="Player Name...">
+                            <input type ="text" id="FA3" name="player3" style="visibility:hidden" placeholder="Player Name...">
+                            <input type ="text" id="FA4" name="player4" style="visibility:hidden" placeholder="Player Name...">
+                            <input type ="text" id="FA5" name="player5" style="visibility:hidden" placeholder="Player Name...">
+                            <input type ="text" id="FA6" name="player6" style="visibility:hidden" placeholder="Player Name...">
     
                     </div>
                 </div> 
                 <!-- <button onclick=submit()>Submit</button> -->
-                <button type="submit" class="btn btn-primary submit">Submit</button>       
+                <div style="width: 50%;">
+                    <button type="submit" class="btn btn-primary submit">Submit</button>   
+                </div>    
         </form>      
     </div>
 
-    <div style="position:absolute;bottom:20%;width:100%;">
+    <div style="bottom:20%;width:100%;">
         <hr>
         <h2>Feedback:</h2>
         <% if (message != '') { %>
@@ -184,107 +186,107 @@
         function getvalue(){
             value = document.getElementById("userTeam").value;
             if(value == "A0"){
-                document.getElementById("user1").style.display='none';
-                document.getElementById("user2").style.display='none';
-                document.getElementById("user3").style.display='none';
-                document.getElementById("user4").style.display='none';
-                document.getElementById("user5").style.display='none';
-                document.getElementById("user6").style.display='none';
+                document.getElementById("user1").style.visibility='hidden';
+                document.getElementById("user2").style.visibility='hidden';
+                document.getElementById("user3").style.visibility='hidden';
+                document.getElementById("user4").style.visibility='hidden';
+                document.getElementById("user5").style.visibility='hidden';
+                document.getElementById("user6").style.visibility='hidden';
             }else if(value == "A1"){
-                document.getElementById("user1").style.display='block';
-                document.getElementById("user2").style.display='none';
-                document.getElementById("user3").style.display='none';
-                document.getElementById("user4").style.display='none';
-                document.getElementById("user5").style.display='none';
-                document.getElementById("user6").style.display='none';
+                document.getElementById("user1").style.visibility='visible';
+                document.getElementById("user2").style.visibility='hidden';
+                document.getElementById("user3").style.visibility='hidden';
+                document.getElementById("user4").style.visibility='hidden';
+                document.getElementById("user5").style.visibility='hidden';
+                document.getElementById("user6").style.visibility='hidden';
             }else if(value == "A2"){
-                document.getElementById("user1").style.display='block';
-                document.getElementById("user2").style.display='block';
-                document.getElementById("user3").style.display='none';
-                document.getElementById("user4").style.display='none';
-                document.getElementById("user5").style.display='none';
-                document.getElementById("user6").style.display='none';
+                document.getElementById("user1").style.visibility='visible';
+                document.getElementById("user2").style.visibility='visible';
+                document.getElementById("user3").style.visibility='hidden';
+                document.getElementById("user4").style.visibility='hidden';
+                document.getElementById("user5").style.visibility='hidden';
+                document.getElementById("user6").style.visibility='hidden';
             }else if(value == "A3"){
-                document.getElementById("user1").style.display='block';
-                document.getElementById("user2").style.display='block';
-                document.getElementById("user3").style.display='block';
-                document.getElementById("user4").style.display='none';
-                document.getElementById("user5").style.display='none';
-                document.getElementById("user6").style.display='none';
+                document.getElementById("user1").style.visibility='visible';
+                document.getElementById("user2").style.visibility='visible';
+                document.getElementById("user3").style.visibility='visible';
+                document.getElementById("user4").style.visibility='hidden';
+                document.getElementById("user5").style.visibility='hidden';
+                document.getElementById("user6").style.visibility='hidden';
             }else if(value == "A4"){
-                document.getElementById("user1").style.display='block';
-                document.getElementById("user2").style.display='block';
-                document.getElementById("user3").style.display='block';
-                document.getElementById("user4").style.display='block';
-                document.getElementById("user5").style.display='none';
-                document.getElementById("user6").style.display='none';
+                document.getElementById("user1").style.visibility='visible';
+                document.getElementById("user2").style.visibility='visible';
+                document.getElementById("user3").style.visibility='visible';
+                document.getElementById("user4").style.visibility='visible';
+                document.getElementById("user5").style.visibility='hidden';
+                document.getElementById("user6").style.visibility='hidden';
             }else if(value == "A5"){
-                document.getElementById("user1").style.display='block';
-                document.getElementById("user2").style.display='block';
-                document.getElementById("user3").style.display='block';
-                document.getElementById("user4").style.display='block';
-                document.getElementById("user5").style.display='block';
-                document.getElementById("user6").style.display='none';
+                document.getElementById("user1").style.visibility='visible';
+                document.getElementById("user2").style.visibility='visible';
+                document.getElementById("user3").style.visibility='visible';
+                document.getElementById("user4").style.visibility='visible';
+                document.getElementById("user5").style.visibility='visible';
+                document.getElementById("user6").style.visibility='hidden';
             }else if(value == "A6"){
-                document.getElementById("user1").style.display='block';
-                document.getElementById("user2").style.display='block';
-                document.getElementById("user3").style.display='block';
-                document.getElementById("user4").style.display='block';
-                document.getElementById("user5").style.display='block';
-                document.getElementById("user6").style.display='block';
+                document.getElementById("user1").style.visibility='visible';
+                document.getElementById("user2").style.visibility='visible';
+                document.getElementById("user3").style.visibility='visible';
+                document.getElementById("user4").style.visibility='visible';
+                document.getElementById("user5").style.visibility='visible';
+                document.getElementById("user6").style.visibility='visible';
             }
         }
         function getvalue2(){
             value = document.getElementById("FreeAgent").value;
             if(value == "D0"){
-                document.getElementById("FA1").style.display='none';
-                document.getElementById("FA2").style.display='none';
-                document.getElementById("FA3").style.display='none';
-                document.getElementById("FA4").style.display='none';
-                document.getElementById("FA5").style.display='none';
-                document.getElementById("FA6").style.display='none';
+                document.getElementById("FA1").style.visibility='hidden';
+                document.getElementById("FA2").style.visibility='hidden';
+                document.getElementById("FA3").style.visibility='hidden';
+                document.getElementById("FA4").style.visibility='hidden';
+                document.getElementById("FA5").style.visibility='hidden';
+                document.getElementById("FA6").style.visibility='hidden';
             }else if(value == "D1"){
-                document.getElementById("FA1").style.display='block';
-                document.getElementById("FA2").style.display='none';
-                document.getElementById("FA3").style.display='none';
-                document.getElementById("FA4").style.display='none';
-                document.getElementById("FA5").style.display='none';
-                document.getElementById("FA6").style.display='none';
+                document.getElementById("FA1").style.visibility='visible';
+                document.getElementById("FA2").style.visibility='hidden';
+                document.getElementById("FA3").style.visibility='hidden';
+                document.getElementById("FA4").style.visibility='hidden';
+                document.getElementById("FA5").style.visibility='hidden';
+                document.getElementById("FA6").style.visibility='hidden';
             }else if(value == "D2"){
-                document.getElementById("FA1").style.display='block';
-                document.getElementById("FA2").style.display='block';
-                document.getElementById("FA3").style.display='none';
-                document.getElementById("FA4").style.display='none';
-                document.getElementById("FA5").style.display='none';
-                document.getElementById("FA6").style.display='none';
+                document.getElementById("FA1").style.visibility='visible';
+                document.getElementById("FA2").style.visibility='visible';
+                document.getElementById("FA3").style.visibility='hidden';
+                document.getElementById("FA4").style.visibility='hidden';
+                document.getElementById("FA5").style.visibility='hidden';
+                document.getElementById("FA6").style.visibility='hidden';
             }else if(value == "D3"){
-                document.getElementById("FA1").style.display='block';
-                document.getElementById("FA2").style.display='block';
-                document.getElementById("FA3").style.display='block';
-                document.getElementById("FA4").style.display='none';
-                document.getElementById("FA5").style.display='none';
-                document.getElementById("FA6").style.display='none';
+                document.getElementById("FA1").style.visibility='visible';
+                document.getElementById("FA2").style.visibility='visible';
+                document.getElementById("FA3").style.visibility='visible';
+                document.getElementById("FA4").style.visibility='hidden';
+                document.getElementById("FA5").style.visibility='hidden';
+                document.getElementById("FA6").style.visibility='hidden';
             }else if(value == "D4"){
-                document.getElementById("FA1").style.display='block';
-                document.getElementById("FA2").style.display='block';
-                document.getElementById("FA3").style.display='block';
-                document.getElementById("FA4").style.display='block';
-                document.getElementById("FA5").style.display='none';
-                document.getElementById("FA6").style.display='none';
+                document.getElementById("FA1").style.visibility='visible';
+                document.getElementById("FA2").style.visibility='visible';
+                document.getElementById("FA3").style.visibility='visible';
+                document.getElementById("FA4").style.visibility='visible';
+                document.getElementById("FA5").style.visibility='hidden';
+                document.getElementById("FA6").style.visibility='hidden';
             }else if(value == "D5"){
-                document.getElementById("FA1").style.display='block';
-                document.getElementById("FA2").style.display='block';
-                document.getElementById("FA3").style.display='block';
-                document.getElementById("FA4").style.display='block';
-                document.getElementById("FA5").style.display='block';
-                document.getElementById("FA6").style.display='none';
+                document.getElementById("FA1").style.visibility='visible';
+                document.getElementById("FA2").style.visibility='visible';
+                document.getElementById("FA3").style.visibility='visible';
+                document.getElementById("FA4").style.visibility='visible';
+                document.getElementById("FA5").style.visibility='visible';
+                document.getElementById("FA6").style.visibility='hidden';
             }else if(value == "D6"){
-                document.getElementById("FA1").style.display='block';
-                document.getElementById("FA2").style.display='block';
-                document.getElementById("FA3").style.display='block';
-                document.getElementById("FA4").style.display='block';
-                document.getElementById("FA5").style.display='block';
-                document.getElementById("FA6").style.display='block';
+                document.getElementById("FA1").style.visibility='visible';
+                document.getElementById("FA2").style.visibility='visible';
+                document.getElementById("FA3").style.visibility='visible';
+                document.getElementById("FA4").style.visibility='visible';
+                document.getElementById("FA5").style.visibility='visible';
+                document.getElementById("FA6").style.visibility='visible';
             }
         }
         
