@@ -36,16 +36,19 @@
        
         <style>
             body{
-                font-family: Verdana;
-                color: black;
-                background-color: lightgray;
-            }
+              font-family: Verdana;
+              color: black;
+			        background-color: white;
+		        }
+  		    .bg-color{
+			        background-image: linear-gradient(to right,#B4975A, black);;
+              }
+		    
             h1{
-                font-size: 48px;
                 text-transform: uppercase;
-                letter-spacing: 2px;
                 font-weight: bold;
             }
+
             p{
                 font-size: 16px; 
                 color: #111
@@ -69,7 +72,7 @@
     </head>
     
     <body>
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-color">
                     <a class="navbar-brand" href="/">OMAHA</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                       <span class="navbar-toggler-icon"></span>
@@ -106,8 +109,8 @@
             </div>
           </nav>
           
-        
-        <div style="width:100%; float:none; padding: 1% 10% 1% 10%;">
+        <div style="padding: 1cm">
+        <div style="width:100%; float:none;">
             <h1>Trade</h1>
             <h2>Directions</h2>
             <p>This page allows you to get feedback on possible trades you may do with other teams. Select how many players you are trading from your team, then select how many players you will be recieving from the other team. When the columns appear,
@@ -174,6 +177,7 @@
         <div id="drop"></div>
         <div id="add"></div>
         <div id="ml"></div>
+    </div>
     </div>
     </body>
     <script>

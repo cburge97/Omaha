@@ -14,16 +14,28 @@
 		body{
             font-family: Verdana;
             color: black;
-			background-color: lightgray;
-		}	
+			background-color: white;
+		}
+		.bg-color{
+			background-image: linear-gradient(to right,#B4975A, black);;
+		}
+
+		th{
+		background-color: gray;
+		}
 		.my-custom-scrollbar {
 			position: relative;
-			height: 200px;
+			height: 250px;
 			overflow: auto;
 		}
 		.my-custom-scrollbar2 {
 			position: relative;
-			height: 250px;
+			height: 300px;
+			overflow: auto;
+		}
+		.my-custom-scrollbar3 {
+			position: relative;
+			height: 325px;
 			overflow: auto;
 		}
 	.table-wrapper-scroll-y {
@@ -38,7 +50,7 @@
 	}
 
 	table{
-			background-color: white;
+			background-color: lightgray;
 		}
 		h1{
 			text-transform: uppercase;
@@ -47,7 +59,7 @@
 	</style>
 </head>
 <body>
-		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<nav class="navbar navbar-expand-lg navbar-dark bg-color">
 				<a class="navbar-brand" href="/">OMAHA</a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				  <span class="navbar-toggler-icon"></span>
@@ -84,6 +96,9 @@
 		</div>
 	  </nav>
 
+
+
+<div style="padding-left: 1.25cm; padding-top: 1cm; padding-right: 1.25cm">
 <h1>Draft</h1>
 <div id="setupInfo">
 	<label> Number of People:</label>
@@ -93,25 +108,32 @@
 	<br>
 	<input type="submit" id="setupBtn" value="Submit">
 </div>
-<form action="post">
-<div id="drafting" style="visibility: hidden">	
-	<div class="row" style="padding-left: 1cm">
-		  <div class="column"><h3>User Team: </h3>
-			<ul class=" table-wrapper-scroll-y my-custom-scrollbar" id="userList">
-						
-			</ul>
+<form method="POST">
+<div id="drafting" style="visibility:hidden">	
+	<div class="row" style="padding-bottom: 1cm">
+		  <div class="column" style="padding-right: 1cm"><h3>User Team: </h3>
+			<label>Number of Players User Picked: <p name="Counter" id="Counter"> 0</p> </label>
+			<table class=" table-wrapper-scroll-y my-custom-scrollbar" id="userList" name="userList"  style="background: white;">
+				<thead>
+					<tr>
+						<th scope="col">Players:</th>
+					</tr>
+				</thead>
+				<tbody>
+				</tbody>	
+			</table>
 			
 	</div>
-  	<div class="column" style="padding-left:0.5cm"><h3>Already Picked: </h3>
-		<ol class=" table-wrapper-scroll-y my-custom-scrollbar" id="testList">
+  	<div class="column"><h3>Already Picked: </h3>
+		<ol class=" table-wrapper-scroll-y my-custom-scrollbar3" id="testList">
 						
 		</ol>
 	</div>
 	</div>
-	<div style="padding: 0.5cm" >
-			<div class="row" style="padding-left: 1cm">
-					<div class="column">
-		<input class="form-control" id="myInput" type="text" placeholder="Search.." style="padding-left:0.5cm">
+	<div>
+			<div class="row">
+					<div class="column" style="padding-right: 0.5">
+		<input class="form-control" id="myInput" type="text" placeholder="Search..">
 		<div class="table-wrapper-scroll-y my-custom-scrollbar2" >
 
 		  <table class="table table-bordered table-striped mb-0" id = "draft_table">
@@ -126,7 +148,7 @@
 				
 			  </tr>
     	</thead>
-    	<tbody id="myTable" >
+    	<tbody id="myTable">
 				<% player.forEach((player, index) => { %>
 					<tr id=<%= index %>>
 					  <td ><%= index %></td>
@@ -141,7 +163,7 @@
   	</table>
 </div>
 </div>
-<div class="column" style="padding-left:0.5cm"><h3>Stats: </h3>
+<div class="column"><h3>Stats: </h3>
 	<table class="table table-bordered table-striped ">
 			<thead>
 				  <tr>
@@ -199,11 +221,13 @@
 </div>
 
 </div>
+
+
 </div>
 
-<input type="submit" id="analyze" value="Submit">
+<button type="submit" class="btn btn-primary submit">Submit</button> 
 </form>
-<div id="feedback" style= "padding-left: 0.5cm; display: none">
+<div id="feedback" style= "display: none">
 	<h4>Feedback:</h4>
 	<% if (message != '') { %>
 		<p class="text-center"><%= message %></p>
@@ -213,32 +237,6 @@
 </div>
 </div>	
 
-
-  <!-- The Modal -->
-  <div class="modal" id="myModal">
-    <div class="modal-dialog">
-      <div class="modal-content">
-      
-        <!-- Modal Header -->
-        <div class="modal-header">
-          <h4 class="modal-title">Modal Heading</h4>
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-        </div>
-        
-        <!-- Modal body -->
-        <div class="modal-body">
-          Player career and season stats here
-        </div>
-        
-        <!-- Modal footer -->
-        <div class="modal-footer">
-			<button type="button" data-dismiss="modal">Draft </button>
-          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-        </div>
-        
-      </div>
-    </div>
-  </div>
 
 <script>
 $(document).ready(function(){
@@ -279,9 +277,10 @@ $(document).ready(function(){
 		table.rows[i].ondblclick = function()
 		{
 			var li = document.createElement("LI");  
-			var li2 = document.createElement("LI");
-			
-
+			var li2 = document.getElementById("userList");
+			var counter = 1;
+			var xcount =  parseInt(document.getElementById("Counter").innerHTML);
+			var tracker = document.getElementById("Counter");
 			rIndex = this.rowIndex;
 			li.innerHTML = this.cells[1].innerHTML + " " + this.cells[2].innerHTML;
 			
@@ -290,27 +289,34 @@ $(document).ready(function(){
 
 			if(round % 2 < 1){
 				if(currentPick == (round*picksRound-yourPick + 1)){
-					li2.innerHTML = this.cells[1].innerHTML + " " + this.cells[2].innerHTML;
-					li2.id = this.cells[1].innerHTML + " " + this.cells[2].innerHTML;
-					document.getElementById("userList").appendChild(li2);
+					var row = li2.insertRow(1);
+					var cell1 = row.insertCell(0);
+					cell1.innerHTML = this.cells[1].innerHTML + " " + this.cells[2].innerHTML;
+					xcount = xcount + 1;
+					tracker.innerHTML = xcount;
+
+					//li2.innerHTML = this.cells[1].innerHTML + " " + this.cells[2].innerHTML;
+					//li2.id = this.cells[1].innerHTML + " " + this.cells[2].innerHTML;
+					//document.getElementById("userList").appendChild(li2);
 				}
 			}
 			else{
-				console.log("odd " + (currentPick == ((round-1)*picksRound + yourPick)));
-				console.log("Current Pick " + (currentPick));
-				console.log("Other " + ((round-1)*picksRound + parseInt(yourPick)));
-				console.log("piclround " + (picksRound ));
-				console.log("u pick  " + (yourPick));
+				
 				
 				if(currentPick == ((round-1)*picksRound + parseInt(yourPick))){
-					li2.innerHTML = this.cells[1].innerHTML + " " + this.cells[2].innerHTML;
-					li2.id = this.cells[1].innerHTML + " " + this.cells[2].innerHTML;
-					document.getElementById("userList").appendChild(li2);
+					var row = li2.insertRow(1);
+					var cell1 = row.insertCell(0);
+					cell1.innerHTML = this.cells[1].innerHTML + " " + this.cells[2].innerHTML;
+					xcount = xcount+1;
+					tracker.innerHTML = xcount;
+					//li2.innerHTML = this.cells[1].innerHTML + " " + this.cells[2].innerHTML;
+					//li2.id = this.cells[1].innerHTML + " " + this.cells[2].innerHTML;
+					//document.getElementById("userList").appendChild(li2);
 				}
 			}
 			console.log("Count " +count);
 			console.log("Round " + round);
-			console.log(picksRound);
+			console.log(xcount);
 			
 			currentPick = currentPick + 1;
 			count = count + 1;
@@ -365,13 +371,7 @@ $(document).ready(function(){
 	}
 </script>
 
-<script>
-document.getElementById("analyze").onclick = function()
-	{
-		
-		document.getElementById("feedback").style.display = "block";
-	}
-</script>
+</div>
 
 </body>
 	

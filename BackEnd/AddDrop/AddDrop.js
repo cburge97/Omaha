@@ -35,7 +35,7 @@ module.exports = {
         // 2. list containing Path of the script 
         //    and arguments for the script  
           
-        var process = spawn('python',["./BackEnd/Python/test2.py", 
+        var process = spawn('python',["./BackEnd/Python/machine.py", 
                                 userPlayer1,userPlayer2,userPlayer3,userPlayer4,userPlayer5,userPlayer6 
                                 ] ); 
         // Takes stdout data from script which executed 
