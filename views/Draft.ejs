@@ -21,8 +21,10 @@
 		}
 
 		th{
-		background-color: gray;
+		background-color: #333F42;
+		color: azure;
 		}
+		
 		.my-custom-scrollbar {
 			position: relative;
 			height: 250px;
@@ -55,6 +57,10 @@
 		h1{
 			text-transform: uppercase;
 			font-weight: bold;
+		}
+
+		.table-striped tbody tr.highlight td { 
+    		background-color: #C8102E;
 		}
 	</style>
 </head>
@@ -366,6 +372,8 @@ $(document).ready(function(){
 				targetT2.rows[2].cells[7].innerHTML = JSON.stringify(statsCareer[table.rows[rIndex+1].cells[0].innerHTML].ReceivingTD);
 				targetT2.rows[2].cells[8].innerHTML = JSON.stringify(statsCareer[table.rows[rIndex+1].cells[0].innerHTML].PAT);
 				targetT2.rows[2].cells[9].innerHTML = JSON.stringify(statsCareer[table.rows[rIndex+1].cells[0].innerHTML].FG);
+
+				$(this).addClass('highlight').siblings().removeClass('highlight');	
 			
 			}
 	}

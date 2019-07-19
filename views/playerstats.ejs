@@ -10,6 +10,8 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 
+
+
 	<style>
 		h1{
 			color: Black;
@@ -44,7 +46,12 @@
 		font-weight: bold;
 	}
 	th{
-		background-color: gray;
+		background-color: #333F42;
+		color: azure;
+	}
+
+	.table-striped tbody tr.highlight td { 
+    	background-color: #C8102E;
 	}
 	
 	</style>
@@ -237,6 +244,8 @@ $(document).ready(function(){
 				targetT.rows[2].cells[7].innerHTML = JSON.stringify(statsCareer[rIndex].ReceivingTD);
 				targetT.rows[2].cells[8].innerHTML = JSON.stringify(statsCareer[rIndex].PAT);
 				targetT.rows[2].cells[9].innerHTML = JSON.stringify(statsCareer[rIndex].FG);
+
+				$(this).addClass('highlight').siblings().removeClass('highlight');
 			
 			}
 		}
