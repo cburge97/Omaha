@@ -93,9 +93,7 @@
 			<li class="nav-item active">
 			  <a class="nav-link" href="Draft">Draft</a>
 			</li>
-			<li class="nav-item">
-					<a class="nav-link" href="Team">Team</a>
-			 </li>
+		
 	
 		  </ul>
 		 
@@ -103,7 +101,6 @@
 	  </nav>
 
 
-<form method="POST">
 <div style="padding-left: 1.25cm; padding-top: 1cm; padding-right: 1.25cm">
 <h1>Draft</h1>
 <div id="setupInfo">
@@ -112,13 +109,15 @@
 	<label> Draft Pick:</label>
 	<input type="number" id="pick" min="1" max="20" value="1">
 	<br>
-	<input type="submit" id="setupBtn" value="Submit">
+	<button id="setupBtn">Submit</button> 
 </div>
+<form method="post">
 
 <div id="drafting" style="visibility:hidden">	
 	<div class="row" style="padding-bottom: 1cm">
 		  <div class="column" style="padding-right: 1cm"><h3>User Team: </h3>
-			<label>Number of Players User Picked: <p name="Counter" id="Counter"> 0</p> <p id="playerList" name="playerList" style= "display: none"></p> </label>
+			<label>Number of Players User Picked: <p name="Counter" id="Counter"> 0</p>
+				 <input type="text" id="playerList" name="playerList" value="" style="display: none"> </label>
 
 			<table class=" table-wrapper-scroll-y my-custom-scrollbar" id="userList" name="userList"  style="background: white;">
 				<thead>
@@ -300,7 +299,8 @@ $(document).ready(function(){
 					document.getElementById(xcount).setAttribute("name",xcount);
 					xcount = xcount + 1;
 					tracker.innerHTML = xcount;
-					pList.innerHTML = pList.innerHTML  + this.cells[1].innerHTML + " " + this.cells[2].innerHTML + ",";
+					pList.value = pList.value  + this.cells[1].innerHTML + " " + this.cells[2].innerHTML + ",";
+					//pList.innerHTML = pList.innerHTML  + this.cells[1].innerHTML + " " + this.cells[2].innerHTML + ",";
 
 
 					//li2.innerHTML = this.cells[1].innerHTML + " " + this.cells[2].innerHTML;
@@ -323,14 +323,15 @@ $(document).ready(function(){
 					//li2.id = this.cells[1].innerHTML + " " + this.cells[2].innerHTML;
 					//document.getElementById("userList").appendChild(li2);
 					var pList = document.getElementById("playerList");
-					pList.innerHTML = pList.innerHTML  + this.cells[1].innerHTML + " " + this.cells[2].innerHTML + ",";
+					pList.value = pList.value  + this.cells[1].innerHTML + " " + this.cells[2].innerHTML + ",";
+					//pList.innerHTML = pList.innerHTML  + this.cells[1].innerHTML + " " + this.cells[2].innerHTML + ",";
 
 				}
 			}
 			///console.log("Count " +count);
 			//console.log("Round " + round);
 			//console.log(xcount);
-			console.log(document.getElementById("playerList"));
+			//console.log(document.getElementById("playerList"));
 			currentPick = currentPick + 1;
 			count = count + 1;
 			

@@ -25,8 +25,9 @@ module.exports = {
 
         var x = 1;
 
-        var playerList = req.body.playerList;
-      
+        var playerList1 = req.body.playerList;
+      console.log(playerList1);
+
         // Use child_process.spawn method from  
         // child_process module and assign it 
         // to variable spawn 
@@ -37,8 +38,8 @@ module.exports = {
         // 2. list containing Path of the script 
         //    and arguments for the script  
           
-        var process = spawn('python',["./BackEnd/Python/test2.py", 
-                                playerList 
+        var process = spawn('python',["./BackEnd/Python/test.py", 
+                                "hello"
                                 ] ); 
         // Takes stdout data from script which executed 
         // with arguments and send this data to res object 
@@ -54,8 +55,9 @@ module.exports = {
             }
 
             process.stdout.on('data', (data) => {
+              console.log(data);
 
-            if(data != ''){  
+            if(playerList1 != ''){  
               res.render('Draft.ejs', {
               player: result[0],
               stats: result[1],
@@ -70,7 +72,7 @@ module.exports = {
                 stats: result[1],
                 stats17: result[2],
                 statsCareer: result[3],
-                message: ''     
+                message: 'Error'     
              });
             }
               // Do something with the data returned from python script

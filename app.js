@@ -19,10 +19,6 @@ const {tradePage, trade} = require('./BackEnd/Trade/trade');
 //Add&Drop
 const {addDropPage, addDrop} = require('./BackEnd/AddDrop/AddDrop');
 
-//Team
-const {teamPage, team} = require('./BackEnd/Team/Team');
-
-const {testPage} = require('./BackEnd/Python/Test');
 
 const port = 5000;
 
@@ -75,11 +71,6 @@ app.post('/trade', trade);
 // Add Drop
 app.get('/add_drop', addDropPage);
 app.post('/add_drop', addDrop);
-
-// Team
-app.get('/Team', teamPage);
-
-app.get('/run',testPage);
 
 
 
