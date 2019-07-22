@@ -103,7 +103,7 @@
 	  </nav>
 
 
-
+<form method="POST">
 <div style="padding-left: 1.25cm; padding-top: 1cm; padding-right: 1.25cm">
 <h1>Draft</h1>
 <div id="setupInfo">
@@ -114,11 +114,12 @@
 	<br>
 	<input type="submit" id="setupBtn" value="Submit">
 </div>
-<form method="POST">
+
 <div id="drafting" style="visibility:hidden">	
 	<div class="row" style="padding-bottom: 1cm">
 		  <div class="column" style="padding-right: 1cm"><h3>User Team: </h3>
-			<label>Number of Players User Picked: <p name="Counter" id="Counter"> 0</p> </label>
+			<label>Number of Players User Picked: <p name="Counter" id="Counter"> 0</p> <p id="playerList" name="playerList" style= "display: none"></p> </label>
+
 			<table class=" table-wrapper-scroll-y my-custom-scrollbar" id="userList" name="userList"  style="background: white;">
 				<thead>
 					<tr>
@@ -174,10 +175,9 @@
 			<thead>
 				  <tr>
 					<th scope="col">Year</th>
-					<th scope="col">Name</th>
-					<th scope="col">Rush Yards</th>
-					<th scope="col">Receive Yards</th>
-					<th scope="col">Throw Yards</th>
+					<th scope="col">Rush</th>
+					<th scope="col">Receive</th>
+					<th scope="col">Pass</th>
 					<th scope="col">R TD</th>
 					<th scope="col">T TD</th>
 					<th scope="col">Re TD</th>
@@ -188,7 +188,6 @@
 			<tbody id="statTable">
 					<tr>
 						<td>2016</td>
-						<td></td>
 						<td></td>
 						<td></td>
 						<td></td>
@@ -208,11 +207,9 @@
 						<td></td>
 						<td></td>
 						<td></td>
-						<td></td>
 					</tr>
 					<tr>
 						<td>Career</td>
-						<td></td>
 						<td></td>
 						<td></td>
 						<td></td>
@@ -233,7 +230,7 @@
 
 <button type="submit" class="btn btn-primary submit">Submit</button> 
 </form>
-<div id="feedback" style= "display: none">
+<div id="feedback">
 	<h4>Feedback:</h4>
 	<% if (message != '') { %>
 		<p class="text-center"><%= message %></p>
@@ -297,9 +294,14 @@ $(document).ready(function(){
 				if(currentPick == (round*picksRound-yourPick + 1)){
 					var row = li2.insertRow(1);
 					var cell1 = row.insertCell(0);
+					var pList = document.getElementById("playerList");
 					cell1.innerHTML = this.cells[1].innerHTML + " " + this.cells[2].innerHTML;
+					cell1.id = xcount;
+					document.getElementById(xcount).setAttribute("name",xcount);
 					xcount = xcount + 1;
 					tracker.innerHTML = xcount;
+					pList.innerHTML = pList.innerHTML  + this.cells[1].innerHTML + " " + this.cells[2].innerHTML + ",";
+
 
 					//li2.innerHTML = this.cells[1].innerHTML + " " + this.cells[2].innerHTML;
 					//li2.id = this.cells[1].innerHTML + " " + this.cells[2].innerHTML;
@@ -313,17 +315,22 @@ $(document).ready(function(){
 					var row = li2.insertRow(1);
 					var cell1 = row.insertCell(0);
 					cell1.innerHTML = this.cells[1].innerHTML + " " + this.cells[2].innerHTML;
+					cell1.id = xcount;
+					document.getElementById(xcount).setAttribute("name",xcount);
 					xcount = xcount+1;
 					tracker.innerHTML = xcount;
 					//li2.innerHTML = this.cells[1].innerHTML + " " + this.cells[2].innerHTML;
 					//li2.id = this.cells[1].innerHTML + " " + this.cells[2].innerHTML;
 					//document.getElementById("userList").appendChild(li2);
+					var pList = document.getElementById("playerList");
+					pList.innerHTML = pList.innerHTML  + this.cells[1].innerHTML + " " + this.cells[2].innerHTML + ",";
+
 				}
 			}
-			console.log("Count " +count);
-			console.log("Round " + round);
-			console.log(xcount);
-			
+			///console.log("Count " +count);
+			//console.log("Round " + round);
+			//console.log(xcount);
+			console.log(document.getElementById("playerList"));
 			currentPick = currentPick + 1;
 			count = count + 1;
 			
@@ -341,37 +348,37 @@ $(document).ready(function(){
 				var rIndex = this.rowIndex -1 ;
 				
 				//2016
-				targetT2.rows[0].cells[1].innerHTML = JSON.stringify(stats[table.rows[rIndex+1].cells[0].innerHTML].first_name + " " + stats[table.rows[rIndex+1].cells[0].innerHTML].last_name);
-				targetT2.rows[0].cells[2].innerHTML = JSON.stringify(stats[table.rows[rIndex+1].cells[0].innerHTML].RushingYds);
-				targetT2.rows[0].cells[3].innerHTML = JSON.stringify(stats[table.rows[rIndex+1].cells[0].innerHTML].ReceivingYDS);
-				targetT2.rows[0].cells[4].innerHTML = JSON.stringify(stats[table.rows[rIndex+1].cells[0].innerHTML].PassingYds);
-				targetT2.rows[0].cells[5].innerHTML = JSON.stringify(stats[table.rows[rIndex+1].cells[0].innerHTML].RushingTD);
-				targetT2.rows[0].cells[6].innerHTML = JSON.stringify(stats[table.rows[rIndex+1].cells[0].innerHTML].PassingTD);
-				targetT2.rows[0].cells[7].innerHTML = JSON.stringify(stats[table.rows[rIndex+1].cells[0].innerHTML].ReceivingTD);
-				targetT2.rows[0].cells[8].innerHTML = JSON.stringify(stats[table.rows[rIndex+1].cells[0].innerHTML].PAT);
-				targetT2.rows[0].cells[9].innerHTML = JSON.stringify(stats[table.rows[rIndex+1].cells[0].innerHTML].FG);
+				//targetT2.rows[0].cells[1].innerHTML = JSON.stringify(stats[table.rows[rIndex+1].cells[0].innerHTML].first_name + " " + stats[table.rows[rIndex+1].cells[0].innerHTML].last_name);
+				targetT2.rows[0].cells[1].innerHTML = JSON.stringify(stats[table.rows[rIndex+1].cells[0].innerHTML].RushingYds);
+				targetT2.rows[0].cells[2].innerHTML = JSON.stringify(stats[table.rows[rIndex+1].cells[0].innerHTML].ReceivingYDS);
+				targetT2.rows[0].cells[3].innerHTML = JSON.stringify(stats[table.rows[rIndex+1].cells[0].innerHTML].PassingYds);
+				targetT2.rows[0].cells[4].innerHTML = JSON.stringify(stats[table.rows[rIndex+1].cells[0].innerHTML].RushingTD);
+				targetT2.rows[0].cells[5].innerHTML = JSON.stringify(stats[table.rows[rIndex+1].cells[0].innerHTML].PassingTD);
+				targetT2.rows[0].cells[6].innerHTML = JSON.stringify(stats[table.rows[rIndex+1].cells[0].innerHTML].ReceivingTD);
+				targetT2.rows[0].cells[7].innerHTML = JSON.stringify(stats[table.rows[rIndex+1].cells[0].innerHTML].PAT);
+				targetT2.rows[0].cells[8].innerHTML = JSON.stringify(stats[table.rows[rIndex+1].cells[0].innerHTML].FG);
 
 				//2017
-				targetT2.rows[1].cells[1].innerHTML = JSON.stringify(stats17[table.rows[rIndex+1].cells[0].innerHTML].first_name + " " + stats17[table.rows[rIndex+1].cells[0].innerHTML].last_name);
-				targetT2.rows[1].cells[2].innerHTML = JSON.stringify(stats17[table.rows[rIndex+1].cells[0].innerHTML].RushingYds);
-				targetT2.rows[1].cells[3].innerHTML = JSON.stringify(stats17[table.rows[rIndex+1].cells[0].innerHTML].ReceivingYDS);
-				targetT2.rows[1].cells[4].innerHTML = JSON.stringify(stats17[table.rows[rIndex+1].cells[0].innerHTML].PassingYds);
-				targetT2.rows[1].cells[5].innerHTML = JSON.stringify(stats17[table.rows[rIndex+1].cells[0].innerHTML].RushingTD);
-				targetT2.rows[1].cells[6].innerHTML = JSON.stringify(stats17[table.rows[rIndex+1].cells[0].innerHTML].PassingTD);
-				targetT2.rows[1].cells[7].innerHTML = JSON.stringify(stats17[table.rows[rIndex+1].cells[0].innerHTML].ReceivingTD);
-				targetT2.rows[1].cells[8].innerHTML = JSON.stringify(stats17[table.rows[rIndex+1].cells[0].innerHTML].PAT);
-				targetT2.rows[1].cells[9].innerHTML = JSON.stringify(stats17[table.rows[rIndex+1].cells[0].innerHTML].FG);
+				//targetT2.rows[1].cells[1].innerHTML = JSON.stringify(stats17[table.rows[rIndex+1].cells[0].innerHTML].first_name + " " + stats17[table.rows[rIndex+1].cells[0].innerHTML].last_name);
+				targetT2.rows[1].cells[1].innerHTML = JSON.stringify(stats17[table.rows[rIndex+1].cells[0].innerHTML].RushingYds);
+				targetT2.rows[1].cells[2].innerHTML = JSON.stringify(stats17[table.rows[rIndex+1].cells[0].innerHTML].ReceivingYDS);
+				targetT2.rows[1].cells[3].innerHTML = JSON.stringify(stats17[table.rows[rIndex+1].cells[0].innerHTML].PassingYds);
+				targetT2.rows[1].cells[4].innerHTML = JSON.stringify(stats17[table.rows[rIndex+1].cells[0].innerHTML].RushingTD);
+				targetT2.rows[1].cells[5].innerHTML = JSON.stringify(stats17[table.rows[rIndex+1].cells[0].innerHTML].PassingTD);
+				targetT2.rows[1].cells[6].innerHTML = JSON.stringify(stats17[table.rows[rIndex+1].cells[0].innerHTML].ReceivingTD);
+				targetT2.rows[1].cells[7].innerHTML = JSON.stringify(stats17[table.rows[rIndex+1].cells[0].innerHTML].PAT);
+				targetT2.rows[1].cells[8].innerHTML = JSON.stringify(stats17[table.rows[rIndex+1].cells[0].innerHTML].FG);
 
 				//career
-				targetT2.rows[2].cells[1].innerHTML = JSON.stringify(statsCareer[table.rows[rIndex+1].cells[0].innerHTML].first_name + " " + statsCareer[table.rows[rIndex+1].cells[0].innerHTML].last_name);
-				targetT2.rows[2].cells[2].innerHTML = JSON.stringify(statsCareer[table.rows[rIndex+1].cells[0].innerHTML].RushingYds);
-				targetT2.rows[2].cells[3].innerHTML = JSON.stringify(statsCareer[table.rows[rIndex+1].cells[0].innerHTML].ReceivingYDS);
-				targetT2.rows[2].cells[4].innerHTML = JSON.stringify(statsCareer[table.rows[rIndex+1].cells[0].innerHTML].PassingYds);
-				targetT2.rows[2].cells[5].innerHTML = JSON.stringify(statsCareer[table.rows[rIndex+1].cells[0].innerHTML].RushingTD);
-				targetT2.rows[2].cells[6].innerHTML = JSON.stringify(statsCareer[table.rows[rIndex+1].cells[0].innerHTML].PassingTD);
-				targetT2.rows[2].cells[7].innerHTML = JSON.stringify(statsCareer[table.rows[rIndex+1].cells[0].innerHTML].ReceivingTD);
-				targetT2.rows[2].cells[8].innerHTML = JSON.stringify(statsCareer[table.rows[rIndex+1].cells[0].innerHTML].PAT);
-				targetT2.rows[2].cells[9].innerHTML = JSON.stringify(statsCareer[table.rows[rIndex+1].cells[0].innerHTML].FG);
+				//targetT2.rows[2].cells[1].innerHTML = JSON.stringify(statsCareer[table.rows[rIndex+1].cells[0].innerHTML].first_name + " " + statsCareer[table.rows[rIndex+1].cells[0].innerHTML].last_name);
+				targetT2.rows[2].cells[1].innerHTML = JSON.stringify(statsCareer[table.rows[rIndex+1].cells[0].innerHTML].RushingYds);
+				targetT2.rows[2].cells[2].innerHTML = JSON.stringify(statsCareer[table.rows[rIndex+1].cells[0].innerHTML].ReceivingYDS);
+				targetT2.rows[2].cells[3].innerHTML = JSON.stringify(statsCareer[table.rows[rIndex+1].cells[0].innerHTML].PassingYds);
+				targetT2.rows[2].cells[4].innerHTML = JSON.stringify(statsCareer[table.rows[rIndex+1].cells[0].innerHTML].RushingTD);
+				targetT2.rows[2].cells[5].innerHTML = JSON.stringify(statsCareer[table.rows[rIndex+1].cells[0].innerHTML].PassingTD);
+				targetT2.rows[2].cells[6].innerHTML = JSON.stringify(statsCareer[table.rows[rIndex+1].cells[0].innerHTML].ReceivingTD);
+				targetT2.rows[2].cells[7].innerHTML = JSON.stringify(statsCareer[table.rows[rIndex+1].cells[0].innerHTML].PAT);
+				targetT2.rows[2].cells[8].innerHTML = JSON.stringify(statsCareer[table.rows[rIndex+1].cells[0].innerHTML].FG);
 
 				$(this).addClass('highlight').siblings().removeClass('highlight');	
 			
