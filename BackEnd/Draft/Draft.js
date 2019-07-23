@@ -38,8 +38,8 @@ module.exports = {
         // 2. list containing Path of the script 
         //    and arguments for the script  
           
-        var process = spawn('python',["./BackEnd/Python/test.py", 
-                                "hello"
+        var process = spawn('python',["./BackEnd/Python/draft.py", 
+                                playerList1
                                 ] ); 
         // Takes stdout data from script which executed 
         // with arguments and send this data to res object 
@@ -55,7 +55,7 @@ module.exports = {
             }
 
             process.stdout.on('data', (data) => {
-              console.log(data);
+              // console.log(data);
 
             if(playerList1 != ''){  
               res.render('Draft.ejs', {
