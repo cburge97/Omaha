@@ -55,11 +55,7 @@ module.exports = {
             }
 
             process.stdout.on('data', (data) => {
-<<<<<<< HEAD
               //console.log(data);
-=======
-              // console.log(data);
->>>>>>> 1668d443161ac5055585f4673c106d786a754736
 
             if(playerList1 != ''){  
               res.render('DraftResults.ejs', {
