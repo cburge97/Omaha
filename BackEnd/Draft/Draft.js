@@ -55,23 +55,15 @@ module.exports = {
             }
 
             process.stdout.on('data', (data) => {
-              console.log(data);
+              //console.log(data);
 
             if(playerList1 != ''){  
-              res.render('Draft.ejs', {
-              player: result[0],
-              stats: result[1],
-              stats17: result[2],
-              statsCareer: result[3],
+              res.render('DraftResults.ejs', {
               message: data     
              });
             }
             else{
-              res.render('Draft.ejs', {
-                player: result[0],
-                stats: result[1],
-                stats17: result[2],
-                statsCareer: result[3],
+              res.render('DraftResults.ejs', {
                 message: 'Error'     
              });
             }

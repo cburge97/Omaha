@@ -9,7 +9,7 @@ module.exports = {
         res.redirect('/');
       }
       else{
-        console.log(result); // [{1: 1}]
+        //console.log(result); // [{1: 1}]
         }
         res.render('add_drop.ejs', {
            players: result,

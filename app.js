@@ -12,7 +12,7 @@ const {playerStatsPage, playerStats} = require('./BackEnd/PlayerStats/PlayerStat
 
 //Draft
 const {draftPage, draft} = require('./BackEnd/Draft/Draft');
-
+const {draftResultsPage,draftResults} = require('./BackEnd/Draft/DraftResults');
 //Trade
 const {tradePage, trade} = require('./BackEnd/Trade/trade');
 
@@ -59,6 +59,8 @@ app.get('/', getHomePage);
 // Draft
 app.get('/Draft', draftPage);
 app.post('/Draft', draft);
+app.get('/DraftResults', draftResultsPage);
+app.post('/DraftResults', draftResults);
 
 // PlayerStats
 app.get('/PlayerStats', playerStatsPage);
