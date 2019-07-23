@@ -429,196 +429,189 @@ def getrating(x):
     else:
             return "Fantastic"
 
+def getPosStats(p,train):
+    split = p.split(" ")
+    add_player = train[(train["first_name"] == split[1]) & (train["last_name"] == split[2])]
+    position = add_player['position'].iloc[0]
+    age = add_player['age'].max()
+    l = []
+    if position == 'QB':
+        QB =getQBStats(train)
+        table = QBProbability(QB)
+        count = 0
+        for i in table.iloc[:,0]:
+            if age == i:
+                index = count
+                break;
+            else:    
+                count = count + 1
+        if  age == table.iloc[index, 0]:
+            l = (table.iloc[index,1:]).tolist()
+            score = np.mean(l).round(2)
+            rating = getrating(score)
+            ranges = [getRange(pd.to_numeric(QB['passing_interceptions']),l[0]), getRange(pd.to_numeric(QB['passing_yards']),l[1]), getRange(pd.to_numeric(QB['passing_touchdowns']),l[2])]
+            answer = fantasyPoints(position,ranges)    
+#             print p, "will do ", rating, " this season! \n",\
+#                     "Folowing stats: \n",\
+#                     "Fantasy Points", answer['Fantasy Points'][0], " and ", answer['Fantasy Points'][1], "points \n",\
+#                     "Passing Touchdowns between:  ", answer['Passing Touchdowns'][0], " and ", answer['Passing Touchdowns'][1],'\n',\
+#                     "Interceptions between:  ", answer['Interceptions'][0], " and ", answer['Interceptions'][1],'\n',\
+#                     "Passing Yards between:  ", answer['Passing Yards'][0], " and ", answer['Passing Yards'][1],'\n'
+        else:
+            print "The age does not match an age in probability table"
+    elif position == 'RB':
+        RB =getRBStats(train)
+        table = RBProbability(RB)
+        count = 0
+        for i in table.iloc[:,0]:
+            if age == i:
+                index = count
+            else:    
+                count = count + 1
+        if  age == table.iloc[index, 0]:
+            l = (table.iloc[index,1:]).tolist()
+            score = np.mean(l).round(2)
+            rating = getrating(score)
+            ranges = [getRange(pd.to_numeric(RB['rushing_yards']),l[0]), getRange(pd.to_numeric(RB['rushing_touchdowns']),l[1])]
+            answer = fantasyPoints(position,ranges)
+#             print p, "will do ", rating, " this season! \n",\
+#                     "Folowing stats: \n",\
+#                     "Fantasy Points", answer['Fantasy Points'][0], " and ", answer['Fantasy Points'][1], "points \n",\
+#                     "Rushing Yards between:  ", answer['Rushing Yards'][0], " and ", answer['Rushing Yards'][1],'\n',\
+#                     "Rushing Touchdowns between:  ", answer['Rushing Touchdowns'][0], " and ", answer['Rushing Touchdowns'][1],'\n'
+        else:
+            print "The age does not match an age in probability table"   
+    elif position == 'WR':
+        WR =getWRStats(train)
+        table = WRProbability(WR)
+        count = 0
+        for i in table.iloc[:,0]:
+            if age == i:
+                index = count
+                break;
+            else:    
+                count = count + 1
+        if  age == table.iloc[index, 0]:
+            l = (table.iloc[index,1:]).tolist()
+            score = np.mean(l).round(2)
+            rating = getrating(score)
+            ranges = [getRange(pd.to_numeric(WR['receiving_yards']),l[0]), getRange(pd.to_numeric(WR['receiving_touchdowns']),l[1])]
+            answer = fantasyPoints(position,ranges)    
+#             print p, "will do ", rating, " this season! \n",\
+#                     "Folowing stats: \n",\
+#                     "Fantasy Points", answer['Fantasy Points'][0], " and ", answer['Fantasy Points'][1], "points \n",\
+#                     "Recieving Yards between:  ", answer['Recieving Yards'][0], " and ", answer['Recieving Yards'][1],'\n',\
+#                     "Recieving Touchdowns between:  ", answer['Recieving Touchdowns'][0], " and ", answer['Recieving Touchdowns'][1],'\n'
+        else:
+            print "The age does not match an age in probability table"  
+    elif position == 'TE':
+        TE =getTEStats(train)
+        table = TEProbability(TE)
+        count = 0
+        for i in table.iloc[:,0]:
+            if age == i:
+                index = count
+                break;
+            else:    
+                count = count + 1
+        if  age == table.iloc[index, 0]:
+            l = (table.iloc[index,1:]).tolist()
+            score = np.mean(l).round(2)
+            rating = getrating(score)
+            ranges = [getRange(pd.to_numeric(TE['receiving_yards']),l[0]), getRange(pd.to_numeric(TE['receiving_touchdowns']),l[1])]
+            answer = fantasyPoints(position,ranges)    
+#             print p, "will do ", rating, " this season! \n",\
+#                     "Folowing stats: \n",\
+#                     "Fantasy Points", answer['Fantasy Points'][0], " and ", answer['Fantasy Points'][1], "points \n",\
+#                     "Recieving Yards between:  ", answer['Recieving Yards'][0], " and ", answer['Recieving Yards'][1],'\n',\
+#                     "Recieving Touchdowns between:  ", answer['Recieving Touchdowns'][0], " and ", answer['Recieving Touchdowns'][1],'\n'
+        else:
+            print "The age does not match an age in probability table"      
+    else:
+        K =getKStats(train)
+        table = KProbability(K)
+        count = 0
+        for i in table.iloc[:,0]:
+            if age == i:
+                index = count
+                break;
+            else:    
+                count = count + 1
+        if  age == table.iloc[index, 0]:
+            l = (table.iloc[index,1:]).tolist()
+            score = np.mean(l).round(2)
+            rating = getrating(score)
+            ranges = [getRange(pd.to_numeric(K['point_after_makes']),l[0]), getRange(pd.to_numeric(K['field_goal_makes']),l[1])]
+            answer = fantasyPoints(position,ranges)    
+#             print p, "will do ", rating, " this season! \n",\
+#                     "Folowing stats: \n",\
+#                     "Fantasy Points", answer['Fantasy Points'][0], " and ", answer['Fantasy Points'][1], "points \n",\
+#                     "Points After Touchdown between:  ", answer['Point After Touchdown'][0], " and ", answer['Point After Touchdown'][1],'\n',\
+#                     "Field Goals between:  ", answer['Field Goals'][0], " and ", answer['Field Goals'][1],'\n'
+        else:
+            print "The age does not match an age in probability table"
+    return score
+
 def main():
 
     cnx = sql.connect(user='root', password='', host='127.0.0.1', database='nfl player stats')
-
+    
     cursor = cnx.cursor()
-
+    
     player = ("SELECT * FROM players")
     past = ("SELECT * FROM offense_stats")
     # current = ("SELECT * FROM current_stats")
-
+    
     players_df = pd.read_sql(player, cnx)
     past_df = pd.read_sql(past, cnx)
     # current_df = pd.read_sql(current, cnx)
-
+    
     players_df = pd.DataFrame(players_df)
     train_df = pd.DataFrame(past_df)
     # test_df = pd.DataFrame(current_df)
-
+    
     cnx.close()
-
+    
     train = createTable(players_df,train_df)
     train17 = train[train['Year'] != '2017']
-
+    
     #Add
     players = []
     amount = len(sys.argv)
-    print amount
     for i in range(1,amount):
         players.append(sys.argv[i])
-    overall_score = []
-    #Drop
-    # drop = "Drew Brees"
+    drop = players[0:6]
+    add = players[6:]
+    add_overall_score = []
+    drop_overall_score = []
+    
+    for p in add:
+        if p !="":
+            score = getPosStats(p,train)
+            add_overall_score.append(score)
+        
+    add_score = np.mean(add_overall_score).round(2)
+    print "Your add Overall score is ", add_score, "/5 \n"
+    
+    for p in drop:
+        if p != "":
+            score = getPosStats(p,train)
+            drop_overall_score.append(score)
+    drop_score = np.mean(drop_overall_score).round(2)
+    print "Your Drop Overall score is ", drop_score, "/5 \n"
+    
+    
+    if add_score > drop_score:
+        print "Your Transaction is worth it"
+    elif add_score < drop_score:
+        print "Your Transaction is not worth it"
+    else:
+        print "Your transaction does not make a difference"
+    
+    sys.stdout.flush()
 
-    for p in players:
-        if not p:
-            continue;
-        split = p.split(" ")
-        add_player = train[(train["first_name"] == split[0]) & (train["last_name"] == split[1])]
-        position = add_player['position'].iloc[0]
-        age = add_player['age'].max()
-    
-        l = []
-    
-        if position == 'QB':
-            QB =getQBStats(train17)
-            table = QBProbability(QB)
-            count = 0
-            for i in table.iloc[:,0]:
-                if age == i:
-                    index = count
-                    break;
-                else:    
-                    count = count + 1
-            if  age == table.iloc[index, 0]:
-                l = (table.iloc[index,1:]).tolist()
-                score = np.mean(l).round(2)
-                overall_score.append(score)
-                rating = getrating(score)
-                ranges = [getRange(pd.to_numeric(QB['passing_interceptions']),l[0]), getRange(pd.to_numeric(QB['passing_yards']),l[1]), getRange(pd.to_numeric(QB['passing_touchdowns']),l[2])]
-                answer = fantasyPoints(position,ranges)    
-                print p, "will do ", rating, " this season! \n",\
-                        "Folowing stats: \n",\
-                        "Fantasy Points", answer['Fantasy Points'][0], " and ", answer['Fantasy Points'][1], "points \n",\
-                        "Passing Touchdowns between:  ", answer['Passing Touchdowns'][0], " and ", answer['Passing Touchdowns'][1],'\n',\
-                        "Interceptions between:  ", answer['Interceptions'][0], " and ", answer['Interceptions'][1],'\n',\
-                        "Passing Yards between:  ", answer['Passing Yards'][0], " and ", answer['Passing Yards'][1],'\n'
-                # sys.stdout.flush()
-            else:
-                print "The age does not match an age in probability table"
-                # sys.stdout.flush()
-        elif position == 'RB':
-            RB =getRBStats(train17)
-            table = RBProbability(RB)
-            count = 0
-            for i in table.iloc[:,0]:
-                if age == i:
-                    index = count
-                else:    
-                    count = count + 1
-            if  age == table.iloc[index, 0]:
-                l = (table.iloc[index,1:]).tolist()
-                score = np.mean(l).round(2)
-                overall_score.append(score)
-                rating = getrating(score)
-                ranges = [getRange(pd.to_numeric(RB['rushing_yards']),l[0]), getRange(pd.to_numeric(RB['rushing_touchdowns']),l[1])]
-                answer = fantasyPoints(position,ranges)
-                print p, "will do ", rating, " this season! \n",\
-                        "Folowing stats: \n",\
-                        "Fantasy Points", answer['Fantasy Points'][0], " and ", answer['Fantasy Points'][1], "points \n",\
-                        "Rushing Yards between:  ", answer['Rushing Yards'][0], " and ", answer['Rushing Yards'][1],'\n',\
-                        "Rushing Touchdowns between:  ", answer['Rushing Touchdowns'][0], " and ", answer['Rushing Touchdowns'][1],'\n'
-                # sys.stdout.flush()
-            else:
-                print "The age does not match an age in probability table" 
-                # sys.stdout.flush()  
-        elif position == 'WR':
-            WR =getWRStats(train17)
-            table = WRProbability(WR)
-            count = 0
-            for i in table.iloc[:,0]:
-                if age == i:
-                    index = count
-                    break;
-                else:    
-                    count = count + 1
-            if  age == table.iloc[index, 0]:
-                l = (table.iloc[index,1:]).tolist()
-                score = np.mean(l).round(2)
-                overall_score.append(score)
-                rating = getrating(score)
-                ranges = [getRange(pd.to_numeric(WR['receiving_yards']),l[0]), getRange(pd.to_numeric(WR['receiving_touchdowns']),l[1])]
-                answer = fantasyPoints(position,ranges)    
-                print p, "will do ", rating, " this season! \n",\
-                        "Folowing stats: \n",\
-                        "Fantasy Points", answer['Fantasy Points'][0], " and ", answer['Fantasy Points'][1], "points \n",\
-                        "Recieving Yards between:  ", answer['Recieving Yards'][0], " and ", answer['Recieving Yards'][1],'\n',\
-                        "Recieving Touchdowns between:  ", answer['Recieving Touchdowns'][0], " and ", answer['Recieving Touchdowns'][1],'\n'
-                # sys.stdout.flush()
-            else:
-                print "The age does not match an age in probability table" 
-                # sys.stdout.flush() 
-        elif position == 'TE':
-            TE =getTEStats(train17)
-            table = TEProbability(TE)
-            count = 0
-            for i in table.iloc[:,0]:
-                if age == i:
-                    index = count
-                    break;
-                else:    
-                    count = count + 1
-            if  age == table.iloc[index, 0]:
-                l = (table.iloc[index,1:]).tolist()
-                score = np.mean(l).round(2)
-                overall_score.append(score)
-                rating = getrating(score)
-                ranges = [getRange(pd.to_numeric(TE['receiving_yards']),l[0]), getRange(pd.to_numeric(TE['receiving_touchdowns']),l[1])]
-                answer = fantasyPoints(position,ranges)    
-                print p, "will do ", rating, " this season! \n",\
-                        "Folowing stats: \n",\
-                        "Fantasy Points", answer['Fantasy Points'][0], " and ", answer['Fantasy Points'][1], "points \n",\
-                        "Recieving Yards between:  ", answer['Recieving Yards'][0], " and ", answer['Recieving Yards'][1],'\n',\
-                        "Recieving Touchdowns between:  ", answer['Recieving Touchdowns'][0], " and ", answer['Recieving Touchdowns'][1],'\n'
-                # sys.stdout.flush()
-            else:
-                print "The age does not match an age in probability table"  
-                # sys.stdout.flush()    
-        else:
-            K =getKStats(train17)
-            table = KProbability(K)
-            count = 0
-            for i in table.iloc[:,0]:
-                if age == i:
-                    index = count
-                    break;
-                else:    
-                    count = count + 1
-            if  age == table.iloc[index, 0]:
-                l = (table.iloc[index,1:]).tolist()
-                score = np.mean(l).round(2)
-                overall_score.append(score)
-                rating = getrating(score)
-                ranges = [getRange(pd.to_numeric(K['point_after_makes']),l[0]), getRange(pd.to_numeric(K['field_goal_makes']),l[1])]
-                answer = fantasyPoints(position,ranges)    
-                print p, "will do ", rating, " this season! \n",\
-                        "Folowing stats: \n",\
-                        "Fantasy Points", answer['Fantasy Points'][0], " and ", answer['Fantasy Points'][1], "points \n",\
-                        "Points After Touchdown between:  ", answer['Point After Touchdown'][0], " and ", answer['Point After Touchdown'][1],'\n',\
-                        "Field Goals between:  ", answer['Field Goals'][0], " and ", answer['Field Goals'][1],'\n'
-                # sys.stdout.flush()
-            else:
-                print "The age does not match an age in probability table" 
-                # sys.stdout.flush()         
-    print "Your players Overall score is ", np.mean(overall_score).round(2), "/5"
-    sys.stdout.flush()                    
+
+                        
 if __name__ == "__main__":
     main()
         
-
-# Takes first name and last name via command  
-# line arguments and then display them 
-#print("Output from Python") 
-#print("First name: " + sys.argv[1]) 
-#print("Last name: " + sys.argv[2]) 
-#sys.argv[1]
-#outP = sys.argv[1] 
-
-
-#print is the return 
-#print(outP + " stuff")
-#sys.stdout.flush()
-  
-# save the script as hello.py 

@@ -3,7 +3,7 @@ module.exports = {
 
 	tradePage: (req, res) => {
  
-    db.query("SELECT p.first_name, p.last_name, p.Player_ID FROM offense_stats o, players p WHERE o.Player_ID = p.player_id and o.Year = 2017 GROUP BY p.player_id", [1,2], (err, result) => {
+    db.query("SELECT p.first_name, p.last_name, p.Player_ID, p.position, o.Team FROM offense_stats o, players p WHERE o.Player_ID = p.player_id and o.Year = 2017 GROUP BY p.player_id", [1,2], (err, result) => {
 
       if (err) {
         res.redirect('/');
@@ -42,7 +42,7 @@ module.exports = {
         // with arguments and send this data to res object 
         //process.stdout.on('data', function(data) { res.send(data.toString()); } )
   
-        db.query("SELECT p.first_name, p.last_name, p.Player_ID FROM offense_stats o, players p WHERE o.Player_ID = p.player_id and o.Year = 2017 GROUP BY p.player_id", [1,2], (err, result) => {
+        db.query("SELECT p.first_name, p.last_name, p.Player_ID, p.position, o.Team FROM offense_stats o, players p WHERE o.Player_ID = p.player_id and o.Year = 2017 GROUP BY p.player_id", [1,2], (err, result) => {
 
           if (err) {
             res.redirect('/');

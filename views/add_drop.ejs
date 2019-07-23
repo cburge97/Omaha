@@ -17,12 +17,12 @@
             $(function(){
                 
                 var tags =  <%- JSON.stringify(players) %>;   
-                console.log(tags[1].first_name + " " + tags[1].last_name);
+                console.log(tags[1].position + " " + tags[1].first_name + " " + tags[1].last_name + " " +tags[1].Team);
                 console.log("Number of players: " + tags.length)
                 var list = [];
                 // console.log(length(tags));
                 for(i = 0; i < tags.length; i++){
-                    var dher = tags[i].first_name + " " + tags[i].last_name;
+                    var dher = tags[i].position + " " + tags[i].first_name + " " + tags[i].last_name + " " +tags[i].Team;
                     list.push(dher);
                 }
                 // var tags = ["tom Brady", "Dez Bryant", "Drew Brees", 'Keenan ALlen']
@@ -160,6 +160,7 @@
         <div style="bottom:20%;width:100%;">
             <hr>
             <h2>Feedback:</h2>
+            
             <% if (message != '') { %>
                 <p class="text-center"><%= message %></p>
             <% } %>

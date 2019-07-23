@@ -3,13 +3,13 @@ module.exports = {
 
   addDropPage: (req, res) => {
 
-    db.query("SELECT p.first_name, p.last_name, p.Player_ID FROM offense_stats o, players p WHERE o.Player_ID = p.player_id and o.Year = 2017 GROUP BY p.player_id", [1,2], (err, result) => {
+    db.query("SELECT p.first_name, p.last_name, p.Player_ID, p.position, o.Team FROM offense_stats o, players p WHERE o.Player_ID = p.player_id and o.Year = 2017 GROUP BY p.player_id", [1,2], (err, result) => {
 
       if (err) {
         res.redirect('/');
       }
       else{
-        // console.log(result); // [{1: 1}]
+        console.log(result); // [{1: 1}]
         }
         res.render('add_drop.ejs', {
            players: result,
@@ -25,6 +25,12 @@ module.exports = {
         let userPlayer4 = req.body.user4;
         let userPlayer5 = req.body.user5;
         let userPlayer6 = req.body.user6;
+        let otherPlayer1 = req.body.FA1;
+        let otherPlayer2 = req.body.FA2;
+        let otherPlayer3 = req.body.FA3;
+        let otherPlayer4 = req.body.FA4;
+        let otherPlayer5 = req.body.FA5;
+        let otherPlayer6 = req.body.FA6;
         // Use child_process.spawn method from  
         // child_process module and assign it 
         // to variable spawn 
@@ -35,14 +41,15 @@ module.exports = {
         // 2. list containing Path of the script 
         //    and arguments for the script  
           
-        var process = spawn('python',["./BackEnd/Python/machine.py", 
-                                userPlayer1,userPlayer2,userPlayer3,userPlayer4,userPlayer5,userPlayer6 
+        var process = spawn('python',["./BackEnd/Python/transaction.py", 
+                                userPlayer1,userPlayer2,userPlayer3,userPlayer4,userPlayer5,userPlayer6,
+                                otherPlayer1, otherPlayer2,otherPlayer3,otherPlayer4,otherPlayer5,otherPlayer6 
                                 ] ); 
         // Takes stdout data from script which executed 
         // with arguments and send this data to res object 
         //process.stdout.on('data', function(data) { res.send(data.toString()); } )
   
-        db.query("SELECT p.first_name, p.last_name, p.Player_ID FROM offense_stats o, players p WHERE o.Player_ID = p.player_id and o.Year = 2017 GROUP BY p.player_id", [1,2], (err, result) => {
+        db.query("SELECT p.first_name, p.last_name, p.Player_ID, p.position, o.Team FROM offense_stats o, players p WHERE o.Player_ID = p.player_id and o.Year = 2017 GROUP BY p.player_id", [1,2], (err, result) => {
 
           if (err) {
             res.redirect('/');
