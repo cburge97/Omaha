@@ -41,7 +41,7 @@ module.exports = {
         // 2. list containing Path of the script 
         //    and arguments for the script  
           
-        var process = spawn('python',["./BackEnd/Python/transaction.py", 
+        var process = spawn('python',["./BackEnd/Python/add_drop.py", 
                                 userPlayer1,userPlayer2,userPlayer3,userPlayer4,userPlayer5,userPlayer6,
                                 otherPlayer1, otherPlayer2,otherPlayer3,otherPlayer4,otherPlayer5,otherPlayer6 
                                 ] ); 

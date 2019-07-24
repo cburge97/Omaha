@@ -25,6 +25,12 @@ module.exports = {
         let userPlayer4 = req.body.user4;
         let userPlayer5 = req.body.user5;
         let userPlayer6 = req.body.user6;
+        let otherPlayer1 = req.body.FA1;
+        let otherPlayer2 = req.body.FA2;
+        let otherPlayer3 = req.body.FA3;
+        let otherPlayer4 = req.body.FA4;
+        let otherPlayer5 = req.body.FA5;
+        let otherPlayer6 = req.body.FA6;
         // Use child_process.spawn method from  
         // child_process module and assign it 
         // to variable spawn 
@@ -35,8 +41,9 @@ module.exports = {
         // 2. list containing Path of the script 
         //    and arguments for the script  
           
-        var process = spawn('python',["./BackEnd/Python/test2.py", 
-                                userPlayer1,userPlayer2,userPlayer3,userPlayer4,userPlayer5,userPlayer6 
+        var process = spawn('python',["./BackEnd/Python/trade.py", 
+                          userPlayer1,userPlayer2,userPlayer3,userPlayer4,userPlayer5,userPlayer6,
+                          otherPlayer1, otherPlayer2,otherPlayer3,otherPlayer4,otherPlayer5,otherPlayer6 
                                 ] ); 
         // Takes stdout data from script which executed 
         // with arguments and send this data to res object 

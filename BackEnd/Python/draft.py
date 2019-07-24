@@ -446,11 +446,10 @@ def main():
     
     train = createTable(players_df,train_df)
     train17 = train[train['Year'] != '2017']
-    train16 = train[train['Year'] != '2016']
-    train15 = train[train['Year'] != '2015']
     test17 = train[train['Year'] == '2017']
-    test16 = train[train['Year'] == '2016']
-    test15 = train[train['Year'] == '2015']
+    age2018 = test17['age'] + 1
+    test18 = test17
+    test18.iloc[:,-1] = age2018
     
     #Main
     #Add
@@ -462,49 +461,192 @@ def main():
     # players = ["Drew Brees"]
     for p in players[:stop-1]:
         split = p.split()
-        #print p
-        add_player = train[(train["first_name"] == split[0]) & (train["last_name"] == split[1])]
+        add_player = test18[(test18["first_name"] == split[0]) & (test18["last_name"] == split[1])]
         position = add_player['position'].iloc[0]
         age = add_player['age'].max()
     
         l = []
-    
+        index1 = 0
+        index2 = 0
+        index3 = 0
         if position == 'QB':
-            QB =getQBStats(train17)
+            QB =getQBStats(train)
             table = QBProbability(QB)
             count = 0
-            for i in table.iloc[:,0]:
-                if age == i:
-                    index = count
-                    break;
-                else:    
-                    count = count + 1
-            if  age == table.iloc[index, 0]:
-                l = (table.iloc[index,1:]).tolist()
+            if age > table.iloc[:,0].max():
+                one = table.iloc[:,0].max()
+                two = one - 1
+                three = two - 1 
+                for i in table.iloc[:,0]:
+                    if one == i:
+                        index1 = count
+                        count = count + 1
+                    elif two == i:
+                        index2 = count
+                        count = count + 1
+                    elif three == i:
+                        index3 = count
+                        count = count + 1
+                    else:    
+                        count = count + 1
+                l1 = (table.iloc[index1,1:]).tolist()
+                l2 = (table.iloc[index2,1:]).tolist()
+                l3 = (table.iloc[index3,1:]).tolist()
+                for i in range(len(l1)):
+                    l.append(np.mean([l1[i],l2[i],l3[i]]).round(0))
                 score = np.mean(l).round(2)
                 overall_score.append(score)
                 rating = getrating(score)
                 ranges = [getRange(pd.to_numeric(QB['passing_interceptions']),l[0]), getRange(pd.to_numeric(QB['passing_yards']),l[1]), getRange(pd.to_numeric(QB['passing_touchdowns']),l[2])]
-                answer = fantasyPoints(position,ranges)    
+                answer = fantasyPoints(position,ranges)
                 print p, "will do ", rating, " this season! \n",\
                         "Folowing stats: \n",\
                         "Fantasy Points", answer['Fantasy Points'][0], " and ", answer['Fantasy Points'][1], "points \n",\
                         "Passing Touchdowns between:  ", answer['Passing Touchdowns'][0], " and ", answer['Passing Touchdowns'][1],'\n',\
                         "Interceptions between:  ", answer['Interceptions'][0], " and ", answer['Interceptions'][1],'\n',\
+                        "Passing Yards between:  ", answer['Passing Yards'][0], " and ", answer['Passing Yards'][1],'\n'            
+                
+            elif age < table.iloc[:,0].min():
+                one = table.iloc[:,0].min()
+                two = one + 1
+                three = two + 1 
+                for i in table.iloc[:,0]:
+                    if one == i:
+                        index1 = count
+                        count = count + 1
+                    elif two == i:
+                        index2 = count
+                        count = count + 1
+                    elif three == i:
+                        index3 = count
+                        count = count + 1
+                    else:    
+                        count = count + 1
+                l1 = (table.iloc[index1,1:]).tolist()
+                l2 = (table.iloc[index2,1:]).tolist()
+                l3 = (table.iloc[index3,1:]).tolist()
+                for i in range(len(l1)):
+                    l.append(np.mean([l1[i],l2[i],l3[i]]).round(0))
+                score = np.mean(l).round(2)
+                overall_score.append(score)
+                rating = getrating(score)
+                ranges = [getRange(pd.to_numeric(QB['passing_interceptions']),l[0]), getRange(pd.to_numeric(QB['passing_yards']),l[1]), getRange(pd.to_numeric(QB['passing_touchdowns']),l[2])]
+                answer = fantasyPoints(position,ranges)
+                print p, "will do ", rating, " this season! \n",\
+                        "Folowing stats: \n",\
+                        "Fantasy Points", answer['Fantasy Points'][0], " and ", answer['Fantasy Points'][1], "points \n",\
+                        "Passing Touchdowns between:  ", answer['Passing Touchdowns'][0], " and ", answer['Passing Touchdowns'][1],'\n',\
+                        "Interceptions between:  ", answer['Interceptions'][0], " and ", answer['Interceptions'][1],'\n',\
+                        "Passing Yards between:  ", answer['Passing Yards'][0], " and ", answer['Passing Yards'][1],'\n'            
+            else: 
+                index = 0
+                for i in table.iloc[:,0]:
+                    if age == i:
+                        index = count
+                    else:    
+                        count = count + 1
+                if  age == table.iloc[index, 0]:
+                    l = (table.iloc[index,1:]).tolist()
+                    score = np.mean(l).round(2)
+                    overall_score.append(score)
+                    rating = getrating(score)
+                    ranges = [getRange(pd.to_numeric(QB['passing_interceptions']),l[0]), getRange(pd.to_numeric(QB['passing_yards']),l[1]), getRange(pd.to_numeric(QB['passing_touchdowns']),l[2])]
+                    answer = fantasyPoints(position,ranges)
+                    print p, "will do ", rating, " this season! \n",\
+                        "Folowing stats: \n",\
+                        "Fantasy Points", answer['Fantasy Points'][0], " and ", answer['Fantasy Points'][1], "points \n",\
+                        "Passing Touchdowns between:  ", answer['Passing Touchdowns'][0], " and ", answer['Passing Touchdowns'][1],'\n',\
+                        "Interceptions between:  ", answer['Interceptions'][0], " and ", answer['Interceptions'][1],'\n',\
+                        "Passing Yards between:  ", answer['Passing Yards'][0], " and ", answer['Passing Yards'][1],'\n'               
+                else:
+                    one = age
+                    two = one + 1
+                    three = one - 1 
+                    index1 = 0
+                    index2 = 0
+                    index3 = 0
+                    count = 0
+                    for i in table.iloc[:,0]:
+                        if two == i:
+                            index2 = count
+                            count = count + 1
+                        elif three == i:
+                            index3 = count
+                            count = count + 1
+                        else:    
+                            count = count + 1
+                    l2 = (table.iloc[index2,1:]).tolist()
+                    l3 = (table.iloc[index3,1:]).tolist()
+                    for i in range(len(l2)):
+                        l.append(np.mean([l2[i],l3[i]]).round(0))
+                    score = np.mean(l).round(2)
+                    overall_score.append(score)
+                    rating = getrating(score)
+                    ranges = [getRange(pd.to_numeric(QB['passing_interceptions']),l[0]), getRange(pd.to_numeric(QB['passing_yards']),l[1]), getRange(pd.to_numeric(QB['passing_touchdowns']),l[2])]
+                    answer = fantasyPoints(position,ranges)
+                    print p, "will do ", rating, " this season! \n",\
+                        "Folowing stats: \n",\
+                        "Fantasy Points", answer['Fantasy Points'][0], " and ", answer['Fantasy Points'][1], "points \n",\
+                        "Passing Touchdowns between:  ", answer['Passing Touchdowns'][0], " and ", answer['Passing Touchdowns'][1],'\n',\
+                        "Interceptions between:  ", answer['Interceptions'][0], " and ", answer['Interceptions'][1],'\n',\
                         "Passing Yards between:  ", answer['Passing Yards'][0], " and ", answer['Passing Yards'][1],'\n'
-            else:
-                print "The age does not match an age in probability table"
+            
         elif position == 'RB':
-            RB =getRBStats(train17)
+            RB =getRBStats(test18)
             table = RBProbability(RB)
             count = 0
-            for i in table.iloc[:,0]:
-                if age == i:
-                    index = count
-                else:    
-                    count = count + 1
-            if  age == table.iloc[index, 0]:
-                l = (table.iloc[index,1:]).tolist()
+            if age > table.iloc[:,0].max():
+                one = table.iloc[:,0].max()
+                two = one - 1
+                three = two - 1 
+                for i in table.iloc[:,0]:
+                    if one == i:
+                        index1 = count
+                        count = count + 1
+                    elif two == i:
+                        index2 = count
+                        count = count + 1
+                    elif three == i:
+                        index3 = count
+                        count = count + 1
+                    else:    
+                        count = count + 1
+                l1 = (table.iloc[index1,1:]).tolist()
+                l2 = (table.iloc[index2,1:]).tolist()
+                l3 = (table.iloc[index3,1:]).tolist()
+                for i in range(len(l1)):
+                    l.append(np.mean([l1[i],l2[i],l3[i]]).round(0))
+                score = np.mean(l).round(2)
+                overall_score.append(score)
+                rating = getrating(score)
+                ranges = [getRange(pd.to_numeric(RB['rushing_yards']),l[0]), getRange(pd.to_numeric(RB['rushing_touchdowns']),l[1])]
+                answer = fantasyPoints(position,ranges)
+                print p, "will do ", rating, " this season! \n",\
+                        "Folowing stats: \n",\
+                        "Fantasy Points", answer['Fantasy Points'][0], " and ", answer['Fantasy Points'][1], "points \n",\
+                        "Rushing Yards between:  ", answer['Rushing Yards'][0], " and ", answer['Rushing Yards'][1],'\n',\
+                        "Rushing Touchdowns between:  ", answer['Rushing Touchdowns'][0], " and ", answer['Rushing Touchdowns'][1],'\n'         
+            elif age < table.iloc[:,0].min():
+                one = table.iloc[:,0].min()
+                two = one + 1
+                three = two + 1 
+                for i in table.iloc[:,0]:
+                    if one == i:
+                        index1 = count
+                        count = count + 1
+                    elif two == i:
+                        index2 = count
+                        count = count + 1
+                    elif three == i:
+                        index3 = count
+                        count = count + 1
+                    else:    
+                        count = count + 1
+                l1 = (table.iloc[index1,1:]).tolist()
+                l2 = (table.iloc[index2,1:]).tolist()
+                l3 = (table.iloc[index3,1:]).tolist()
+                for i in range(len(l1)):
+                    l.append(np.mean([l1[i],l2[i],l3[i]]).round(0))
                 score = np.mean(l).round(2)
                 overall_score.append(score)
                 rating = getrating(score)
@@ -516,19 +658,80 @@ def main():
                         "Rushing Yards between:  ", answer['Rushing Yards'][0], " and ", answer['Rushing Yards'][1],'\n',\
                         "Rushing Touchdowns between:  ", answer['Rushing Touchdowns'][0], " and ", answer['Rushing Touchdowns'][1],'\n'
             else:
-                print "The age does not match an age in probability table"   
+                index = 0
+                for i in table.iloc[:,0]:
+                    if age == i:
+                        index = count
+                    else:    
+                        count = count + 1
+                if  age == table.iloc[index, 0]:        
+                    l = (table.iloc[index,1:]).tolist()
+                    score = np.mean(l).round(2)
+                    overall_score.append(score)
+                    rating = getrating(score)
+                    ranges = [getRange(pd.to_numeric(RB['rushing_yards']),l[0]), getRange(pd.to_numeric(RB['rushing_touchdowns']),l[1])]
+                    answer = fantasyPoints(position,ranges)
+                    print p, "will do ", rating, " this season! \n",\
+                        "Folowing stats: \n",\
+                        "Fantasy Points", answer['Fantasy Points'][0], " and ", answer['Fantasy Points'][1], "points \n",\
+                        "Rushing Yards between:  ", answer['Rushing Yards'][0], " and ", answer['Rushing Yards'][1],'\n',\
+                        "Rushing Touchdowns between:  ", answer['Rushing Touchdowns'][0], " and ", answer['Rushing Touchdowns'][1],'\n'
+                else:
+                    one = age
+                    two = one + 1
+                    three = one - 1 
+                    index1 = 0
+                    index2 = 0
+                    index3 = 0
+                    count = 0
+                    for i in table.iloc[:,0]:
+                        if two == i:
+                            index2 = count
+                            count = count + 1
+                        elif three == i:
+                            index3 = count
+                            count = count + 1
+                        else:    
+                            count = count + 1
+                    l2 = (table.iloc[index2,1:]).tolist()
+                    l3 = (table.iloc[index3,1:]).tolist()
+                    for i in range(len(l2)):
+                        l.append(np.mean([l2[i],l3[i]]).round(0))
+                    score = np.mean(l).round(2)
+                    overall_score.append(score)
+                    rating = getrating(score)
+                    ranges = [getRange(pd.to_numeric(RB['rushing_yards']),l[0]), getRange(pd.to_numeric(RB['rushing_touchdowns']),l[1])]
+                    answer = fantasyPoints(position,ranges)
+                    print p, "will do ", rating, " this season! \n",\
+                        "Folowing stats: \n",\
+                        "Fantasy Points", answer['Fantasy Points'][0], " and ", answer['Fantasy Points'][1], "points \n",\
+                        "Rushing Yards between:  ", answer['Rushing Yards'][0], " and ", answer['Rushing Yards'][1],'\n',\
+                        "Rushing Touchdowns between:  ", answer['Rushing Touchdowns'][0], " and ", answer['Rushing Touchdowns'][1],'\n'
         elif position == 'WR':
-            WR =getWRStats(train17)
+            WR =getWRStats(test18)
             table = WRProbability(WR)
             count = 0
-            for i in table.iloc[:,0]:
-                if age == i:
-                    index = count
-                    break;
-                else:    
-                    count = count + 1
-            if  age == table.iloc[index, 0]:
-                l = (table.iloc[index,1:]).tolist()
+            if age > table.iloc[:,0].max():
+                one = table.iloc[:,0].max()
+                two = one - 1
+                three = two - 1 
+                for i in table.iloc[:,0]:
+                    if one == i:
+                        index1 = count
+                        count = count + 1
+                    elif two == i:
+                        index2 = count
+                        count = count + 1
+                    elif three == i:
+                        index3 = count
+                        count = count + 1
+                    else:    
+                        count = count + 1
+                l1 = (table.iloc[index1,1:]).tolist()
+                l2 = (table.iloc[index2,1:]).tolist()
+                l3 = (table.iloc[index3,1:]).tolist()
+                for i in range(len(l1)):
+                    l.append(np.mean([l1[i],l2[i],l3[i]]).round(0))
                 score = np.mean(l).round(2)
                 overall_score.append(score)
                 rating = getrating(score)
@@ -539,20 +742,112 @@ def main():
                         "Fantasy Points", answer['Fantasy Points'][0], " and ", answer['Fantasy Points'][1], "points \n",\
                         "Recieving Yards between:  ", answer['Recieving Yards'][0], " and ", answer['Recieving Yards'][1],'\n',\
                         "Recieving Touchdowns between:  ", answer['Recieving Touchdowns'][0], " and ", answer['Recieving Touchdowns'][1],'\n'
+            elif age < table.iloc[:,0].min():
+                one = table.iloc[:,0].min()
+                two = one + 1
+                three = two + 1 
+                for i in table.iloc[:,0]:
+                    if one == i:
+                        index1 = count
+                        count = count + 1
+                    elif two == i:
+                        index2 = count
+                        count = count + 1
+                    elif three == i:
+                        index3 = count
+                        count = count + 1
+                    else:    
+                        count = count + 1
+                l1 = (table.iloc[index1,1:]).tolist()
+                l2 = (table.iloc[index2,1:]).tolist()
+                l3 = (table.iloc[index3,1:]).tolist()
+                for i in range(len(l1)):
+                    l.append(np.mean([l1[i],l2[i],l3[i]]).round(0))
+                score = np.mean(l).round(2)
+                overall_score.append(score)
+                rating = getrating(score)  
+                ranges = [getRange(pd.to_numeric(WR['receiving_yards']),l[0]), getRange(pd.to_numeric(WR['receiving_touchdowns']),l[1])]
+                answer = fantasyPoints(position,ranges) 
+                print p, "will do ", rating, " this season! \n",\
+                        "Folowing stats: \n",\
+                        "Fantasy Points", answer['Fantasy Points'][0], " and ", answer['Fantasy Points'][1], "points \n",\
+                        "Recieving Yards between:  ", answer['Recieving Yards'][0], " and ", answer['Recieving Yards'][1],'\n',\
+                        "Recieving Touchdowns between:  ", answer['Recieving Touchdowns'][0], " and ", answer['Recieving Touchdowns'][1],'\n'
             else:
-                print "The age does not match an age in probability table"  
+                index = 0
+                for i in table.iloc[:,0]:
+                    if age == i:
+                        index = count
+                    else:    
+                        count = count + 1
+                if  age == table.iloc[index, 0]:       
+                    l = (table.iloc[index,1:]).tolist()
+                    score = np.mean(l).round(2)
+                    overall_score.append(score)
+                    rating = getrating(score)
+                    ranges = [getRange(pd.to_numeric(WR['receiving_yards']),l[0]), getRange(pd.to_numeric(WR['receiving_touchdowns']),l[1])]
+                    answer = fantasyPoints(position,ranges)     
+                    print p, "will do ", rating, " this season! \n",\
+                        "Folowing stats: \n",\
+                        "Fantasy Points", answer['Fantasy Points'][0], " and ", answer['Fantasy Points'][1], "points \n",\
+                        "Recieving Yards between:  ", answer['Recieving Yards'][0], " and ", answer['Recieving Yards'][1],'\n',\
+                        "Recieving Touchdowns between:  ", answer['Recieving Touchdowns'][0], " and ", answer['Recieving Touchdowns'][1],'\n'
+                else:
+                    one = age
+                    two = one + 1
+                    three = one - 1 
+                    index1 = 0
+                    index2 = 0
+                    index3 = 0
+                    count = 0
+                    for i in table.iloc[:,0]:
+                        if two == i:
+                            index2 = count
+                            count = count + 1
+                        elif three == i:
+                            index3 = count
+                            count = count + 1
+                        else:    
+                            count = count + 1
+                    l2 = (table.iloc[index2,1:]).tolist()
+                    l3 = (table.iloc[index3,1:]).tolist()
+                    for i in range(len(l2)):
+                        l.append(np.mean([l2[i],l3[i]]).round(0))
+                    score = np.mean(l).round(2)
+                    overall_score.append(score)
+                    rating = getrating(score)
+                    ranges = [getRange(pd.to_numeric(WR['receiving_yards']),l[0]), getRange(pd.to_numeric(WR['receiving_touchdowns']),l[1])]
+                    answer = fantasyPoints(position,ranges)       
+                    print p, "will do ", rating, " this season! \n",\
+                        "Folowing stats: \n",\
+                        "Fantasy Points", answer['Fantasy Points'][0], " and ", answer['Fantasy Points'][1], "points \n",\
+                        "Recieving Yards between:  ", answer['Recieving Yards'][0], " and ", answer['Recieving Yards'][1],'\n',\
+                        "Recieving Touchdowns between:  ", answer['Recieving Touchdowns'][0], " and ", answer['Recieving Touchdowns'][1],'\n'                            
         elif position == 'TE':
-            TE =getTEStats(train17)
+            TE =getTEStats(test18)
             table = TEProbability(TE)
             count = 0
-            for i in table.iloc[:,0]:
-                if age == i:
-                    index = count
-                    break;
-                else:    
-                    count = count + 1
-            if  age == table.iloc[index, 0]:
-                l = (table.iloc[index,1:]).tolist()
+            if age > table.iloc[:,0].max():
+                one = table.iloc[:,0].max()
+                two = one - 1
+                three = two - 1 
+                for i in table.iloc[:,0]:
+                    if one == i:
+                        index1 = count
+                        count = count + 1
+                    elif two == i:
+                        index2 = count
+                        count = count + 1
+                    elif three == i:
+                        index3 = count
+                        count = count + 1
+                    else:    
+                        count = count + 1
+                l1 = (table.iloc[index1,1:]).tolist()
+                l2 = (table.iloc[index2,1:]).tolist()
+                l3 = (table.iloc[index3,1:]).tolist()
+                for i in range(len(l1)):
+                    l.append(np.mean([l1[i],l2[i],l3[i]]).round(0))
                 score = np.mean(l).round(2)
                 overall_score.append(score)
                 rating = getrating(score)
@@ -563,20 +858,112 @@ def main():
                         "Fantasy Points", answer['Fantasy Points'][0], " and ", answer['Fantasy Points'][1], "points \n",\
                         "Recieving Yards between:  ", answer['Recieving Yards'][0], " and ", answer['Recieving Yards'][1],'\n',\
                         "Recieving Touchdowns between:  ", answer['Recieving Touchdowns'][0], " and ", answer['Recieving Touchdowns'][1],'\n'
+            elif age < table.iloc[:,0].min():
+                one = table.iloc[:,0].min()
+                two = one + 1
+                three = two + 1 
+                for i in table.iloc[:,0]:
+                    if one == i:
+                        index1 = count
+                        count = count + 1
+                    elif two == i:
+                        index2 = count
+                        count = count + 1
+                    elif three == i:
+                        index3 = count
+                        count = count + 1
+                    else:    
+                        count = count + 1
+                l1 = (table.iloc[index1,1:]).tolist()
+                l2 = (table.iloc[index2,1:]).tolist()
+                l3 = (table.iloc[index3,1:]).tolist()
+                for i in range(len(l1)):
+                    l.append(np.mean([l1[i],l2[i],l3[i]]).round(0))
+                score = np.mean(l).round(2)
+                overall_score.append(score)
+                rating = getrating(score)
+                ranges = [getRange(pd.to_numeric(TE['receiving_yards']),l[0]), getRange(pd.to_numeric(TE['receiving_touchdowns']),l[1])]
+                answer = fantasyPoints(position,ranges)
+                print p, "will do ", rating, " this season! \n",\
+                        "Folowing stats: \n",\
+                        "Fantasy Points", answer['Fantasy Points'][0], " and ", answer['Fantasy Points'][1], "points \n",\
+                        "Recieving Yards between:  ", answer['Recieving Yards'][0], " and ", answer['Recieving Yards'][1],'\n',\
+                        "Recieving Touchdowns between:  ", answer['Recieving Touchdowns'][0], " and ", answer['Recieving Touchdowns'][1],'\n'
             else:
-                print "The age does not match an age in probability table"      
+                index = 0
+                for i in table.iloc[:,0]:
+                    if age == i:
+                        index = count
+                    else:    
+                        count = count + 1
+                if  age == table.iloc[index, 0]:
+                    l = (table.iloc[index,1:]).tolist()
+                    score = np.mean(l).round(2)
+                    overall_score.append(score)
+                    rating = getrating(score)
+                    ranges = [getRange(pd.to_numeric(TE['receiving_yards']),l[0]), getRange(pd.to_numeric(TE['receiving_touchdowns']),l[1])]
+                    answer = fantasyPoints(position,ranges) 
+                    print p, "will do ", rating, " this season! \n",\
+                        "Folowing stats: \n",\
+                        "Fantasy Points", answer['Fantasy Points'][0], " and ", answer['Fantasy Points'][1], "points \n",\
+                        "Recieving Yards between:  ", answer['Recieving Yards'][0], " and ", answer['Recieving Yards'][1],'\n',\
+                        "Recieving Touchdowns between:  ", answer['Recieving Touchdowns'][0], " and ", answer['Recieving Touchdowns'][1],'\n'
+                else:
+                    one = age
+                    two = one + 1
+                    three = one - 1 
+                    index1 = 0
+                    index2 = 0
+                    index3 = 0
+                    count = 0
+                    for i in table.iloc[:,0]:
+                        if two == i:
+                            index2 = count
+                            count = count + 1
+                        elif three == i:
+                            index3 = count
+                            count = count + 1
+                        else:    
+                            count = count + 1
+                    l2 = (table.iloc[index2,1:]).tolist()
+                    l3 = (table.iloc[index3,1:]).tolist()
+                    for i in range(len(l2)):
+                        l.append(np.mean([l2[i],l3[i]]).round(0))
+                    score = np.mean(l).round(2)
+                    overall_score.append(score)
+                    rating = getrating(score)
+                    ranges = [getRange(pd.to_numeric(TE['receiving_yards']),l[0]), getRange(pd.to_numeric(TE['receiving_touchdowns']),l[1])]
+                    answer = fantasyPoints(position,ranges) 
+                    print p, "will do ", rating, " this season! \n",\
+                        "Folowing stats: \n",\
+                        "Fantasy Points", answer['Fantasy Points'][0], " and ", answer['Fantasy Points'][1], "points \n",\
+                        "Recieving Yards between:  ", answer['Recieving Yards'][0], " and ", answer['Recieving Yards'][1],'\n',\
+                        "Recieving Touchdowns between:  ", answer['Recieving Touchdowns'][0], " and ", answer['Recieving Touchdowns'][1],'\n'      
         else:
-            K =getKStats(train17)
+            K =getKStats(test18)
             table = KProbability(K)
             count = 0
-            for i in table.iloc[:,0]:
-                if age == i:
-                    index = count
-                    break;
-                else:    
-                    count = count + 1
-            if  age == table.iloc[index, 0]:
-                l = (table.iloc[index,1:]).tolist()
+            if age > table.iloc[:,0].max():
+                one = table.iloc[:,0].max()
+                two = one - 1
+                three = two - 1 
+                for i in table.iloc[:,0]:
+                    if one == i:
+                        index1 = count
+                        count = count + 1
+                    elif two == i:
+                        index2 = count
+                        count = count + 1
+                    elif three == i:
+                        index3 = count
+                        count = count + 1
+                    else:    
+                        count = count + 1
+                l1 = (table.iloc[index1,1:]).tolist()
+                l2 = (table.iloc[index2,1:]).tolist()
+                l3 = (table.iloc[index3,1:]).tolist()
+                for i in range(len(l1)):
+                    l.append(np.mean([l1[i],l2[i],l3[i]]).round(0))
                 score = np.mean(l).round(2)
                 overall_score.append(score)
                 rating = getrating(score)
@@ -587,8 +974,87 @@ def main():
                         "Fantasy Points", answer['Fantasy Points'][0], " and ", answer['Fantasy Points'][1], "points \n",\
                         "Points After Touchdown between:  ", answer['Point After Touchdown'][0], " and ", answer['Point After Touchdown'][1],'\n',\
                         "Field Goals between:  ", answer['Field Goals'][0], " and ", answer['Field Goals'][1],'\n'
+            elif age < table.iloc[:,0].min():
+                one = table.iloc[:,0].min()
+                two = one + 1
+                three = two + 1 
+                for i in table.iloc[:,0]:
+                    if two == i:
+                        index1 = count
+                        count = count + 1
+                    elif two == i:
+                        index2 = count
+                        count = count + 1
+                    elif three == i:
+                        index3 = count
+                        count = count + 1
+                    else:    
+                        count = count + 1
+                l1 = (table.iloc[index1,1:]).tolist()
+                l2 = (table.iloc[index2,1:]).tolist()
+                l3 = (table.iloc[index3,1:]).tolist()
+                for i in range(len(l1)):
+                    l.append(np.mean([l1[i],l2[i],l3[i]]).round(0))
+                score = np.mean(l).round(2)
+                overall_score.append(score)
+                rating = getrating(score)
+                ranges = [getRange(pd.to_numeric(K['point_after_makes']),l[0]), getRange(pd.to_numeric(K['field_goal_makes']),l[1])]
+                answer = fantasyPoints(position,ranges)
+                print p, "will do ", rating, " this season! \n",\
+                        "Folowing stats: \n",\
+                        "Fantasy Points", answer['Fantasy Points'][0], " and ", answer['Fantasy Points'][1], "points \n",\
+                        "Points After Touchdown between:  ", answer['Point After Touchdown'][0], " and ", answer['Point After Touchdown'][1],'\n',\
+                        "Field Goals between:  ", answer['Field Goals'][0], " and ", answer['Field Goals'][1],'\n'
             else:
-                print "The age does not match an age in probability table"          
+                index = 0
+                for i in table.iloc[:,0]:
+                    if age == i:
+                        index = count
+                    else:    
+                        count = count + 1
+                if  age == table.iloc[index, 0]:   
+                    l = (table.iloc[index,1:]).tolist()
+                    score = np.mean(l).round(2)
+                    overall_score.append(score)
+                    rating = getrating(score)
+                    ranges = [getRange(pd.to_numeric(K['point_after_makes']),l[0]), getRange(pd.to_numeric(K['field_goal_makes']),l[1])]
+                    answer = fantasyPoints(position,ranges)
+                    print p, "will do ", rating, " this season! \n",\
+                        "Folowing stats: \n",\
+                        "Fantasy Points", answer['Fantasy Points'][0], " and ", answer['Fantasy Points'][1], "points \n",\
+                        "Points After Touchdown between:  ", answer['Point After Touchdown'][0], " and ", answer['Point After Touchdown'][1],'\n',\
+                        "Field Goals between:  ", answer['Field Goals'][0], " and ", answer['Field Goals'][1],'\n'
+                else:
+                    one = age
+                    two = one + 1
+                    three = one - 1 
+                    index1 = 0
+                    index2 = 0
+                    index3 = 0
+                    count = 0
+                    for i in table.iloc[:,0]:
+                        if two == i:
+                            index2 = count
+                            count = count + 1
+                        elif three == i:
+                            index3 = count
+                            count = count + 1
+                        else:    
+                            count = count + 1
+                    l2 = (table.iloc[index2,1:]).tolist()
+                    l3 = (table.iloc[index3,1:]).tolist()
+                    for i in range(len(l2)):
+                        l.append(np.mean([l2[i],l3[i]]).round(0))
+                    score = np.mean(l).round(2)
+                    overall_score.append(score)
+                    rating = getrating(score)
+                    ranges = [getRange(pd.to_numeric(K['point_after_makes']),l[0]), getRange(pd.to_numeric(K['field_goal_makes']),l[1])]
+                    answer = fantasyPoints(position,ranges) 
+                    print p, "will do ", rating, " this season! \n",\
+                        "Folowing stats: \n",\
+                        "Fantasy Points", answer['Fantasy Points'][0], " and ", answer['Fantasy Points'][1], "points \n",\
+                        "Points After Touchdown between:  ", answer['Point After Touchdown'][0], " and ", answer['Point After Touchdown'][1],'\n',\
+                        "Field Goals between:  ", answer['Field Goals'][0], " and ", answer['Field Goals'][1],'\n'        
     print  "Your players Overall score is ", np.mean(overall_score).round(2), "/5"
     sys.stdout.flush()
 if __name__ == "__main__":
