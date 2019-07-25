@@ -106,9 +106,21 @@
 <form action="Draft">
 <div id="feedback">
 	<h4>Feedback:</h4>
-	<% if (message != '') { %>
-		<p class="text-center"><%= message %></p>
-	<% } %>
+	<div class="table-wrapper-scroll-y my-custom-scrollbar" style="padding-bottom: 1.5cm">
+
+		<table class="table table-bordered table-striped mb-0">
+	  <thead>
+	  </thead>
+	  <tbody id="myTable">
+			  <% message.forEach((message) => { %>
+				  <tr>
+					<td ><%= message %></td>
+				 </tr>
+			 <% }) %>
+  </tbody>
+	</table>
+
+</div>
 
 	
 </div>

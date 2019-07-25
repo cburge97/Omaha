@@ -61,9 +61,12 @@ module.exports = {
             process.stdout.on('data', (data) => {
 
             if(userPlayer1 != ''){  
+              data = String(data);
+              var newD = data.split("!");
+
               res.render('add_drop.ejs', {
                 players: result,
-                message: data     
+                message: newD     
              });
             }
             else{

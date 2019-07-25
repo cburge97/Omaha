@@ -1047,34 +1047,37 @@ def main():
     add = players[6:]
     add_overall_score = []
     drop_overall_score = []
-
+    a = []
+    d = []
     for p in add:
         if p !="":
+            a.append(p)
             score = getPosStats(p,test18,train)
             add_overall_score.append(score)
     if add == []:
         add_score = 0
     else:
         add_score = np.mean(add_overall_score).round(2)
-    print "The players you want to add to you team have an averge overall score of ", add_score, "out of 5 stars \n"
+    print "The players", str(a),  "you want to add to you team have an averge overall score of ", add_score, "out of 5 stars! \n"
 
     for p in drop:
         if p != "":
+            d.append(p)
             score = getPosStats(p,test18,train)
             drop_overall_score.append(score)
     if drop == []:
         drop_score = 0
     else:
         drop_score = np.mean(drop_overall_score).round(2)
-    print "The players you want to drop from your team have an averge overall score of ", drop_score, "out of 5 stars \n"
+    print "The players", str(d), "you want to drop from your team have an averge overall score of ", drop_score, "out of 5 stars! \n"
 
 
     if add_score > drop_score:
-        print "Your Transaction is worth it"
+        print "Your Transaction is worth it!"
     elif add_score < drop_score:
-        print "Your Transaction is not worth it"
+        print "Your Transaction is not worth it!"
     else:
-        print "Your transaction does not make a difference"
+        print "Your transaction does not make a difference!"
 
     sys.stdout.flush()
 if __name__ == "__main__":

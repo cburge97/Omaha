@@ -499,12 +499,11 @@ def main():
                 rating = getrating(score)
                 ranges = [getRange(pd.to_numeric(QB['passing_interceptions']),l[0]), getRange(pd.to_numeric(QB['passing_yards']),l[1]), getRange(pd.to_numeric(QB['passing_touchdowns']),l[2])]
                 answer = fantasyPoints(position,ranges)
-                print p, "will do ", rating, " this season! \n",\
-                        "Folowing stats: \n",\
-                        "Fantasy Points", answer['Fantasy Points'][0], " and ", answer['Fantasy Points'][1], "points \n",\
-                        "Passing Touchdowns between:  ", answer['Passing Touchdowns'][0], " and ", answer['Passing Touchdowns'][1],'\n',\
-                        "Interceptions between:  ", answer['Interceptions'][0], " and ", answer['Interceptions'][1],'\n',\
-                        "Passing Yards between:  ", answer['Passing Yards'][0], " and ", answer['Passing Yards'][1],'\n'            
+                print p, "will do ", rating, " this season!",\
+                        "Fantasy Points", answer['Fantasy Points'][0], " and ", answer['Fantasy Points'][1], "points |",\
+                        "Passing Touchdowns between:  ", answer['Passing Touchdowns'][0], " and ", answer['Passing Touchdowns'][1],'|',\
+                        "Interceptions between:  ", answer['Interceptions'][0], " and ", answer['Interceptions'][1],'|',\
+                        "Passing Yards between:  ", answer['Passing Yards'][0], " and ", answer['Passing Yards'][1],'$'            
                 
             elif age < table.iloc[:,0].min():
                 one = table.iloc[:,0].min()
@@ -532,12 +531,11 @@ def main():
                 rating = getrating(score)
                 ranges = [getRange(pd.to_numeric(QB['passing_interceptions']),l[0]), getRange(pd.to_numeric(QB['passing_yards']),l[1]), getRange(pd.to_numeric(QB['passing_touchdowns']),l[2])]
                 answer = fantasyPoints(position,ranges)
-                print p, "will do ", rating, " this season! \n",\
-                        "Folowing stats: \n",\
-                        "Fantasy Points", answer['Fantasy Points'][0], " and ", answer['Fantasy Points'][1], "points \n",\
-                        "Passing Touchdowns between:  ", answer['Passing Touchdowns'][0], " and ", answer['Passing Touchdowns'][1],'\n',\
-                        "Interceptions between:  ", answer['Interceptions'][0], " and ", answer['Interceptions'][1],'\n',\
-                        "Passing Yards between:  ", answer['Passing Yards'][0], " and ", answer['Passing Yards'][1],'\n'            
+                print p, "will do ", rating, " this season!",\
+                        "Fantasy Points", answer['Fantasy Points'][0], " and ", answer['Fantasy Points'][1], "points |",\
+                        "Passing Touchdowns between:  ", answer['Passing Touchdowns'][0], " and ", answer['Passing Touchdowns'][1],'|',\
+                        "Interceptions between:  ", answer['Interceptions'][0], " and ", answer['Interceptions'][1],'|',\
+                        "Passing Yards between:  ", answer['Passing Yards'][0], " and ", answer['Passing Yards'][1],'$'            
             else: 
                 index = 0
                 for i in table.iloc[:,0]:
@@ -552,12 +550,11 @@ def main():
                     rating = getrating(score)
                     ranges = [getRange(pd.to_numeric(QB['passing_interceptions']),l[0]), getRange(pd.to_numeric(QB['passing_yards']),l[1]), getRange(pd.to_numeric(QB['passing_touchdowns']),l[2])]
                     answer = fantasyPoints(position,ranges)
-                    print p, "will do ", rating, " this season! \n",\
-                        "Folowing stats: \n",\
-                        "Fantasy Points", answer['Fantasy Points'][0], " and ", answer['Fantasy Points'][1], "points \n",\
-                        "Passing Touchdowns between:  ", answer['Passing Touchdowns'][0], " and ", answer['Passing Touchdowns'][1],'\n',\
-                        "Interceptions between:  ", answer['Interceptions'][0], " and ", answer['Interceptions'][1],'\n',\
-                        "Passing Yards between:  ", answer['Passing Yards'][0], " and ", answer['Passing Yards'][1],'\n'               
+                    print p, "will do ", rating, " this season!",\
+                        "Fantasy Points", answer['Fantasy Points'][0], " and ", answer['Fantasy Points'][1], "points |",\
+                        "Passing Touchdowns between:  ", answer['Passing Touchdowns'][0], " and ", answer['Passing Touchdowns'][1],'|',\
+                        "Interceptions between:  ", answer['Interceptions'][0], " and ", answer['Interceptions'][1],'|',\
+                        "Passing Yards between:  ", answer['Passing Yards'][0], " and ", answer['Passing Yards'][1],'$'               
                 else:
                     one = age
                     two = one + 1
@@ -584,12 +581,11 @@ def main():
                     rating = getrating(score)
                     ranges = [getRange(pd.to_numeric(QB['passing_interceptions']),l[0]), getRange(pd.to_numeric(QB['passing_yards']),l[1]), getRange(pd.to_numeric(QB['passing_touchdowns']),l[2])]
                     answer = fantasyPoints(position,ranges)
-                    print p, "will do ", rating, " this season! \n",\
-                        "Folowing stats: \n",\
-                        "Fantasy Points", answer['Fantasy Points'][0], " and ", answer['Fantasy Points'][1], "points \n",\
-                        "Passing Touchdowns between:  ", answer['Passing Touchdowns'][0], " and ", answer['Passing Touchdowns'][1],'\n',\
-                        "Interceptions between:  ", answer['Interceptions'][0], " and ", answer['Interceptions'][1],'\n',\
-                        "Passing Yards between:  ", answer['Passing Yards'][0], " and ", answer['Passing Yards'][1],'\n'
+                    print p, "will do ", rating, " this season!",\
+                        "Fantasy Points", answer['Fantasy Points'][0], " and ", answer['Fantasy Points'][1], "points !",\
+                        "Passing Touchdowns between:  ", answer['Passing Touchdowns'][0], " and ", answer['Passing Touchdowns'][1],'!',\
+                        "Interceptions between:  ", answer['Interceptions'][0], " and ", answer['Interceptions'][1],'!',\
+                        "Passing Yards between:  ", answer['Passing Yards'][0], " and ", answer['Passing Yards'][1],'$'
             
         elif position == 'RB':
             RB =getRBStats(test18)
@@ -621,11 +617,10 @@ def main():
                 rating = getrating(score)
                 ranges = [getRange(pd.to_numeric(RB['rushing_yards']),l[0]), getRange(pd.to_numeric(RB['rushing_touchdowns']),l[1])]
                 answer = fantasyPoints(position,ranges)
-                print p, "will do ", rating, " this season! \n",\
-                        "Folowing stats: \n",\
-                        "Fantasy Points", answer['Fantasy Points'][0], " and ", answer['Fantasy Points'][1], "points \n",\
-                        "Rushing Yards between:  ", answer['Rushing Yards'][0], " and ", answer['Rushing Yards'][1],'\n',\
-                        "Rushing Touchdowns between:  ", answer['Rushing Touchdowns'][0], " and ", answer['Rushing Touchdowns'][1],'\n'         
+                print p, "will do ", rating, " this season!",\
+                        "Fantasy Points", answer['Fantasy Points'][0], " and ", answer['Fantasy Points'][1], "points |",\
+                        "Rushing Yards between:  ", answer['Rushing Yards'][0], " and ", answer['Rushing Yards'][1],'|',\
+                        "Rushing Touchdowns between:  ", answer['Rushing Touchdowns'][0], " and ", answer['Rushing Touchdowns'][1],'$'         
             elif age < table.iloc[:,0].min():
                 one = table.iloc[:,0].min()
                 two = one + 1
@@ -652,11 +647,10 @@ def main():
                 rating = getrating(score)
                 ranges = [getRange(pd.to_numeric(RB['rushing_yards']),l[0]), getRange(pd.to_numeric(RB['rushing_touchdowns']),l[1])]
                 answer = fantasyPoints(position,ranges)
-                print p, "will do ", rating, " this season! \n",\
-                        "Folowing stats: \n",\
-                        "Fantasy Points", answer['Fantasy Points'][0], " and ", answer['Fantasy Points'][1], "points \n",\
-                        "Rushing Yards between:  ", answer['Rushing Yards'][0], " and ", answer['Rushing Yards'][1],'\n',\
-                        "Rushing Touchdowns between:  ", answer['Rushing Touchdowns'][0], " and ", answer['Rushing Touchdowns'][1],'\n'
+                print p, "will do ", rating, " this season!",\
+                        "Fantasy Points", answer['Fantasy Points'][0], " and ", answer['Fantasy Points'][1], "points |",\
+                        "Rushing Yards between:  ", answer['Rushing Yards'][0], " and ", answer['Rushing Yards'][1],'|',\
+                        "Rushing Touchdowns between:  ", answer['Rushing Touchdowns'][0], " and ", answer['Rushing Touchdowns'][1],'$'
             else:
                 index = 0
                 for i in table.iloc[:,0]:
@@ -671,11 +665,10 @@ def main():
                     rating = getrating(score)
                     ranges = [getRange(pd.to_numeric(RB['rushing_yards']),l[0]), getRange(pd.to_numeric(RB['rushing_touchdowns']),l[1])]
                     answer = fantasyPoints(position,ranges)
-                    print p, "will do ", rating, " this season! \n",\
-                        "Folowing stats: \n",\
-                        "Fantasy Points", answer['Fantasy Points'][0], " and ", answer['Fantasy Points'][1], "points \n",\
-                        "Rushing Yards between:  ", answer['Rushing Yards'][0], " and ", answer['Rushing Yards'][1],'\n',\
-                        "Rushing Touchdowns between:  ", answer['Rushing Touchdowns'][0], " and ", answer['Rushing Touchdowns'][1],'\n'
+                    print p, "will do ", rating, " this season!",\
+                        "Fantasy Points", answer['Fantasy Points'][0], " and ", answer['Fantasy Points'][1], "points |",\
+                        "Rushing Yards between:  ", answer['Rushing Yards'][0], " and ", answer['Rushing Yards'][1],'|',\
+                        "Rushing Touchdowns between:  ", answer['Rushing Touchdowns'][0], " and ", answer['Rushing Touchdowns'][1],'$'
                 else:
                     one = age
                     two = one + 1
@@ -702,11 +695,10 @@ def main():
                     rating = getrating(score)
                     ranges = [getRange(pd.to_numeric(RB['rushing_yards']),l[0]), getRange(pd.to_numeric(RB['rushing_touchdowns']),l[1])]
                     answer = fantasyPoints(position,ranges)
-                    print p, "will do ", rating, " this season! \n",\
-                        "Folowing stats: \n",\
-                        "Fantasy Points", answer['Fantasy Points'][0], " and ", answer['Fantasy Points'][1], "points \n",\
-                        "Rushing Yards between:  ", answer['Rushing Yards'][0], " and ", answer['Rushing Yards'][1],'\n',\
-                        "Rushing Touchdowns between:  ", answer['Rushing Touchdowns'][0], " and ", answer['Rushing Touchdowns'][1],'\n'
+                    print p, "will do ", rating, " this season!",\
+                        "Fantasy Points", answer['Fantasy Points'][0], " and ", answer['Fantasy Points'][1], "points |",\
+                        "Rushing Yards between:  ", answer['Rushing Yards'][0], " and ", answer['Rushing Yards'][1],'|',\
+                        "Rushing Touchdowns between:  ", answer['Rushing Touchdowns'][0], " and ", answer['Rushing Touchdowns'][1],'$'
         elif position == 'WR':
             WR =getWRStats(test18)
             table = WRProbability(WR)
@@ -737,11 +729,10 @@ def main():
                 rating = getrating(score)
                 ranges = [getRange(pd.to_numeric(WR['receiving_yards']),l[0]), getRange(pd.to_numeric(WR['receiving_touchdowns']),l[1])]
                 answer = fantasyPoints(position,ranges)    
-                print p, "will do ", rating, " this season! \n",\
-                        "Folowing stats: \n",\
-                        "Fantasy Points", answer['Fantasy Points'][0], " and ", answer['Fantasy Points'][1], "points \n",\
-                        "Recieving Yards between:  ", answer['Recieving Yards'][0], " and ", answer['Recieving Yards'][1],'\n',\
-                        "Recieving Touchdowns between:  ", answer['Recieving Touchdowns'][0], " and ", answer['Recieving Touchdowns'][1],'\n'
+                print p, "will do ", rating, " this season!",\
+                        "Fantasy Points", answer['Fantasy Points'][0], " and ", answer['Fantasy Points'][1], "points |",\
+                        "Recieving Yards between:  ", answer['Recieving Yards'][0], " and ", answer['Recieving Yards'][1],'|',\
+                        "Recieving Touchdowns between:  ", answer['Recieving Touchdowns'][0], " and ", answer['Recieving Touchdowns'][1],'$'
             elif age < table.iloc[:,0].min():
                 one = table.iloc[:,0].min()
                 two = one + 1
@@ -768,11 +759,10 @@ def main():
                 rating = getrating(score)  
                 ranges = [getRange(pd.to_numeric(WR['receiving_yards']),l[0]), getRange(pd.to_numeric(WR['receiving_touchdowns']),l[1])]
                 answer = fantasyPoints(position,ranges) 
-                print p, "will do ", rating, " this season! \n",\
-                        "Folowing stats: \n",\
-                        "Fantasy Points", answer['Fantasy Points'][0], " and ", answer['Fantasy Points'][1], "points \n",\
-                        "Recieving Yards between:  ", answer['Recieving Yards'][0], " and ", answer['Recieving Yards'][1],'\n',\
-                        "Recieving Touchdowns between:  ", answer['Recieving Touchdowns'][0], " and ", answer['Recieving Touchdowns'][1],'\n'
+                print p, "will do ", rating, " this season!",\
+                        "Fantasy Points", answer['Fantasy Points'][0], " and ", answer['Fantasy Points'][1], "points |",\
+                        "Recieving Yards between:  ", answer['Recieving Yards'][0], " and ", answer['Recieving Yards'][1],'|',\
+                        "Recieving Touchdowns between:  ", answer['Recieving Touchdowns'][0], " and ", answer['Recieving Touchdowns'][1],'$'
             else:
                 index = 0
                 for i in table.iloc[:,0]:
@@ -787,11 +777,10 @@ def main():
                     rating = getrating(score)
                     ranges = [getRange(pd.to_numeric(WR['receiving_yards']),l[0]), getRange(pd.to_numeric(WR['receiving_touchdowns']),l[1])]
                     answer = fantasyPoints(position,ranges)     
-                    print p, "will do ", rating, " this season! \n",\
-                        "Folowing stats: \n",\
-                        "Fantasy Points", answer['Fantasy Points'][0], " and ", answer['Fantasy Points'][1], "points \n",\
-                        "Recieving Yards between:  ", answer['Recieving Yards'][0], " and ", answer['Recieving Yards'][1],'\n',\
-                        "Recieving Touchdowns between:  ", answer['Recieving Touchdowns'][0], " and ", answer['Recieving Touchdowns'][1],'\n'
+                    print p, "will do ", rating, " this season!",\
+                        "Fantasy Points", answer['Fantasy Points'][0], " and ", answer['Fantasy Points'][1], "points |",\
+                        "Recieving Yards between:  ", answer['Recieving Yards'][0], " and ", answer['Recieving Yards'][1],'|',\
+                        "Recieving Touchdowns between:  ", answer['Recieving Touchdowns'][0], " and ", answer['Recieving Touchdowns'][1],'$'
                 else:
                     one = age
                     two = one + 1
@@ -818,11 +807,10 @@ def main():
                     rating = getrating(score)
                     ranges = [getRange(pd.to_numeric(WR['receiving_yards']),l[0]), getRange(pd.to_numeric(WR['receiving_touchdowns']),l[1])]
                     answer = fantasyPoints(position,ranges)       
-                    print p, "will do ", rating, " this season! \n",\
-                        "Folowing stats: \n",\
-                        "Fantasy Points", answer['Fantasy Points'][0], " and ", answer['Fantasy Points'][1], "points \n",\
-                        "Recieving Yards between:  ", answer['Recieving Yards'][0], " and ", answer['Recieving Yards'][1],'\n',\
-                        "Recieving Touchdowns between:  ", answer['Recieving Touchdowns'][0], " and ", answer['Recieving Touchdowns'][1],'\n'                            
+                    print p, "will do ", rating, " this season!",\
+                        "Fantasy Points", answer['Fantasy Points'][0], " and ", answer['Fantasy Points'][1], "points |",\
+                        "Recieving Yards between:  ", answer['Recieving Yards'][0], " and ", answer['Recieving Yards'][1],'|',\
+                        "Recieving Touchdowns between:  ", answer['Recieving Touchdowns'][0], " and ", answer['Recieving Touchdowns'][1],'$'                            
         elif position == 'TE':
             TE =getTEStats(test18)
             table = TEProbability(TE)
@@ -853,11 +841,10 @@ def main():
                 rating = getrating(score)
                 ranges = [getRange(pd.to_numeric(TE['receiving_yards']),l[0]), getRange(pd.to_numeric(TE['receiving_touchdowns']),l[1])]
                 answer = fantasyPoints(position,ranges)    
-                print p, "will do ", rating, " this season! \n",\
-                        "Folowing stats: \n",\
-                        "Fantasy Points", answer['Fantasy Points'][0], " and ", answer['Fantasy Points'][1], "points \n",\
-                        "Recieving Yards between:  ", answer['Recieving Yards'][0], " and ", answer['Recieving Yards'][1],'\n',\
-                        "Recieving Touchdowns between:  ", answer['Recieving Touchdowns'][0], " and ", answer['Recieving Touchdowns'][1],'\n'
+                print p, "will do ", rating, " this season!",\
+                        "Fantasy Points", answer['Fantasy Points'][0], " and ", answer['Fantasy Points'][1], "points |",\
+                        "Recieving Yards between:  ", answer['Recieving Yards'][0], " and ", answer['Recieving Yards'][1],'|',\
+                        "Recieving Touchdowns between:  ", answer['Recieving Touchdowns'][0], " and ", answer['Recieving Touchdowns'][1],'$'
             elif age < table.iloc[:,0].min():
                 one = table.iloc[:,0].min()
                 two = one + 1
@@ -884,11 +871,10 @@ def main():
                 rating = getrating(score)
                 ranges = [getRange(pd.to_numeric(TE['receiving_yards']),l[0]), getRange(pd.to_numeric(TE['receiving_touchdowns']),l[1])]
                 answer = fantasyPoints(position,ranges)
-                print p, "will do ", rating, " this season! \n",\
-                        "Folowing stats: \n",\
-                        "Fantasy Points", answer['Fantasy Points'][0], " and ", answer['Fantasy Points'][1], "points \n",\
-                        "Recieving Yards between:  ", answer['Recieving Yards'][0], " and ", answer['Recieving Yards'][1],'\n',\
-                        "Recieving Touchdowns between:  ", answer['Recieving Touchdowns'][0], " and ", answer['Recieving Touchdowns'][1],'\n'
+                print p, "will do ", rating, " this season!",\
+                        "Fantasy Points", answer['Fantasy Points'][0], " and ", answer['Fantasy Points'][1], "points |",\
+                        "Recieving Yards between:  ", answer['Recieving Yards'][0], " and ", answer['Recieving Yards'][1],'|',\
+                        "Recieving Touchdowns between:  ", answer['Recieving Touchdowns'][0], " and ", answer['Recieving Touchdowns'][1],'$'
             else:
                 index = 0
                 for i in table.iloc[:,0]:
@@ -903,11 +889,10 @@ def main():
                     rating = getrating(score)
                     ranges = [getRange(pd.to_numeric(TE['receiving_yards']),l[0]), getRange(pd.to_numeric(TE['receiving_touchdowns']),l[1])]
                     answer = fantasyPoints(position,ranges) 
-                    print p, "will do ", rating, " this season! \n",\
-                        "Folowing stats: \n",\
-                        "Fantasy Points", answer['Fantasy Points'][0], " and ", answer['Fantasy Points'][1], "points \n",\
-                        "Recieving Yards between:  ", answer['Recieving Yards'][0], " and ", answer['Recieving Yards'][1],'\n',\
-                        "Recieving Touchdowns between:  ", answer['Recieving Touchdowns'][0], " and ", answer['Recieving Touchdowns'][1],'\n'
+                    print p, "will do ", rating, " this season!",\
+                        "Fantasy Points", answer['Fantasy Points'][0], " and ", answer['Fantasy Points'][1], "points |",\
+                        "Recieving Yards between:  ", answer['Recieving Yards'][0], " and ", answer['Recieving Yards'][1],'|',\
+                        "Recieving Touchdowns between:  ", answer['Recieving Touchdowns'][0], " and ", answer['Recieving Touchdowns'][1],'$'
                 else:
                     one = age
                     two = one + 1
@@ -934,11 +919,10 @@ def main():
                     rating = getrating(score)
                     ranges = [getRange(pd.to_numeric(TE['receiving_yards']),l[0]), getRange(pd.to_numeric(TE['receiving_touchdowns']),l[1])]
                     answer = fantasyPoints(position,ranges) 
-                    print p, "will do ", rating, " this season! \n",\
-                        "Folowing stats: \n",\
-                        "Fantasy Points", answer['Fantasy Points'][0], " and ", answer['Fantasy Points'][1], "points \n",\
-                        "Recieving Yards between:  ", answer['Recieving Yards'][0], " and ", answer['Recieving Yards'][1],'\n',\
-                        "Recieving Touchdowns between:  ", answer['Recieving Touchdowns'][0], " and ", answer['Recieving Touchdowns'][1],'\n'      
+                    print p, "will do ", rating, " this season!",\
+                        "Fantasy Points", answer['Fantasy Points'][0], " and ", answer['Fantasy Points'][1], "points |",\
+                        "Recieving Yards between:  ", answer['Recieving Yards'][0], " and ", answer['Recieving Yards'][1],'|',\
+                        "Recieving Touchdowns between:  ", answer['Recieving Touchdowns'][0], " and ", answer['Recieving Touchdowns'][1],'$'      
         else:
             K =getKStats(test18)
             table = KProbability(K)
@@ -969,11 +953,10 @@ def main():
                 rating = getrating(score)
                 ranges = [getRange(pd.to_numeric(K['point_after_makes']),l[0]), getRange(pd.to_numeric(K['field_goal_makes']),l[1])]
                 answer = fantasyPoints(position,ranges)    
-                print p, "will do ", rating, " this season! \n",\
-                        "Folowing stats: \n",\
-                        "Fantasy Points", answer['Fantasy Points'][0], " and ", answer['Fantasy Points'][1], "points \n",\
-                        "Points After Touchdown between:  ", answer['Point After Touchdown'][0], " and ", answer['Point After Touchdown'][1],'\n',\
-                        "Field Goals between:  ", answer['Field Goals'][0], " and ", answer['Field Goals'][1],'\n'
+                print p, "will do ", rating, " this season!",\
+                        "Fantasy Points", answer['Fantasy Points'][0], " and ", answer['Fantasy Points'][1], "points |",\
+                        "Points After Touchdown between:  ", answer['Point After Touchdown'][0], " and ", answer['Point After Touchdown'][1],'|',\
+                        "Field Goals between:  ", answer['Field Goals'][0], " and ", answer['Field Goals'][1],'$'
             elif age < table.iloc[:,0].min():
                 one = table.iloc[:,0].min()
                 two = one + 1
@@ -1000,11 +983,10 @@ def main():
                 rating = getrating(score)
                 ranges = [getRange(pd.to_numeric(K['point_after_makes']),l[0]), getRange(pd.to_numeric(K['field_goal_makes']),l[1])]
                 answer = fantasyPoints(position,ranges)
-                print p, "will do ", rating, " this season! \n",\
-                        "Folowing stats: \n",\
-                        "Fantasy Points", answer['Fantasy Points'][0], " and ", answer['Fantasy Points'][1], "points \n",\
-                        "Points After Touchdown between:  ", answer['Point After Touchdown'][0], " and ", answer['Point After Touchdown'][1],'\n',\
-                        "Field Goals between:  ", answer['Field Goals'][0], " and ", answer['Field Goals'][1],'\n'
+                print p, "will do ", rating, " this season!",\
+                        "Fantasy Points", answer['Fantasy Points'][0], " and ", answer['Fantasy Points'][1], "points |",\
+                        "Points After Touchdown between:  ", answer['Point After Touchdown'][0], " and ", answer['Point After Touchdown'][1],'|',\
+                        "Field Goals between:  ", answer['Field Goals'][0], " and ", answer['Field Goals'][1],'$'
             else:
                 index = 0
                 for i in table.iloc[:,0]:
@@ -1019,11 +1001,10 @@ def main():
                     rating = getrating(score)
                     ranges = [getRange(pd.to_numeric(K['point_after_makes']),l[0]), getRange(pd.to_numeric(K['field_goal_makes']),l[1])]
                     answer = fantasyPoints(position,ranges)
-                    print p, "will do ", rating, " this season! \n",\
-                        "Folowing stats: \n",\
-                        "Fantasy Points", answer['Fantasy Points'][0], " and ", answer['Fantasy Points'][1], "points \n",\
-                        "Points After Touchdown between:  ", answer['Point After Touchdown'][0], " and ", answer['Point After Touchdown'][1],'\n',\
-                        "Field Goals between:  ", answer['Field Goals'][0], " and ", answer['Field Goals'][1],'\n'
+                    print p, "will do ", rating, " this season!",\
+                        "Fantasy Points", answer['Fantasy Points'][0], " and ", answer['Fantasy Points'][1], "points |",\
+                        "Points After Touchdown between:  ", answer['Point After Touchdown'][0], " and ", answer['Point After Touchdown'][1],'|',\
+                        "Field Goals between:  ", answer['Field Goals'][0], " and ", answer['Field Goals'][1],'$'
                 else:
                     one = age
                     two = one + 1
@@ -1050,12 +1031,11 @@ def main():
                     rating = getrating(score)
                     ranges = [getRange(pd.to_numeric(K['point_after_makes']),l[0]), getRange(pd.to_numeric(K['field_goal_makes']),l[1])]
                     answer = fantasyPoints(position,ranges) 
-                    print p, "will do ", rating, " this season! \n",\
-                        "Folowing stats: \n",\
-                        "Fantasy Points", answer['Fantasy Points'][0], " and ", answer['Fantasy Points'][1], "points \n",\
-                        "Points After Touchdown between:  ", answer['Point After Touchdown'][0], " and ", answer['Point After Touchdown'][1],'\n',\
-                        "Field Goals between:  ", answer['Field Goals'][0], " and ", answer['Field Goals'][1],'\n'        
-    print  "Your players Overall score is ", np.mean(overall_score).round(2), "/5"
+                    print p, "will do ", rating, " this season!",\
+                        "Fantasy Points", answer['Fantasy Points'][0], " and ", answer['Fantasy Points'][1], "points |",\
+                        "Points After Touchdown between:  ", answer['Point After Touchdown'][0], " and ", answer['Point After Touchdown'][1],'|',\
+                        "Field Goals between:  ", answer['Field Goals'][0], " and ", answer['Field Goals'][1],'!'        
+    print  "Your Teams Overall score is ", np.mean(overall_score).round(2), " out of 5 stars! "
     sys.stdout.flush()
 if __name__ == "__main__":
     main()

@@ -26,7 +26,7 @@ module.exports = {
         var x = 1;
 
         var playerList1 = req.body.playerList;
-      console.log(playerList1);
+      //console.log(playerList1);
 
         // Use child_process.spawn method from  
         // child_process module and assign it 
@@ -55,11 +55,14 @@ module.exports = {
             }
 
             process.stdout.on('data', (data) => {
-              //console.log(data);
-
+              // console.log(data);
+              data = String(data);
+              var newD = data.split("$");
+              // console.log(newD);
             if(playerList1 != ''){  
+              
               res.render('DraftResults.ejs', {
-              message: data     
+              message: newD     
              });
             }
             else{

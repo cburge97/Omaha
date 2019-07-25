@@ -59,11 +59,12 @@ module.exports = {
             }
 
             process.stdout.on('data', (data) => {
-
+              data = String(data);
+              var newD = data.split("!");
             if(userPlayer1 != ''){  
               res.render('trade.ejs', {
                 players1: result,
-                message: data     
+                message: newD     
              });
             }
             else{

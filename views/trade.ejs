@@ -151,12 +151,12 @@
                         </select>
                     </div>
                     <div>
-                            <input type ="text" id="FA1" name="player1" style="visibility:hidden" placeholder="Player Name...">
-                            <input type ="text" id="FA2" name="player2" style="visibility:hidden" placeholder="Player Name...">
-                            <input type ="text" id="FA3" name="player3" style="visibility:hidden" placeholder="Player Name...">
-                            <input type ="text" id="FA4" name="player4" style="visibility:hidden" placeholder="Player Name...">
-                            <input type ="text" id="FA5" name="player5" style="visibility:hidden" placeholder="Player Name...">
-                            <input type ="text" id="FA6" name="player6" style="visibility:hidden" placeholder="Player Name...">
+                            <input type ="text" id="FA1" name="FA1" style="visibility:hidden" placeholder="Player Name...">
+                            <input type ="text" id="FA2" name="FA2" style="visibility:hidden" placeholder="Player Name...">
+                            <input type ="text" id="FA3" name="FA3" style="visibility:hidden" placeholder="Player Name...">
+                            <input type ="text" id="FA4" name="FA4" style="visibility:hidden" placeholder="Player Name...">
+                            <input type ="text" id="FA5" name="FA5" style="visibility:hidden" placeholder="Player Name...">
+                            <input type ="text" id="FA6" name="FA6" style="visibility:hidden" placeholder="Player Name...">
     
                     </div>
                 </div> 
@@ -170,9 +170,7 @@
     <div style="bottom:20%;width:100%;">
         <hr>
         <h2>Feedback:</h2>
-        <% if (message != '') { %>
-            <p class="text-center"><%= message %></p>
-        <% } %>
+        <p class="text-left"><%= message[0] %> <br> <%= message[1] %> <br> <%= message[2] %></p>
         <div id="drop"></div>
         <div id="add"></div>
         <div id="ml"></div>
