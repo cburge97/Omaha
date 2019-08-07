@@ -1,0 +1,46 @@
+## Plan
+
+1. Week of 5/20: Setup environment & create paper GUI model
+   * Download: Node.JS, XAMPP, Visual Studio Code, Python, GIT -BOTH
+   * Paper GUI Draft -DHERIC
+   * Design Relation Diagram and Database - CHRIS
+   * Munge data needed for 2 seasons (2017 and 2016) - DHERIC
+   * Get total offensive stats and total defensive stats - DHERIC
+2. Week of 5/27: Refine paper model then make it using an online design tool
+   * Refine Paper design online - BOTH
+       * Home - DHERIC 
+       * Player Stats - CHRIS
+       * Transaction - DHERIC
+       * Draft - CHRIS
+3. Week of 6/3:   Release 1 
+   * View All Player Stats
+   * Filter based on columns
+   * Add auto-populate for dropdown
+   * Start Machine Learning: Stat Projections for non rookie players, player stats
+   * Draft Page: allow user to select player for team and already drafted
+   * Transaction Page: allow user to select player for team and transaction
+   * Working for 3 years
+4. Week of 6/10: Release 2 
+   * Working for 5 years
+   * Add functionality to transaction page (compare players and projected stats) 
+   * Refine machine learning: Add suggestions/ feedback for draft/transaction page
+5. Week of 6/17: Release 3 
+   * Working for 7-10(optional) years
+   * Machine Learning: compatible with new years added
+6. Week of 6/24: Refine GUI and midterm present 
+   * Touch up GUI
+   * Prepare presentation
+   * Optional Feature: Rookie stat Page
+7. Week of 7/1:   Add More features,test scalability of database, and start poster
+   * Fix app based on feedback from presentation
+   * Begin poster
+   * Optional Feature: Player vs Opponent
+8. Week of 7/8: Testing and work on poster
+   * Finish Poster Layout
+9. Week of 7/15: Final touches on Poster 
+   * Finish Poster
+10. Week of 7/22: Poster Submission, and practice final presentation
+11. Week of 7/29: Final push, and Final Presentation
+12. Week of 8/5:Poster Showcase (tentative)
+
+NOTE: Bug Fixes for prev. week in weeks after. Dates subject to change based on complications and bugs
