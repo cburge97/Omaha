@@ -73,52 +73,70 @@ Miscellaneous
        * Simple page where people can view random facts
   * Rookie Page
        * Page that predicts stats for this years rookies
-## Plan
 
-1. Week of 5/20: Setup environment & create paper GUI model
-   * Download: Node.JS, XAMPP, Visual Studio Code, Python, GIT -BOTH
-   * Paper GUI Draft -DHERIC
-   * Design Relation Diagram and Database - CHRIS
-   * Munge data needed for 2 seasons (2017 and 2016) - DHERIC
-   * Get total offensive stats and total defensive stats - DHERIC
-2. Week of 5/27: Refine paper model then make it using an online design tool
-   * Refine Paper design online - BOTH
-       * Home - DHERIC 
-       * Player Stats - CHRIS
-       * Transaction - DHERIC
-       * Draft - CHRIS
-3. Week of 6/3:   Release 1 
-   * View All Player Stats
-   * Filter based on columns
-   * Add auto-populate for dropdown
-   * Start Machine Learning: Stat Projections for non rookie players, player stats
-   * Draft Page: allow user to select player for team and already drafted
-   * Transaction Page: allow user to select player for team and transaction
-   * Working for 3 years
-4. Week of 6/10: Release 2 
-   * Working for 5 years
-   * Add functionality to transaction page (compare players and projected stats) 
-   * Refine machine learning: Add suggestions/ feedback for draft/transaction page
-5. Week of 6/17: Release 3 
-   * Working for 7-10(optional) years
-   * Machine Learning: compatible with new years added
-6. Week of 6/24: Refine GUI and midterm present 
-   * Touch up GUI
-   * Prepare presentation
-   * Optional Feature: Rookie stat Page
-7. Week of 7/1:   Add More features,test scalability of database, and start poster
-   * Fix app based on feedback from presentation
-   * Begin poster
-   * Optional Feature: Player vs Opponent
-8. Week of 7/8: Testing and work on poster
-   * Finish Poster Layout
-9. Week of 7/15: Final touches on Poster 
-   * Finish Poster
-10. Week of 7/22: Poster Submission, and practice final presentation
-11. Week of 7/29: Final push, and Final Presentation
-12. Week of 8/5:Poster Showcase (tentative)
+## Getting Started
 
-NOTE: Bug Fixes for prev. week in weeks after. Dates subject to change based on complications and bugs
+### Install
+* XAMPP
+* Python 2.7
+* body-parser@1.19.0
+* bootstrap@4.3.1
+* child_process@1.0.2
+* ejs@2.6.2
+* express@4.17.1
+* express-fileupload@1.1.5
+* UNMET PEER DEPENDENCY jquery@1.9.1 - 3
+* mysql@2.17.1
+* UNMET PEER DEPENDENCY popper.js@^1.14.7
+* python-shell@1.0.7
+* req-flash@0.0.3
+* requirejs@2.3.6 extraneous
+
+### Run
+1. Start-up Database
+   * Run XAMPP Control Panel
+   * Start Apache 
+   * Start MySQL
+2. Open Command prompt
+   * Go to the directory where the project is located
+   * Run node app.js command
+3. Website
+   * Open a browser
+   * Type http://localhost:5000/ as the url
+  
+### Features
+1. Player Stats Page:
+   * User navigates to through Player Stats page
+   * Can view different stats from of different players
+   * Can use search filter bar to find specific players by first or last name
+   * User clicks on player row to view stats from 2016, 2017, and overall stats
+  
+2. Add drop Page:
+   * User navigates through add drop page
+   * user selects how many people they want to drop from their team
+   * user selects how many people they want to add to their team
+   * user input player names into the text boxes
+   * user clicks on submit button and gets a rating on their transaction and gets feedback on if the transaction is worth it
+  
+3. Trade Page:
+   * User navigates through add drop page
+   * user selects how many people they want to trade away from their team
+   * user selects how many people they will recieve from the other team
+   * user input player names into the text boxes
+   * user clicks on submit button and gets a rating on their transaction and gets feedback on if the transaction is worth it
+  
+4. Draft Page:
+   * User navigates through draft page
+   * User inputs how many people are in their draft and what draft pick they have
+   * User can scroll and view stats of each player by clicking the player name once
+   * User selects a player by double clicking the player name in the table
+   * As draft goes on, user clicks on the players on the players that have been taken so those players are added to the taken list
+   * When it's users time to pick a player, they double click and the player is added to the taken list and the user's team list
+   * When draft is finished, user clicks submit and gets  feedback on how each player they chose will do this year and the overall grade on how they drafted
+   
+### Demo Video
+
+https://www.youtube.com/watch?v=MF-7dYxFUzQ
 
 ## Team members
 
